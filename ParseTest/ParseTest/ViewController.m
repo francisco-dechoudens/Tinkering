@@ -18,12 +18,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    /*Example of single Object Queries:*/
+    
     //[self savingObject];
     //[self retrievingObjectById];
     //[self updateObjectById];
     //[self deleteObjectById];
     //[self removeSingleFieldById];
     //[self exampleOfDataType];
+    
+    /*Example of multiple Object Queries:*/
+    //[self basicQuery];
+    [self queryWithPredicate];
+    
     
 }
 
@@ -133,6 +141,74 @@
     bigObject[@"myDictionary"] = dictionary;
     bigObject[@"myNull"] = null;
     [bigObject saveInBackground];
+}
+
+-(void)basicQuery{
+    
+    //Create a query
+    PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+    
+    //Condition
+    [query whereKey:@"playerName" equalTo:@"Sean Plott"];
+    
+    //Retrieve a NSArray of matching PFObjects
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            // Do something with the found objects
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object.objectId);
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+}
+
+/*
+ For Predicates,
+ 
+ These features are SUPPORTED:
+ 
+ Simple comparisons such as =, !=, <, >, <=, >=, and BETWEEN with a key and a constant.
+ Containment predicates, such as x IN {1, 2, 3}.
+ Key-existence predicates, such as x IN SELF.
+ BEGINSWITH expressions.
+ Compound predicates with AND, OR, and NOT.
+ Sub-queries with "key IN %@", subquery.
+ 
+ 
+ The following types of predicates are NOT SUPPORTED:
+ 
+ Aggregate operations, such as ANY, SOME, ALL, or NONE.
+ Regular expressions, such as LIKE, MATCHES, CONTAINS, or ENDSWITH.
+ Predicates comparing one key to another.
+ Complex predicates with many ORed clauses.
+ */
+
+-(void)queryWithPredicate{
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:
+                              @"playerName = 'Sean Plott'"];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"GameScore" predicate:predicate];
+    
+    //Retrieve a NSArray of matching PFObjects
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            // Do something with the found objects
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object.objectId);
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
