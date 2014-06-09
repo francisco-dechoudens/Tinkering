@@ -17,7 +17,67 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    //[self savingObject];
+    //[self retrievingObjectById];
+    [self updateObjectById];
+    
+}
+
+
+/*Create a Class table and save object following information:
+ score = 1337
+ playerName = "Sean Plott"
+ cheatMode = NO
+ 
+ ps- note that is save in background
+ */
+-(void)savingObject{
+    PFObject *gameScore = [PFObject objectWithClassName:@"GameScore"];
+    gameScore[@"score"] = @3555;
+    gameScore[@"playerName"] = @"Frankie Plott";
+    gameScore[@"cheatMode"] = @YES;
+    
+    [gameScore saveInBackground];
+    //Note: You can use the saveInBackgroundWithBlock or saveInBackgroundWithTarget:selector: methods to provide additional logic which will run after the save completes.
+    
+}
+
+-(void)retrievingObjectById{
+    PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+    [query getObjectInBackgroundWithId:@"H5tycxqo5O" block:^(PFObject *gameScore, NSError *error) {
+        // Do something with the returned PFObject in the gameScore variable.
+        NSLog(@"%@", gameScore);
+        int score = [[gameScore objectForKey:@"score"] intValue];
+        NSString *playerName = gameScore[@"playerName"];
+        BOOL cheatMode = [gameScore[@"cheatMode"] boolValue];
+        
+        //three special value provided:
+        
+        NSString *objectId = gameScore.objectId;
+        NSDate *updatedAt = gameScore.updatedAt;
+        NSDate *createdAt = gameScore.createdAt;
+        
+        NSLog(@"Score %d, playerName %@, cheatMode %d",score,playerName,cheatMode);
+    }];
+    // The InBackground methods are asynchronous, so any code after this will run
+    // immediately.  Any code that depends on the query result should be moved
+    // inside the completion block above.
+   
+}
+
+-(void)updateObjectById{
+    PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+    
+    // Retrieve the object by id
+    [query getObjectInBackgroundWithId:@"H5tycxqo5O" block:^(PFObject *gameScore, NSError *error) {
+        
+        // Now let's update it with some new data. In this case, only cheatMode and score
+        // will get sent to the cloud. playerName hasn't changed.
+        gameScore[@"cheatMode"] = @NO;
+        gameScore[@"score"] = @1234;
+        [gameScore saveInBackground];
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning
