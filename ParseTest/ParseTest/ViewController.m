@@ -22,7 +22,8 @@
     //[self retrievingObjectById];
     //[self updateObjectById];
     //[self deleteObjectById];
-    [self removeSingleFieldById];
+    //[self removeSingleFieldById];
+    //[self exampleOfDataType];
     
 }
 
@@ -111,6 +112,27 @@
         
     }];
 
+}
+
+-(void)exampleOfDataType{
+    NSNumber *number = @42;
+    NSString *string = [NSString stringWithFormat:@"the number is %@", number];
+    NSDate *date = [NSDate date];
+    NSData *data = [@"foo" dataUsingEncoding:NSUTF8StringEncoding];
+    NSArray *array = @[string, number];
+    NSDictionary *dictionary = @{@"number": number,
+                                 @"string": string};
+    NSNull *null = [NSNull null];
+    
+    PFObject *bigObject = [PFObject objectWithClassName:@"BigObject"];
+    bigObject[@"myNumber"] = number;
+    bigObject[@"myString"] = string;
+    bigObject[@"myDate"] = date;
+    bigObject[@"myData"] = data;
+    bigObject[@"myArray"] = array;
+    bigObject[@"myDictionary"] = dictionary;
+    bigObject[@"myNull"] = null;
+    [bigObject saveInBackground];
 }
 
 - (void)didReceiveMemoryWarning
