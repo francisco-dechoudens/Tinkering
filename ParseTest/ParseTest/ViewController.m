@@ -5,6 +5,7 @@
 //  Created by Frankie on 6/9/14.
 //  Copyright (c) 2014 Francisco L. De Choudens Ortiz. All rights reserved.
 //
+//  All information found in : https://www.parse.com/docs/ios_guide#objects/iOS
 
 #import "ViewController.h"
 
@@ -19,7 +20,9 @@
     [super viewDidLoad];
     //[self savingObject];
     //[self retrievingObjectById];
-    [self updateObjectById];
+    //[self updateObjectById];
+    //[self deleteObjectById];
+    [self removeSingleFieldById];
     
 }
 
@@ -78,6 +81,36 @@
         [gameScore saveInBackground];
         
     }];
+}
+
+-(void)deleteObjectById{
+    PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+    
+    // Retrieve the object by id
+    [query getObjectInBackgroundWithId:@"H5tycxqo5O" block:^(PFObject *gameScore, NSError *error) {
+    
+        //To delete an object from the cloud
+        [gameScore deleteInBackground];
+        
+    }];
+    
+}
+
+-(void)removeSingleFieldById{
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+    
+    // Retrieve the object by id
+    [query getObjectInBackgroundWithId:@"UK5pROfP1c" block:^(PFObject *gameScore, NSError *error) {
+        
+        // After this, the playerName field will be empty
+        [gameScore removeObjectForKey:@"playerName"];
+        
+        // Saves the field deletion to the Parse Cloud
+        [gameScore saveInBackground];
+        
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning
