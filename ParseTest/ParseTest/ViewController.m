@@ -38,6 +38,14 @@
     //[self queryWithContraints:2]; //With contain
     //[self queryWithContraints:3]; // Some column only
     
+    /*Query on Array*/
+    //[self queryOnArrayValues:0];
+    //[self queryOnArrayValues:1];
+    
+    /*Query on String Values*/
+    [self quieryOnStringValue];
+
+    
     
     
 }
@@ -305,6 +313,8 @@
         case 3:
         {
             PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+            
+            //Condition
             [query selectKeys:@[@"playerName", @"score"]];
             
             //Retrieve a NSArray of matching PFObjects
@@ -330,6 +340,94 @@
             // Code
             break;
     }
+}
+
+-(void)queryOnArrayValues:(int)exampleNumber{
+    
+    switch (exampleNumber) {
+        
+        case 0:
+        {
+            PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+            
+            //Condition
+            // Find objects where the array in arrayKey contains guitar.
+            [query whereKey:@"interest" equalTo:@"guitar"];
+            
+            //Retrieve a NSArray of matching PFObjects
+            [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                if (!error) {
+                    // The find succeeded.
+                    NSLog(@"Successfully retrieved %d scores.", objects.count);
+                    // Do something with the found objects
+                    //NSLog(@"%@", objects);
+                    for (PFObject *object in objects) {
+                        NSLog(@"%@", object[@"playerName"]);
+                    }
+                } else {
+                    // Log details of the failure
+                    NSLog(@"Error: %@ %@", error, [error userInfo]);
+                }
+            }];
+    
+        }
+            
+        case 1:{
+            
+            PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+            
+            //Condition
+            // Find objects where the array in arrayKey contains each of the
+            // elements guitar and ukulele.
+            [query whereKey:@"interest" containsAllObjectsInArray:@[@"ukulele",@"guitar"]];
+            
+            //Retrieve a NSArray of matching PFObjects
+            [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                if (!error) {
+                    // The find succeeded.
+                    NSLog(@"Successfully retrieved %d scores.", objects.count);
+                    // Do something with the found objects
+                    //NSLog(@"%@", objects);
+                    for (PFObject *object in objects) {
+                        NSLog(@"%@", object[@"playerName"]);
+                    }
+                } else {
+                    // Log details of the failure
+                    NSLog(@"Error: %@ %@", error, [error userInfo]);
+                }
+            }];
+            
+        }
+        default:
+            // Code
+            break;
+    }
+    
+}
+
+-(void)quieryOnStringValue{
+    PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+    
+    //Condition
+    // Finds barbecue sauces that start with "Big Daddy's".
+    [query whereKey:@"playerName" hasPrefix:@"J"];
+    
+    //Retrieve a NSArray of matching PFObjects
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            // Do something with the found objects
+            //NSLog(@"%@", objects);
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object[@"playerName"]);
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning
