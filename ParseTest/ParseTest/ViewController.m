@@ -43,10 +43,10 @@
     //[self queryOnArrayValues:1];
     
     /*Query on String Values*/
-    [self quieryOnStringValue];
-
+    //[self quieryOnStringValue];
     
-    
+    /*Query with ORs*/
+    //[self queryWithOR];
     
 }
 
@@ -429,6 +429,31 @@
     }];
     
 }
+
+-(void)queryWithOR{
+    PFQuery *lotsOfWins = [PFQuery queryWithClassName:@"GameScore"];
+    [lotsOfWins whereKey:@"score" greaterThan:@3500];
+    
+    PFQuery *fewWins = [PFQuery queryWithClassName:@"GameScore"];
+    [fewWins whereKey:@"score" lessThan:@11];
+    PFQuery *query = [PFQuery orQueryWithSubqueries:@[fewWins,lotsOfWins]];
+    //Retrieve a NSArray of matching PFObjects
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            // Do something with the found objects
+            //NSLog(@"%@", objects);
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object[@"playerName"]);
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
