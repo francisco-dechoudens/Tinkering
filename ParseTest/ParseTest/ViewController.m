@@ -30,7 +30,14 @@
     
     /*Example of multiple Object Queries:*/
     //[self basicQuery];
-    [self queryWithPredicate];
+    //[self queryWithPredicate];
+    
+    /*Queries with contraints*/
+    //[self queryWithContraints:0]; //NOT EQUAL
+    //[self queryWithContraints:1]; //With ANDs
+    //[self queryWithContraints:2]; //With contain
+    //[self queryWithContraints:3]; // Some column only
+    
     
     
 }
@@ -65,9 +72,9 @@
         
         //three special value provided:
         
-        NSString *objectId = gameScore.objectId;
-        NSDate *updatedAt = gameScore.updatedAt;
-        NSDate *createdAt = gameScore.createdAt;
+        //NSString *objectId = gameScore.objectId;
+        //NSDate *updatedAt = gameScore.updatedAt;
+        //NSDate *createdAt = gameScore.createdAt;
         
         NSLog(@"Score %d, playerName %@, cheatMode %d",score,playerName,cheatMode);
     }];
@@ -209,6 +216,120 @@
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
+}
+
+-(void)queryWithContraints:(int)contraintCase{
+    //Create a query
+    PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+    
+    
+    switch (contraintCase) {
+            
+        //NOT EQUAL
+        case 0:
+        {
+            //Condition
+            [query whereKey:@"playerName" notEqualTo:@"Apu"];
+            
+            //Retrieve a NSArray of matching PFObjects
+            [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                if (!error) {
+                    // The find succeeded.
+                    NSLog(@"Successfully retrieved %d scores.", objects.count);
+                    // Do something with the found objects
+                    NSLog(@"%@", objects);
+                    for (PFObject *object in objects) {
+                        NSLog(@"%@", object[@"playerName"]);
+                    }
+                } else {
+                    // Log details of the failure
+                    NSLog(@"Error: %@ %@", error, [error userInfo]);
+                }
+            }];
+            break;
+        }
+            
+        //AND of constraint
+        case 1:
+        {
+            //Condition
+            [query whereKey:@"playerName" notEqualTo:@"Michael Yabuti"];
+            [query whereKey:@"score" greaterThan:@1337];
+            
+            //Retrieve a NSArray of matching PFObjects
+            [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                if (!error) {
+                    // The find succeeded.
+                    NSLog(@"Successfully retrieved %d scores.", objects.count);
+                    // Do something with the found objects
+                    NSLog(@"%@", objects);
+                    for (PFObject *object in objects) {
+                        NSLog(@"%@", object[@"playerName"]);
+                    }
+                } else {
+                    // Log details of the failure
+                    NSLog(@"Error: %@ %@", error, [error userInfo]);
+                }
+            }];
+            break;
+        }
+            
+        //Using contain
+        case 2:
+        {
+            // Finds scores from any of Jonathan, Dario, or Shawn
+            NSArray *names = @[@"Lala",
+                               @"red",
+                               @"Shawn Simon"];
+            //Condition
+            [query whereKey:@"playerName" containedIn:names];
+            
+            //Retrieve a NSArray of matching PFObjects
+            [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                if (!error) {
+                    // The find succeeded.
+                    NSLog(@"Successfully retrieved %d scores.", objects.count);
+                    // Do something with the found objects
+                    NSLog(@"%@", objects);
+                    for (PFObject *object in objects) {
+                        NSLog(@"%@", object[@"playerName"]);
+                    }
+                } else {
+                    // Log details of the failure
+                    NSLog(@"Error: %@ %@", error, [error userInfo]);
+                }
+            }];
+            break;
+        }
+    
+        case 3:
+        {
+            PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+            [query selectKeys:@[@"playerName", @"score"]];
+            
+            //Retrieve a NSArray of matching PFObjects
+            [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                if (!error) {
+                    // The find succeeded.
+                    NSLog(@"Successfully retrieved %d scores.", objects.count);
+                    // Do something with the found objects
+                    NSLog(@"%@", objects);
+                    for (PFObject *object in objects) {
+                        NSLog(@"%@", object[@"playerName"]);
+                    }
+                } else {
+                    // Log details of the failure
+                    NSLog(@"Error: %@ %@", error, [error userInfo]);
+                }
+            }];
+            break;
+        }
+            
+            
+        default:
+            // Code
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning
