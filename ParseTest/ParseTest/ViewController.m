@@ -48,6 +48,8 @@
     /*Query with ORs*/
     //[self queryWithOR];
     
+    //PFLogInViewController *login = [[PFLogInViewController alloc] init];
+    //[self presentViewController:login animated:YES completion:nil];
 }
 
 

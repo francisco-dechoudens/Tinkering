@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  ParseTest
+//  InAppPurchaseTutorial
 //
-//  Created by Frankie on 6/9/14.
+//  Created by Frankie on 6/27/14.
 //  Copyright (c) 2014 Francisco L. De Choudens Ortiz. All rights reserved.
 //
 
@@ -12,23 +12,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    
-    // ****************************************************************************
-    // Uncomment and fill in with your Parse credentials:
-        [Parse setApplicationId:@"B2msQMuknpqTTH6JYpZAoGUqoJsiJwwaixZuzs5G"
-                  clientKey:@"4SYg9eW145fzgsDFJn58zqRzvEKCKXYJyJXuKPaP"];
-    
-    // If you are using Facebook, uncomment and add your FacebookAppID to your bundle's plist as
-    // described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/
-    // [PFFacebookUtils initializeFacebook];
-    // ****************************************************************************
-    
-    [PFUser enableAutomaticUser];
-
+    // Override point for customization after application launch.
     return YES;
 }
-
+							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
