@@ -29,7 +29,7 @@
 - (IBAction)PurchaseItem:(id)sender {
     _purchaseController = [self.storyboard instantiateViewControllerWithIdentifier:@"PurchaseIdentifier"];
     
-    _purchaseController.productID = @"om.geekylemon.inappurchase.iap1";
+    _purchaseController.productID = @"com.geekylemon.inappurchase.iap1";
     
     [self presentViewController:_purchaseController animated:YES completion:nil];
     
