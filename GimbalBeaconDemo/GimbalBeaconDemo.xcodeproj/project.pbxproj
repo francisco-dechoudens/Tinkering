@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		101973311974649600541622 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973301974649600541622 /* Foundation.framework */; };
+		101973331974649600541622 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973321974649600541622 /* CoreGraphics.framework */; };
+		101973351974649600541622 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973341974649600541622 /* UIKit.framework */; };
+		1019733B1974649600541622 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 101973391974649600541622 /* InfoPlist.strings */; };
+		1019733D1974649700541622 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1019733C1974649600541622 /* main.m */; };
+		101973411974649700541622 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 101973401974649700541622 /* AppDelegate.m */; };
+		101973441974649700541622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101973421974649700541622 /* Main.storyboard */; };
+		101973471974649700541622 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101973461974649700541622 /* ViewController.m */; };
+		101973491974649700541622 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101973481974649700541622 /* Images.xcassets */; };
+		101973501974649700541622 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1019734F1974649700541622 /* XCTest.framework */; };
+		101973511974649700541622 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973301974649600541622 /* Foundation.framework */; };
+		101973521974649700541622 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973341974649600541622 /* UIKit.framework */; };
+		1019735A1974649700541622 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 101973581974649700541622 /* InfoPlist.strings */; };
+		1019735C1974649700541622 /* GimbalBeaconDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1019735B1974649700541622 /* GimbalBeaconDemoTests.m */; };
+		10197366197464D800541622 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10197365197464D800541622 /* CoreBluetooth.framework */; };
+		10197368197464E000541622 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10197367197464E000541622 /* CoreLocation.framework */; };
+		1019736A197464E900541622 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10197369197464E900541622 /* CoreData.framework */; };
+		1019736C197464F100541622 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1019736B197464F100541622 /* libz.dylib */; };
+		1019736E197464F800541622 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1019736D197464F800541622 /* MapKit.framework */; };
+		10197370197464FF00541622 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1019736F197464FF00541622 /* Security.framework */; };
+		1019737B1974652900541622 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973721974652900541622 /* Common.framework */; };
+		1019737C1974652900541622 /* ContextCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973751974652900541622 /* ContextCore.framework */; };
+		1019737D1974652900541622 /* ContextLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973781974652900541622 /* ContextLocation.framework */; };
+		1019737E1974652900541622 /* DataModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1019737A1974652900541622 /* DataModels.bundle */; };
+		101973831974653D00541622 /* FYX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1019737F1974653D00541622 /* FYX.framework */; };
+		101973841974653D00541622 /* NetworkServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973811974653D00541622 /* NetworkServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		101973531974649700541622 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 101973251974649600541622 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1019732C1974649600541622;
+			remoteInfo = GimbalBeaconDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1019732D1974649600541622 /* GimbalBeaconDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GimbalBeaconDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		101973301974649600541622 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		101973321974649600541622 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		101973341974649600541622 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		101973381974649600541622 /* GimbalBeaconDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GimbalBeaconDemo-Info.plist"; sourceTree = "<group>"; };
+		1019733A1974649600541622 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1019733C1974649600541622 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1019733E1974649700541622 /* GimbalBeaconDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GimbalBeaconDemo-Prefix.pch"; sourceTree = "<group>"; };
+		1019733F1974649700541622 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		101973401974649700541622 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		101973431974649700541622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		101973451974649700541622 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		101973461974649700541622 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		101973481974649700541622 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1019734E1974649700541622 /* GimbalBeaconDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GimbalBeaconDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1019734F1974649700541622 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		101973571974649700541622 /* GimbalBeaconDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GimbalBeaconDemoTests-Info.plist"; sourceTree = "<group>"; };
+		101973591974649700541622 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1019735B1974649700541622 /* GimbalBeaconDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GimbalBeaconDemoTests.m; sourceTree = "<group>"; };
+		10197365197464D800541622 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		10197367197464E000541622 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		10197369197464E900541622 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1019736B197464F100541622 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1019736D197464F800541622 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1019736F197464FF00541622 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		101973721974652900541622 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
+		101973751974652900541622 /* ContextCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextCore.framework; sourceTree = "<group>"; };
+		101973781974652900541622 /* ContextLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextLocation.framework; sourceTree = "<group>"; };
+		1019737A1974652900541622 /* DataModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DataModels.bundle; sourceTree = "<group>"; };
+		1019737F1974653D00541622 /* FYX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FYX.framework; sourceTree = "<group>"; };
+		101973811974653D00541622 /* NetworkServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkServices.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1019732A1974649600541622 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10197370197464FF00541622 /* Security.framework in Frameworks */,
+				1019736E197464F800541622 /* MapKit.framework in Frameworks */,
+				101973831974653D00541622 /* FYX.framework in Frameworks */,
+				1019736C197464F100541622 /* libz.dylib in Frameworks */,
+				1019737D1974652900541622 /* ContextLocation.framework in Frameworks */,
+				1019736A197464E900541622 /* CoreData.framework in Frameworks */,
+				1019737C1974652900541622 /* ContextCore.framework in Frameworks */,
+				10197368197464E000541622 /* CoreLocation.framework in Frameworks */,
+				10197366197464D800541622 /* CoreBluetooth.framework in Frameworks */,
+				101973841974653D00541622 /* NetworkServices.framework in Frameworks */,
+				101973331974649600541622 /* CoreGraphics.framework in Frameworks */,
+				1019737B1974652900541622 /* Common.framework in Frameworks */,
+				101973351974649600541622 /* UIKit.framework in Frameworks */,
+				101973311974649600541622 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1019734B1974649700541622 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101973501974649700541622 /* XCTest.framework in Frameworks */,
+				101973521974649700541622 /* UIKit.framework in Frameworks */,
+				101973511974649700541622 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		101973241974649600541622 = {
+			isa = PBXGroup;
+			children = (
+				101973361974649600541622 /* GimbalBeaconDemo */,
+				101973551974649700541622 /* GimbalBeaconDemoTests */,
+				1019732F1974649600541622 /* Frameworks */,
+				1019736B197464F100541622 /* libz.dylib */,
+				1019732E1974649600541622 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1019732E1974649600541622 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1019732D1974649600541622 /* GimbalBeaconDemo.app */,
+				1019734E1974649700541622 /* GimbalBeaconDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1019732F1974649600541622 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				101973711974652900541622 /* Common.embeddedframework */,
+				101973741974652900541622 /* ContextCore.embeddedframework */,
+				101973771974652900541622 /* ContextLocation.embeddedframework */,
+				101973801974653D00541622 /* NetworkServices.embeddedframework */,
+				1019737F1974653D00541622 /* FYX.framework */,
+				1019736F197464FF00541622 /* Security.framework */,
+				1019736D197464F800541622 /* MapKit.framework */,
+				10197369197464E900541622 /* CoreData.framework */,
+				10197367197464E000541622 /* CoreLocation.framework */,
+				10197365197464D800541622 /* CoreBluetooth.framework */,
+				101973301974649600541622 /* Foundation.framework */,
+				101973321974649600541622 /* CoreGraphics.framework */,
+				101973341974649600541622 /* UIKit.framework */,
+				1019734F1974649700541622 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		101973361974649600541622 /* GimbalBeaconDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1019733F1974649700541622 /* AppDelegate.h */,
+				101973401974649700541622 /* AppDelegate.m */,
+				101973421974649700541622 /* Main.storyboard */,
+				101973451974649700541622 /* ViewController.h */,
+				101973461974649700541622 /* ViewController.m */,
+				101973481974649700541622 /* Images.xcassets */,
+				101973371974649600541622 /* Supporting Files */,
+			);
+			path = GimbalBeaconDemo;
+			sourceTree = "<group>";
+		};
+		101973371974649600541622 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				101973381974649600541622 /* GimbalBeaconDemo-Info.plist */,
+				101973391974649600541622 /* InfoPlist.strings */,
+				1019733C1974649600541622 /* main.m */,
+				1019733E1974649700541622 /* GimbalBeaconDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		101973551974649700541622 /* GimbalBeaconDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1019735B1974649700541622 /* GimbalBeaconDemoTests.m */,
+				101973561974649700541622 /* Supporting Files */,
+			);
+			path = GimbalBeaconDemoTests;
+			sourceTree = "<group>";
+		};
+		101973561974649700541622 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				101973571974649700541622 /* GimbalBeaconDemoTests-Info.plist */,
+				101973581974649700541622 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		101973711974652900541622 /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				101973721974652900541622 /* Common.framework */,
+				101973731974652900541622 /* Resources */,
+			);
+			path = Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		101973731974652900541622 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		101973741974652900541622 /* ContextCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				101973751974652900541622 /* ContextCore.framework */,
+				101973761974652900541622 /* Resources */,
+			);
+			path = ContextCore.embeddedframework;
+			sourceTree = "<group>";
+		};
+		101973761974652900541622 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		101973771974652900541622 /* ContextLocation.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				101973781974652900541622 /* ContextLocation.framework */,
+				101973791974652900541622 /* Resources */,
+			);
+			path = ContextLocation.embeddedframework;
+			sourceTree = "<group>";
+		};
+		101973791974652900541622 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1019737A1974652900541622 /* DataModels.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		101973801974653D00541622 /* NetworkServices.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				101973811974653D00541622 /* NetworkServices.framework */,
+				101973821974653D00541622 /* Resources */,
+			);
+			path = NetworkServices.embeddedframework;
+			sourceTree = "<group>";
+		};
+		101973821974653D00541622 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1019732C1974649600541622 /* GimbalBeaconDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1019735F1974649700541622 /* Build configuration list for PBXNativeTarget "GimbalBeaconDemo" */;
+			buildPhases = (
+				101973291974649600541622 /* Sources */,
+				1019732A1974649600541622 /* Frameworks */,
+				1019732B1974649600541622 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GimbalBeaconDemo;
+			productName = GimbalBeaconDemo;
+			productReference = 1019732D1974649600541622 /* GimbalBeaconDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1019734D1974649700541622 /* GimbalBeaconDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 101973621974649700541622 /* Build configuration list for PBXNativeTarget "GimbalBeaconDemoTests" */;
+			buildPhases = (
+				1019734A1974649700541622 /* Sources */,
+				1019734B1974649700541622 /* Frameworks */,
+				1019734C1974649700541622 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				101973541974649700541622 /* PBXTargetDependency */,
+			);
+			name = GimbalBeaconDemoTests;
+			productName = GimbalBeaconDemoTests;
+			productReference = 1019734E1974649700541622 /* GimbalBeaconDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		101973251974649600541622 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Francisco L. De Choudens Ortiz";
+				TargetAttributes = {
+					1019734D1974649700541622 = {
+						TestTargetID = 1019732C1974649600541622;
+					};
+				};
+			};
+			buildConfigurationList = 101973281974649600541622 /* Build configuration list for PBXProject "GimbalBeaconDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 101973241974649600541622;
+			productRefGroup = 1019732E1974649600541622 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1019732C1974649600541622 /* GimbalBeaconDemo */,
+				1019734D1974649700541622 /* GimbalBeaconDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1019732B1974649600541622 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101973491974649700541622 /* Images.xcassets in Resources */,
+				1019733B1974649600541622 /* InfoPlist.strings in Resources */,
+				101973441974649700541622 /* Main.storyboard in Resources */,
+				1019737E1974652900541622 /* DataModels.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1019734C1974649700541622 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1019735A1974649700541622 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		101973291974649600541622 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101973471974649700541622 /* ViewController.m in Sources */,
+				101973411974649700541622 /* AppDelegate.m in Sources */,
+				1019733D1974649700541622 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1019734A1974649700541622 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1019735C1974649700541622 /* GimbalBeaconDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		101973541974649700541622 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1019732C1974649600541622 /* GimbalBeaconDemo */;
+			targetProxy = 101973531974649700541622 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		101973391974649600541622 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1019733A1974649600541622 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		101973421974649700541622 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				101973431974649700541622 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		101973581974649700541622 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				101973591974649700541622 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1019735D1974649700541622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1019735E1974649700541622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		101973601974649700541622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common.embeddedframework",
+					"$(PROJECT_DIR)/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NetworkServices.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GimbalBeaconDemo/GimbalBeaconDemo-Prefix.pch";
+				INFOPLIST_FILE = "GimbalBeaconDemo/GimbalBeaconDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		101973611974649700541622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common.embeddedframework",
+					"$(PROJECT_DIR)/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NetworkServices.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GimbalBeaconDemo/GimbalBeaconDemo-Prefix.pch";
+				INFOPLIST_FILE = "GimbalBeaconDemo/GimbalBeaconDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		101973631974649700541622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GimbalBeaconDemo.app/GimbalBeaconDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GimbalBeaconDemo/GimbalBeaconDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GimbalBeaconDemoTests/GimbalBeaconDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		101973641974649700541622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GimbalBeaconDemo.app/GimbalBeaconDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GimbalBeaconDemo/GimbalBeaconDemo-Prefix.pch";
+				INFOPLIST_FILE = "GimbalBeaconDemoTests/GimbalBeaconDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		101973281974649600541622 /* Build configuration list for PBXProject "GimbalBeaconDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1019735D1974649700541622 /* Debug */,
+				1019735E1974649700541622 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1019735F1974649700541622 /* Build configuration list for PBXNativeTarget "GimbalBeaconDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				101973601974649700541622 /* Debug */,
+				101973611974649700541622 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		101973621974649700541622 /* Build configuration list for PBXNativeTarget "GimbalBeaconDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				101973631974649700541622 /* Debug */,
+				101973641974649700541622 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 101973251974649600541622 /* Project object */;
+}
