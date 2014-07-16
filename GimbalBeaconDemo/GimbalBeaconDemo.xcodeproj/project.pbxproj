@@ -33,6 +33,10 @@
 		1019737E1974652900541622 /* DataModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1019737A1974652900541622 /* DataModels.bundle */; };
 		101973831974653D00541622 /* FYX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1019737F1974653D00541622 /* FYX.framework */; };
 		101973841974653D00541622 /* NetworkServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973811974653D00541622 /* NetworkServices.framework */; };
+		102DF00D1975A1B3005E1CDC /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 102DF00B1975A1B3005E1CDC /* red.png */; };
+		102DF00E1975A1B3005E1CDC /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 102DF00C1975A1B3005E1CDC /* green.png */; };
+		1030F4151975685800972E98 /* SightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030F4141975685800972E98 /* SightingViewController.m */; };
+		1030F4181975730900972E98 /* VisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030F4171975730900972E98 /* VisitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,12 @@
 		1019737A1974652900541622 /* DataModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DataModels.bundle; sourceTree = "<group>"; };
 		1019737F1974653D00541622 /* FYX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FYX.framework; sourceTree = "<group>"; };
 		101973811974653D00541622 /* NetworkServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkServices.framework; sourceTree = "<group>"; };
+		102DF00B1975A1B3005E1CDC /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		102DF00C1975A1B3005E1CDC /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		1030F4131975685800972E98 /* SightingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SightingViewController.h; sourceTree = "<group>"; };
+		1030F4141975685800972E98 /* SightingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SightingViewController.m; sourceTree = "<group>"; };
+		1030F4161975730900972E98 /* VisitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitViewController.h; sourceTree = "<group>"; };
+		1030F4171975730900972E98 /* VisitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +173,10 @@
 				101973421974649700541622 /* Main.storyboard */,
 				101973451974649700541622 /* ViewController.h */,
 				101973461974649700541622 /* ViewController.m */,
+				1030F4131975685800972E98 /* SightingViewController.h */,
+				1030F4141975685800972E98 /* SightingViewController.m */,
+				1030F4161975730900972E98 /* VisitViewController.h */,
+				1030F4171975730900972E98 /* VisitViewController.m */,
 				101973481974649700541622 /* Images.xcassets */,
 				101973371974649600541622 /* Supporting Files */,
 			);
@@ -172,6 +186,8 @@
 		101973371974649600541622 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				102DF00B1975A1B3005E1CDC /* red.png */,
+				102DF00C1975A1B3005E1CDC /* green.png */,
 				101973381974649600541622 /* GimbalBeaconDemo-Info.plist */,
 				101973391974649600541622 /* InfoPlist.strings */,
 				1019733C1974649600541622 /* main.m */,
@@ -342,6 +358,8 @@
 				101973491974649700541622 /* Images.xcassets in Resources */,
 				1019733B1974649600541622 /* InfoPlist.strings in Resources */,
 				101973441974649700541622 /* Main.storyboard in Resources */,
+				102DF00E1975A1B3005E1CDC /* green.png in Resources */,
+				102DF00D1975A1B3005E1CDC /* red.png in Resources */,
 				1019737E1974652900541622 /* DataModels.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,8 +380,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				101973471974649700541622 /* ViewController.m in Sources */,
+				1030F4181975730900972E98 /* VisitViewController.m in Sources */,
 				101973411974649700541622 /* AppDelegate.m in Sources */,
 				1019733D1974649700541622 /* main.m in Sources */,
+				1030F4151975685800972E98 /* SightingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +604,7 @@
 				101973611974649700541622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		101973621974649700541622 /* Build configuration list for PBXNativeTarget "GimbalBeaconDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +613,7 @@
 				101973641974649700541622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

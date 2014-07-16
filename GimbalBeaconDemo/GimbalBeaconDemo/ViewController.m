@@ -41,7 +41,8 @@
     
     [options setObject:[NSNumber numberWithInt:arrivalRSSI] forKey:FYXVisitOptionArrivalRSSIKey];
     [options setObject:[NSNumber numberWithInt:departureRSSI] forKey:FYXVisitOptionDepartureRSSIKey];
-    [self.visitManager startWithOptions:options];}     
+    [self.visitManager startWithOptions:options];
+}
 
 - (void)didReceiveMemoryWarning
 {

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  GimbalBeaconDemo
+//  CameraAppDemo
 //
-//  Created by Frankie on 7/14/14.
+//  Created by Frankie on 7/16/14.
 //  Copyright (c) 2014 Francisco L. De Choudens Ortiz. All rights reserved.
 //
 
@@ -12,13 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //Set Proximity API Key and Secret
-    [FYX setAppId:@"f79df9cebe7062da4ddbe5a58ab0df4ec59d42cde4af4fd663db0ac35d802eeb"
-        appSecret:@"f5a855a67fea5c6cace5303b0afb1a5be9e4668e2961b289c5be05b4f792ccef"
-      callbackUrl:@"comwlggimbalbeacondemo://authcode"];
-    
-    //This call registers the application with the server and starts bluetooth scanning.
-    [FYX startService:self];
+    // Override point for customization after application launch.
    
     return YES;
 }
@@ -48,21 +42,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-- (void)serviceStarted
-{
-    // this will be invoked if the service has successfully started
-    // bluetooth scanning will be started at this point.
-    // further calls into the SDK should be allowed at this point
-    NSLog(@"FYX Service Successfully Started");
-}
-
-- (void)startServiceFailed:(NSError *)error
-{
-    // this will be called if the service has failed to start
-    // further calls into the SDK will be rejected by the server as Unauthorized
-    NSLog(@"%@", error);
 }
 
 @end
