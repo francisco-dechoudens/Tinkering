@@ -64,47 +64,6 @@
 }
 
 //the actual custom transition animation
--(void)animateTransition:
-(id<UIViewControllerContextTransitioning>)transitionContext {
-    
-    //The two view controllers involved in the transition
-    UIViewController* vc1 =
-    [transitionContext viewControllerForKey:
-     UITransitionContextFromViewControllerKey];
-    
-    UIViewController* vc2 =
-    [transitionContext viewControllerForKey:
-     UITransitionContextToViewControllerKey];
-    
-    //The special container view inside which the views of those two view controllers will appear.
-    UIView* con = [transitionContext containerView];
-    
-    UIView* v1 = vc1.view;
-    UIView* v2 = vc2.view;
-    
-    if (vc2 == self) { // presenting
-        [con addSubview:v2];
-        v2.frame = v1.frame; //“shadow view” - its frame will be the same as the frame of the original view behind it
-        self.backgroundView.transform = CGAffineTransformTranslate(self.backgroundView.transform, 0, 140.0); // for animate our view from large to normal(Scaling factor by which to scale 1.6)
-        v2.alpha = 1; //we will animate our view from invisible to visible
-        v1.tintAdjustmentMode = UIViewTintAdjustmentModeDimmed;
-        [UIView animateWithDuration:0.5 animations:^{
-            v2.alpha = 1;
-            self.backgroundView.transform = CGAffineTransformIdentity; //Checks whether an affine transform is the identity transform
-        } completion:^(BOOL finished) {
-            [transitionContext completeTransition:YES];
-        }];
-    }
-    else { // dismissing
-        [UIView animateWithDuration:0.5 animations:^{
-            self.backgroundView.transform = CGAffineTransformTranslate(self.backgroundView.transform, 0, 200.0);//(Scaling factor by which to scale 0.5)
-            v1.alpha = 1;
-        } completion:^(BOOL finished) {
-            v2.tintAdjustmentMode = UIViewTintAdjustmentModeAutomatic;
-            [transitionContext completeTransition:YES];
-        }];
-    }
-}
 - (IBAction)takeAShot:(id)sender {
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
