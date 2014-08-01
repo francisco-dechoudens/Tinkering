@@ -21,6 +21,17 @@
 		1001C03D198BCB2B00D845D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1001C01F198BCB2B00D845D1 /* UIKit.framework */; };
 		1001C045198BCB2B00D845D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1001C043198BCB2B00D845D1 /* InfoPlist.strings */; };
 		1001C047198BCB2B00D845D1 /* ShortestPathDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001C046198BCB2B00D845D1 /* ShortestPathDemoTests.m */; };
+		1001C057198BCBA200D845D1 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001C052198BCBA200D845D1 /* Vertex.m */; };
+		1001C058198BCBA200D845D1 /* Placemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001C054198BCBA200D845D1 /* Placemark.m */; };
+		1001C059198BCBA200D845D1 /* ParseCustomKML.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001C056198BCBA200D845D1 /* ParseCustomKML.m */; };
+		1001C05C198BCBC200D845D1 /* SMXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001C05B198BCBC200D845D1 /* SMXMLDocument.m */; };
+		1001C068198BCC7600D845D1 /* PESGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001C05F198BCC7600D845D1 /* PESGraph.m */; };
+		1001C069198BCC7600D845D1 /* PESGraphNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001C061198BCC7600D845D1 /* PESGraphNode.m */; };
+		1001C06A198BCC7600D845D1 /* PESGraphEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001C063198BCC7600D845D1 /* PESGraphEdge.m */; };
+		1001C06B198BCC7600D845D1 /* PESGraphRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001C065198BCC7600D845D1 /* PESGraphRoute.m */; };
+		1001C06C198BCC7600D845D1 /* PESGraphRouteStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001C067198BCC7600D845D1 /* PESGraphRouteStep.m */; };
+		1001C06E198BCE6600D845D1 /* test.kml in Resources */ = {isa = PBXBuildFile; fileRef = 1001C06D198BCE6600D845D1 /* test.kml */; };
+		1001C074198BE46100D845D1 /* PESGraphEdge+Coordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 1001C073198BE46100D845D1 /* PESGraphEdge+Coordinates.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +64,27 @@
 		1001C042198BCB2B00D845D1 /* ShortestPathDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShortestPathDemoTests-Info.plist"; sourceTree = "<group>"; };
 		1001C044198BCB2B00D845D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1001C046198BCB2B00D845D1 /* ShortestPathDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortestPathDemoTests.m; sourceTree = "<group>"; };
+		1001C051198BCBA200D845D1 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		1001C052198BCBA200D845D1 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		1001C053198BCBA200D845D1 /* Placemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Placemark.h; sourceTree = "<group>"; };
+		1001C054198BCBA200D845D1 /* Placemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Placemark.m; sourceTree = "<group>"; };
+		1001C055198BCBA200D845D1 /* ParseCustomKML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseCustomKML.h; sourceTree = "<group>"; };
+		1001C056198BCBA200D845D1 /* ParseCustomKML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseCustomKML.m; sourceTree = "<group>"; };
+		1001C05A198BCBC200D845D1 /* SMXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXMLDocument.h; sourceTree = "<group>"; };
+		1001C05B198BCBC200D845D1 /* SMXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXMLDocument.m; sourceTree = "<group>"; };
+		1001C05E198BCC7600D845D1 /* PESGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraph.h; sourceTree = "<group>"; };
+		1001C05F198BCC7600D845D1 /* PESGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraph.m; sourceTree = "<group>"; };
+		1001C060198BCC7600D845D1 /* PESGraphNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphNode.h; sourceTree = "<group>"; };
+		1001C061198BCC7600D845D1 /* PESGraphNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphNode.m; sourceTree = "<group>"; };
+		1001C062198BCC7600D845D1 /* PESGraphEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphEdge.h; sourceTree = "<group>"; };
+		1001C063198BCC7600D845D1 /* PESGraphEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphEdge.m; sourceTree = "<group>"; };
+		1001C064198BCC7600D845D1 /* PESGraphRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphRoute.h; sourceTree = "<group>"; };
+		1001C065198BCC7600D845D1 /* PESGraphRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphRoute.m; sourceTree = "<group>"; };
+		1001C066198BCC7600D845D1 /* PESGraphRouteStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphRouteStep.h; sourceTree = "<group>"; };
+		1001C067198BCC7600D845D1 /* PESGraphRouteStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphRouteStep.m; sourceTree = "<group>"; };
+		1001C06D198BCE6600D845D1 /* test.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.kml; sourceTree = "<group>"; };
+		1001C072198BE46100D845D1 /* PESGraphEdge+Coordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PESGraphEdge+Coordinates.h"; sourceTree = "<group>"; };
+		1001C073198BE46100D845D1 /* PESGraphEdge+Coordinates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PESGraphEdge+Coordinates.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +149,10 @@
 				1001C02D198BCB2B00D845D1 /* Main.storyboard */,
 				1001C030198BCB2B00D845D1 /* ViewController.h */,
 				1001C031198BCB2B00D845D1 /* ViewController.m */,
+				1001C072198BE46100D845D1 /* PESGraphEdge+Coordinates.h */,
+				1001C073198BE46100D845D1 /* PESGraphEdge+Coordinates.m */,
+				1001C05D198BCC6700D845D1 /* PESGraph */,
+				1001C050198BCB8300D845D1 /* CustomKMLParser */,
 				1001C033198BCB2B00D845D1 /* Images.xcassets */,
 				1001C022198BCB2B00D845D1 /* Supporting Files */,
 			);
@@ -127,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				1001C023198BCB2B00D845D1 /* ShortestPathDemo-Info.plist */,
+				1001C06D198BCE6600D845D1 /* test.kml */,
 				1001C024198BCB2B00D845D1 /* InfoPlist.strings */,
 				1001C027198BCB2B00D845D1 /* main.m */,
 				1001C029198BCB2B00D845D1 /* ShortestPathDemo-Prefix.pch */,
@@ -150,6 +187,38 @@
 				1001C043198BCB2B00D845D1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1001C050198BCB8300D845D1 /* CustomKMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				1001C051198BCBA200D845D1 /* Vertex.h */,
+				1001C052198BCBA200D845D1 /* Vertex.m */,
+				1001C053198BCBA200D845D1 /* Placemark.h */,
+				1001C054198BCBA200D845D1 /* Placemark.m */,
+				1001C05A198BCBC200D845D1 /* SMXMLDocument.h */,
+				1001C05B198BCBC200D845D1 /* SMXMLDocument.m */,
+				1001C055198BCBA200D845D1 /* ParseCustomKML.h */,
+				1001C056198BCBA200D845D1 /* ParseCustomKML.m */,
+			);
+			name = CustomKMLParser;
+			sourceTree = "<group>";
+		};
+		1001C05D198BCC6700D845D1 /* PESGraph */ = {
+			isa = PBXGroup;
+			children = (
+				1001C05E198BCC7600D845D1 /* PESGraph.h */,
+				1001C05F198BCC7600D845D1 /* PESGraph.m */,
+				1001C060198BCC7600D845D1 /* PESGraphNode.h */,
+				1001C061198BCC7600D845D1 /* PESGraphNode.m */,
+				1001C062198BCC7600D845D1 /* PESGraphEdge.h */,
+				1001C063198BCC7600D845D1 /* PESGraphEdge.m */,
+				1001C064198BCC7600D845D1 /* PESGraphRoute.h */,
+				1001C065198BCC7600D845D1 /* PESGraphRoute.m */,
+				1001C066198BCC7600D845D1 /* PESGraphRouteStep.h */,
+				1001C067198BCC7600D845D1 /* PESGraphRouteStep.m */,
+			);
+			name = PESGraph;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +299,7 @@
 			files = (
 				1001C034198BCB2B00D845D1 /* Images.xcassets in Resources */,
 				1001C026198BCB2B00D845D1 /* InfoPlist.strings in Resources */,
+				1001C06E198BCE6600D845D1 /* test.kml in Resources */,
 				1001C02F198BCB2B00D845D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,8 +320,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1001C032198BCB2B00D845D1 /* ViewController.m in Sources */,
+				1001C069198BCC7600D845D1 /* PESGraphNode.m in Sources */,
+				1001C057198BCBA200D845D1 /* Vertex.m in Sources */,
+				1001C074198BE46100D845D1 /* PESGraphEdge+Coordinates.m in Sources */,
+				1001C058198BCBA200D845D1 /* Placemark.m in Sources */,
+				1001C059198BCBA200D845D1 /* ParseCustomKML.m in Sources */,
 				1001C02C198BCB2B00D845D1 /* AppDelegate.m in Sources */,
 				1001C028198BCB2B00D845D1 /* main.m in Sources */,
+				1001C06C198BCC7600D845D1 /* PESGraphRouteStep.m in Sources */,
+				1001C05C198BCBC200D845D1 /* SMXMLDocument.m in Sources */,
+				1001C06A198BCC7600D845D1 /* PESGraphEdge.m in Sources */,
+				1001C068198BCC7600D845D1 /* PESGraph.m in Sources */,
+				1001C06B198BCC7600D845D1 /* PESGraphRoute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
