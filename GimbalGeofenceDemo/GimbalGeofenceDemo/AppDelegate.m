@@ -93,7 +93,7 @@
     // Return NO if place does not need to be monitored
     
     //Test - Just monitor Caguas
-    if ([place.name isEqualToString:@"test2"]) {
+    if ([place.name isEqualToString:@"Caguas"]) {
         return YES;
     }
     else{

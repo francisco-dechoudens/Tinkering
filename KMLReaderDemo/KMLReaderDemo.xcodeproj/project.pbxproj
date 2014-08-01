@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		108A844E198AB3CB00435897 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108A844D198AB3CB00435897 /* Foundation.framework */; };
+		108A8450198AB3CB00435897 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108A844F198AB3CB00435897 /* CoreGraphics.framework */; };
+		108A8452198AB3CB00435897 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108A8451198AB3CB00435897 /* UIKit.framework */; };
+		108A8458198AB3CB00435897 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 108A8456198AB3CB00435897 /* InfoPlist.strings */; };
+		108A845A198AB3CB00435897 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 108A8459198AB3CB00435897 /* main.m */; };
+		108A845E198AB3CB00435897 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 108A845D198AB3CB00435897 /* AppDelegate.m */; };
+		108A8461198AB3CB00435897 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108A845F198AB3CB00435897 /* Main.storyboard */; };
+		108A8464198AB3CB00435897 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108A8463198AB3CB00435897 /* ViewController.m */; };
+		108A8466198AB3CB00435897 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 108A8465198AB3CB00435897 /* Images.xcassets */; };
+		108A846D198AB3CB00435897 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108A846C198AB3CB00435897 /* XCTest.framework */; };
+		108A846E198AB3CB00435897 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108A844D198AB3CB00435897 /* Foundation.framework */; };
+		108A846F198AB3CB00435897 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108A8451198AB3CB00435897 /* UIKit.framework */; };
+		108A8477198AB3CB00435897 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 108A8475198AB3CB00435897 /* InfoPlist.strings */; };
+		108A8479198AB3CB00435897 /* KMLReaderDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 108A8478198AB3CB00435897 /* KMLReaderDemoTests.m */; };
+		10B08858198AB50D009572DE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 10B08857198AB50D009572DE /* Podfile */; };
+		10B0885A198AB8F9009572DE /* test.kml in Resources */ = {isa = PBXBuildFile; fileRef = 10B08859198AB8F9009572DE /* test.kml */; };
+		10B0885D198AC52E009572DE /* SMXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B0885C198AC52E009572DE /* SMXMLDocument.m */; };
+		10B08860198ACDD3009572DE /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B0885F198ACDD3009572DE /* Vertex.m */; };
+		10B08863198AD1B5009572DE /* ParseCustomKML.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B08862198AD1B5009572DE /* ParseCustomKML.m */; };
+		10B08866198AD54F009572DE /* Placemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B08865198AD54F009572DE /* Placemark.m */; };
+		D66AA17F86064D1ABC432D04 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E94D931AC54A9C89B123ED /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		108A8470198AB3CB00435897 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 108A8442198AB3CB00435897 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 108A8449198AB3CB00435897;
+			remoteInfo = KMLReaderDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		108A844A198AB3CB00435897 /* KMLReaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMLReaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		108A844D198AB3CB00435897 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		108A844F198AB3CB00435897 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		108A8451198AB3CB00435897 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		108A8455198AB3CB00435897 /* KMLReaderDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KMLReaderDemo-Info.plist"; sourceTree = "<group>"; };
+		108A8457198AB3CB00435897 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		108A8459198AB3CB00435897 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		108A845B198AB3CB00435897 /* KMLReaderDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KMLReaderDemo-Prefix.pch"; sourceTree = "<group>"; };
+		108A845C198AB3CB00435897 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		108A845D198AB3CB00435897 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		108A8460198AB3CB00435897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		108A8462198AB3CB00435897 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		108A8463198AB3CB00435897 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		108A8465198AB3CB00435897 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		108A846B198AB3CB00435897 /* KMLReaderDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMLReaderDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		108A846C198AB3CB00435897 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		108A8474198AB3CB00435897 /* KMLReaderDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KMLReaderDemoTests-Info.plist"; sourceTree = "<group>"; };
+		108A8476198AB3CB00435897 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		108A8478198AB3CB00435897 /* KMLReaderDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMLReaderDemoTests.m; sourceTree = "<group>"; };
+		10B08857198AB50D009572DE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		10B08859198AB8F9009572DE /* test.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.kml; sourceTree = "<group>"; };
+		10B0885B198AC52E009572DE /* SMXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXMLDocument.h; sourceTree = "<group>"; };
+		10B0885C198AC52E009572DE /* SMXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXMLDocument.m; sourceTree = "<group>"; };
+		10B0885E198ACDD3009572DE /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		10B0885F198ACDD3009572DE /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		10B08861198AD1B5009572DE /* ParseCustomKML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseCustomKML.h; sourceTree = "<group>"; };
+		10B08862198AD1B5009572DE /* ParseCustomKML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseCustomKML.m; sourceTree = "<group>"; };
+		10B08864198AD54F009572DE /* Placemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Placemark.h; sourceTree = "<group>"; };
+		10B08865198AD54F009572DE /* Placemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Placemark.m; sourceTree = "<group>"; };
+		B5B4A508574747D59E7F0A3D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = KMLReaderDemo/Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E1E94D931AC54A9C89B123ED /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		108A8447198AB3CB00435897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108A8450198AB3CB00435897 /* CoreGraphics.framework in Frameworks */,
+				108A8452198AB3CB00435897 /* UIKit.framework in Frameworks */,
+				108A844E198AB3CB00435897 /* Foundation.framework in Frameworks */,
+				D66AA17F86064D1ABC432D04 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		108A8468198AB3CB00435897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108A846D198AB3CB00435897 /* XCTest.framework in Frameworks */,
+				108A846F198AB3CB00435897 /* UIKit.framework in Frameworks */,
+				108A846E198AB3CB00435897 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		108A8441198AB3CB00435897 = {
+			isa = PBXGroup;
+			children = (
+				108A8453198AB3CB00435897 /* KMLReaderDemo */,
+				108A8472198AB3CB00435897 /* KMLReaderDemoTests */,
+				108A844C198AB3CB00435897 /* Frameworks */,
+				108A844B198AB3CB00435897 /* Products */,
+				B5B4A508574747D59E7F0A3D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		108A844B198AB3CB00435897 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				108A844A198AB3CB00435897 /* KMLReaderDemo.app */,
+				108A846B198AB3CB00435897 /* KMLReaderDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		108A844C198AB3CB00435897 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				108A844D198AB3CB00435897 /* Foundation.framework */,
+				108A844F198AB3CB00435897 /* CoreGraphics.framework */,
+				108A8451198AB3CB00435897 /* UIKit.framework */,
+				108A846C198AB3CB00435897 /* XCTest.framework */,
+				E1E94D931AC54A9C89B123ED /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		108A8453198AB3CB00435897 /* KMLReaderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				108A845C198AB3CB00435897 /* AppDelegate.h */,
+				108A845D198AB3CB00435897 /* AppDelegate.m */,
+				108A845F198AB3CB00435897 /* Main.storyboard */,
+				108A8462198AB3CB00435897 /* ViewController.h */,
+				108A8463198AB3CB00435897 /* ViewController.m */,
+				10B0885E198ACDD3009572DE /* Vertex.h */,
+				10B0885F198ACDD3009572DE /* Vertex.m */,
+				10B08864198AD54F009572DE /* Placemark.h */,
+				10B08865198AD54F009572DE /* Placemark.m */,
+				10B08861198AD1B5009572DE /* ParseCustomKML.h */,
+				10B08862198AD1B5009572DE /* ParseCustomKML.m */,
+				108A8465198AB3CB00435897 /* Images.xcassets */,
+				108A8454198AB3CB00435897 /* Supporting Files */,
+			);
+			path = KMLReaderDemo;
+			sourceTree = "<group>";
+		};
+		108A8454198AB3CB00435897 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10B0885B198AC52E009572DE /* SMXMLDocument.h */,
+				10B0885C198AC52E009572DE /* SMXMLDocument.m */,
+				10B08857198AB50D009572DE /* Podfile */,
+				10B08859198AB8F9009572DE /* test.kml */,
+				108A8455198AB3CB00435897 /* KMLReaderDemo-Info.plist */,
+				108A8456198AB3CB00435897 /* InfoPlist.strings */,
+				108A8459198AB3CB00435897 /* main.m */,
+				108A845B198AB3CB00435897 /* KMLReaderDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		108A8472198AB3CB00435897 /* KMLReaderDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				108A8478198AB3CB00435897 /* KMLReaderDemoTests.m */,
+				108A8473198AB3CB00435897 /* Supporting Files */,
+			);
+			path = KMLReaderDemoTests;
+			sourceTree = "<group>";
+		};
+		108A8473198AB3CB00435897 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				108A8474198AB3CB00435897 /* KMLReaderDemoTests-Info.plist */,
+				108A8475198AB3CB00435897 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		108A8449198AB3CB00435897 /* KMLReaderDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 108A847C198AB3CB00435897 /* Build configuration list for PBXNativeTarget "KMLReaderDemo" */;
+			buildPhases = (
+				E3B0755B22424203BFDB697A /* Check Pods Manifest.lock */,
+				108A8446198AB3CB00435897 /* Sources */,
+				108A8447198AB3CB00435897 /* Frameworks */,
+				108A8448198AB3CB00435897 /* Resources */,
+				AD872C339433487A92D0E94C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMLReaderDemo;
+			productName = KMLReaderDemo;
+			productReference = 108A844A198AB3CB00435897 /* KMLReaderDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		108A846A198AB3CB00435897 /* KMLReaderDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 108A847F198AB3CB00435897 /* Build configuration list for PBXNativeTarget "KMLReaderDemoTests" */;
+			buildPhases = (
+				108A8467198AB3CB00435897 /* Sources */,
+				108A8468198AB3CB00435897 /* Frameworks */,
+				108A8469198AB3CB00435897 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				108A8471198AB3CB00435897 /* PBXTargetDependency */,
+			);
+			name = KMLReaderDemoTests;
+			productName = KMLReaderDemoTests;
+			productReference = 108A846B198AB3CB00435897 /* KMLReaderDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		108A8442198AB3CB00435897 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Francisco L. De Choudens Ortiz";
+				TargetAttributes = {
+					108A846A198AB3CB00435897 = {
+						TestTargetID = 108A8449198AB3CB00435897;
+					};
+				};
+			};
+			buildConfigurationList = 108A8445198AB3CB00435897 /* Build configuration list for PBXProject "KMLReaderDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 108A8441198AB3CB00435897;
+			productRefGroup = 108A844B198AB3CB00435897 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				108A8449198AB3CB00435897 /* KMLReaderDemo */,
+				108A846A198AB3CB00435897 /* KMLReaderDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		108A8448198AB3CB00435897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108A8466198AB3CB00435897 /* Images.xcassets in Resources */,
+				108A8458198AB3CB00435897 /* InfoPlist.strings in Resources */,
+				10B0885A198AB8F9009572DE /* test.kml in Resources */,
+				10B08858198AB50D009572DE /* Podfile in Resources */,
+				108A8461198AB3CB00435897 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		108A8469198AB3CB00435897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108A8477198AB3CB00435897 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD872C339433487A92D0E94C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/KMLReaderDemo/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3B0755B22424203BFDB697A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		108A8446198AB3CB00435897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108A8464198AB3CB00435897 /* ViewController.m in Sources */,
+				108A845E198AB3CB00435897 /* AppDelegate.m in Sources */,
+				10B08866198AD54F009572DE /* Placemark.m in Sources */,
+				10B08860198ACDD3009572DE /* Vertex.m in Sources */,
+				10B08863198AD1B5009572DE /* ParseCustomKML.m in Sources */,
+				10B0885D198AC52E009572DE /* SMXMLDocument.m in Sources */,
+				108A845A198AB3CB00435897 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		108A8467198AB3CB00435897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108A8479198AB3CB00435897 /* KMLReaderDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		108A8471198AB3CB00435897 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 108A8449198AB3CB00435897 /* KMLReaderDemo */;
+			targetProxy = 108A8470198AB3CB00435897 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		108A8456198AB3CB00435897 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				108A8457198AB3CB00435897 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		108A845F198AB3CB00435897 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				108A8460198AB3CB00435897 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		108A8475198AB3CB00435897 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				108A8476198AB3CB00435897 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		108A847A198AB3CB00435897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		108A847B198AB3CB00435897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		108A847D198AB3CB00435897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B4A508574747D59E7F0A3D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMLReaderDemo/KMLReaderDemo-Prefix.pch";
+				INFOPLIST_FILE = "KMLReaderDemo/KMLReaderDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		108A847E198AB3CB00435897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B4A508574747D59E7F0A3D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMLReaderDemo/KMLReaderDemo-Prefix.pch";
+				INFOPLIST_FILE = "KMLReaderDemo/KMLReaderDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		108A8480198AB3CB00435897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KMLReaderDemo.app/KMLReaderDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMLReaderDemo/KMLReaderDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KMLReaderDemoTests/KMLReaderDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		108A8481198AB3CB00435897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KMLReaderDemo.app/KMLReaderDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMLReaderDemo/KMLReaderDemo-Prefix.pch";
+				INFOPLIST_FILE = "KMLReaderDemoTests/KMLReaderDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		108A8445198AB3CB00435897 /* Build configuration list for PBXProject "KMLReaderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108A847A198AB3CB00435897 /* Debug */,
+				108A847B198AB3CB00435897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		108A847C198AB3CB00435897 /* Build configuration list for PBXNativeTarget "KMLReaderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108A847D198AB3CB00435897 /* Debug */,
+				108A847E198AB3CB00435897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		108A847F198AB3CB00435897 /* Build configuration list for PBXNativeTarget "KMLReaderDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108A8480198AB3CB00435897 /* Debug */,
+				108A8481198AB3CB00435897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 108A8442198AB3CB00435897 /* Project object */;
+}

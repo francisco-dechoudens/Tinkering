@@ -1,0 +1,3 @@
+platform :ios, '7.1'
+pod 'iOS-KML-Framework', :git => 'https://github.com/FLCLjp/iOS-KML-Framework.git'
+xcodeproj '../KMLReaderDemo.xcodeproj'
