@@ -26,7 +26,7 @@
     [self.videoController.view setFrame:CGRectMake (0, 0, 320, 460)];
     [self.view addSubview:self.videoController.view];
     
-    [self.videoController play];
+    //[self.videoController play];
 }
 
 - (void)didReceiveMemoryWarning
