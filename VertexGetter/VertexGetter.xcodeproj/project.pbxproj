@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1044C79D19B74AE000001272 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1044C79C19B74AE000001272 /* Foundation.framework */; };
+		1044C79F19B74AE000001272 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1044C79E19B74AE000001272 /* CoreGraphics.framework */; };
+		1044C7A119B74AE000001272 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1044C7A019B74AE000001272 /* UIKit.framework */; };
+		1044C7A719B74AE000001272 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1044C7A519B74AE000001272 /* InfoPlist.strings */; };
+		1044C7A919B74AE000001272 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7A819B74AE000001272 /* main.m */; };
+		1044C7AD19B74AE000001272 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7AC19B74AE000001272 /* AppDelegate.m */; };
+		1044C7B019B74AE000001272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1044C7AE19B74AE000001272 /* Main.storyboard */; };
+		1044C7B319B74AE000001272 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7B219B74AE000001272 /* ViewController.m */; };
+		1044C7B519B74AE000001272 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1044C7B419B74AE000001272 /* Images.xcassets */; };
+		1044C7BC19B74AE000001272 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1044C7BB19B74AE000001272 /* XCTest.framework */; };
+		1044C7BD19B74AE000001272 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1044C79C19B74AE000001272 /* Foundation.framework */; };
+		1044C7BE19B74AE000001272 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1044C7A019B74AE000001272 /* UIKit.framework */; };
+		1044C7C619B74AE100001272 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1044C7C419B74AE100001272 /* InfoPlist.strings */; };
+		1044C7C819B74AE100001272 /* VertexGetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7C719B74AE100001272 /* VertexGetterTests.m */; };
+		1044C7D219B74BDA00001272 /* JardinBotanicoDKML.kml in Resources */ = {isa = PBXBuildFile; fileRef = 1044C7D119B74BDA00001272 /* JardinBotanicoDKML.kml */; };
+		1044C7E019B74C2500001272 /* PESGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7D519B74C2500001272 /* PESGraph.m */; };
+		1044C7E119B74C2500001272 /* PESGraphNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7D719B74C2500001272 /* PESGraphNode.m */; };
+		1044C7E219B74C2500001272 /* PESGraphEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7D919B74C2500001272 /* PESGraphEdge.m */; };
+		1044C7E319B74C2500001272 /* PESGraphRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7DB19B74C2500001272 /* PESGraphRoute.m */; };
+		1044C7E419B74C2500001272 /* PESGraphRouteStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7DD19B74C2500001272 /* PESGraphRouteStep.m */; };
+		1044C7E519B74C2500001272 /* PESGraphEdge+Coordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7DF19B74C2500001272 /* PESGraphEdge+Coordinates.m */; };
+		1044C7EF19B74C4200001272 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7E819B74C4200001272 /* Vertex.m */; };
+		1044C7F019B74C4200001272 /* Placemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7EA19B74C4200001272 /* Placemark.m */; };
+		1044C7F119B74C4200001272 /* SMXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7EC19B74C4200001272 /* SMXMLDocument.m */; };
+		1044C7F219B74C4200001272 /* ParseCustomKML.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C7EE19B74C4200001272 /* ParseCustomKML.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1044C7BF19B74AE100001272 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1044C79119B74AE000001272 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1044C79819B74AE000001272;
+			remoteInfo = VertexGetter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1044C79919B74AE000001272 /* VertexGetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VertexGetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1044C79C19B74AE000001272 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1044C79E19B74AE000001272 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1044C7A019B74AE000001272 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1044C7A419B74AE000001272 /* VertexGetter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VertexGetter-Info.plist"; sourceTree = "<group>"; };
+		1044C7A619B74AE000001272 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1044C7A819B74AE000001272 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1044C7AA19B74AE000001272 /* VertexGetter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VertexGetter-Prefix.pch"; sourceTree = "<group>"; };
+		1044C7AB19B74AE000001272 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1044C7AC19B74AE000001272 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1044C7AF19B74AE000001272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1044C7B119B74AE000001272 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1044C7B219B74AE000001272 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1044C7B419B74AE000001272 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1044C7BA19B74AE000001272 /* VertexGetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VertexGetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1044C7BB19B74AE000001272 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1044C7C319B74AE100001272 /* VertexGetterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VertexGetterTests-Info.plist"; sourceTree = "<group>"; };
+		1044C7C519B74AE100001272 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1044C7C719B74AE100001272 /* VertexGetterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VertexGetterTests.m; sourceTree = "<group>"; };
+		1044C7D119B74BDA00001272 /* JardinBotanicoDKML.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JardinBotanicoDKML.kml; sourceTree = "<group>"; };
+		1044C7D419B74C2500001272 /* PESGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraph.h; sourceTree = "<group>"; };
+		1044C7D519B74C2500001272 /* PESGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraph.m; sourceTree = "<group>"; };
+		1044C7D619B74C2500001272 /* PESGraphNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphNode.h; sourceTree = "<group>"; };
+		1044C7D719B74C2500001272 /* PESGraphNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphNode.m; sourceTree = "<group>"; };
+		1044C7D819B74C2500001272 /* PESGraphEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphEdge.h; sourceTree = "<group>"; };
+		1044C7D919B74C2500001272 /* PESGraphEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphEdge.m; sourceTree = "<group>"; };
+		1044C7DA19B74C2500001272 /* PESGraphRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphRoute.h; sourceTree = "<group>"; };
+		1044C7DB19B74C2500001272 /* PESGraphRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphRoute.m; sourceTree = "<group>"; };
+		1044C7DC19B74C2500001272 /* PESGraphRouteStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphRouteStep.h; sourceTree = "<group>"; };
+		1044C7DD19B74C2500001272 /* PESGraphRouteStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphRouteStep.m; sourceTree = "<group>"; };
+		1044C7DE19B74C2500001272 /* PESGraphEdge+Coordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PESGraphEdge+Coordinates.h"; sourceTree = "<group>"; };
+		1044C7DF19B74C2500001272 /* PESGraphEdge+Coordinates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PESGraphEdge+Coordinates.m"; sourceTree = "<group>"; };
+		1044C7E719B74C4200001272 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		1044C7E819B74C4200001272 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		1044C7E919B74C4200001272 /* Placemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Placemark.h; sourceTree = "<group>"; };
+		1044C7EA19B74C4200001272 /* Placemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Placemark.m; sourceTree = "<group>"; };
+		1044C7EB19B74C4200001272 /* SMXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXMLDocument.h; sourceTree = "<group>"; };
+		1044C7EC19B74C4200001272 /* SMXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXMLDocument.m; sourceTree = "<group>"; };
+		1044C7ED19B74C4200001272 /* ParseCustomKML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseCustomKML.h; sourceTree = "<group>"; };
+		1044C7EE19B74C4200001272 /* ParseCustomKML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseCustomKML.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1044C79619B74AE000001272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1044C79F19B74AE000001272 /* CoreGraphics.framework in Frameworks */,
+				1044C7A119B74AE000001272 /* UIKit.framework in Frameworks */,
+				1044C79D19B74AE000001272 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1044C7B719B74AE000001272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1044C7BC19B74AE000001272 /* XCTest.framework in Frameworks */,
+				1044C7BE19B74AE000001272 /* UIKit.framework in Frameworks */,
+				1044C7BD19B74AE000001272 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1044C79019B74AE000001272 = {
+			isa = PBXGroup;
+			children = (
+				1044C7A219B74AE000001272 /* VertexGetter */,
+				1044C7C119B74AE100001272 /* VertexGetterTests */,
+				1044C79B19B74AE000001272 /* Frameworks */,
+				1044C79A19B74AE000001272 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1044C79A19B74AE000001272 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1044C79919B74AE000001272 /* VertexGetter.app */,
+				1044C7BA19B74AE000001272 /* VertexGetterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1044C79B19B74AE000001272 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1044C79C19B74AE000001272 /* Foundation.framework */,
+				1044C79E19B74AE000001272 /* CoreGraphics.framework */,
+				1044C7A019B74AE000001272 /* UIKit.framework */,
+				1044C7BB19B74AE000001272 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1044C7A219B74AE000001272 /* VertexGetter */ = {
+			isa = PBXGroup;
+			children = (
+				1044C7AB19B74AE000001272 /* AppDelegate.h */,
+				1044C7AC19B74AE000001272 /* AppDelegate.m */,
+				1044C7AE19B74AE000001272 /* Main.storyboard */,
+				1044C7B119B74AE000001272 /* ViewController.h */,
+				1044C7B219B74AE000001272 /* ViewController.m */,
+				1044C7D119B74BDA00001272 /* JardinBotanicoDKML.kml */,
+				1044C7E619B74C3000001272 /* CustomKMLParser */,
+				1044C7D319B74C1100001272 /* PESGraph */,
+				1044C7B419B74AE000001272 /* Images.xcassets */,
+				1044C7A319B74AE000001272 /* Supporting Files */,
+			);
+			path = VertexGetter;
+			sourceTree = "<group>";
+		};
+		1044C7A319B74AE000001272 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1044C7A419B74AE000001272 /* VertexGetter-Info.plist */,
+				1044C7A519B74AE000001272 /* InfoPlist.strings */,
+				1044C7A819B74AE000001272 /* main.m */,
+				1044C7AA19B74AE000001272 /* VertexGetter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1044C7C119B74AE100001272 /* VertexGetterTests */ = {
+			isa = PBXGroup;
+			children = (
+				1044C7C719B74AE100001272 /* VertexGetterTests.m */,
+				1044C7C219B74AE100001272 /* Supporting Files */,
+			);
+			path = VertexGetterTests;
+			sourceTree = "<group>";
+		};
+		1044C7C219B74AE100001272 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1044C7C319B74AE100001272 /* VertexGetterTests-Info.plist */,
+				1044C7C419B74AE100001272 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1044C7D319B74C1100001272 /* PESGraph */ = {
+			isa = PBXGroup;
+			children = (
+				1044C7D419B74C2500001272 /* PESGraph.h */,
+				1044C7D519B74C2500001272 /* PESGraph.m */,
+				1044C7D619B74C2500001272 /* PESGraphNode.h */,
+				1044C7D719B74C2500001272 /* PESGraphNode.m */,
+				1044C7D819B74C2500001272 /* PESGraphEdge.h */,
+				1044C7D919B74C2500001272 /* PESGraphEdge.m */,
+				1044C7DA19B74C2500001272 /* PESGraphRoute.h */,
+				1044C7DB19B74C2500001272 /* PESGraphRoute.m */,
+				1044C7DC19B74C2500001272 /* PESGraphRouteStep.h */,
+				1044C7DD19B74C2500001272 /* PESGraphRouteStep.m */,
+				1044C7DE19B74C2500001272 /* PESGraphEdge+Coordinates.h */,
+				1044C7DF19B74C2500001272 /* PESGraphEdge+Coordinates.m */,
+			);
+			name = PESGraph;
+			sourceTree = "<group>";
+		};
+		1044C7E619B74C3000001272 /* CustomKMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				1044C7E719B74C4200001272 /* Vertex.h */,
+				1044C7E819B74C4200001272 /* Vertex.m */,
+				1044C7E919B74C4200001272 /* Placemark.h */,
+				1044C7EA19B74C4200001272 /* Placemark.m */,
+				1044C7EB19B74C4200001272 /* SMXMLDocument.h */,
+				1044C7EC19B74C4200001272 /* SMXMLDocument.m */,
+				1044C7ED19B74C4200001272 /* ParseCustomKML.h */,
+				1044C7EE19B74C4200001272 /* ParseCustomKML.m */,
+			);
+			name = CustomKMLParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1044C79819B74AE000001272 /* VertexGetter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1044C7CB19B74AE100001272 /* Build configuration list for PBXNativeTarget "VertexGetter" */;
+			buildPhases = (
+				1044C79519B74AE000001272 /* Sources */,
+				1044C79619B74AE000001272 /* Frameworks */,
+				1044C79719B74AE000001272 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VertexGetter;
+			productName = VertexGetter;
+			productReference = 1044C79919B74AE000001272 /* VertexGetter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1044C7B919B74AE000001272 /* VertexGetterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1044C7CE19B74AE100001272 /* Build configuration list for PBXNativeTarget "VertexGetterTests" */;
+			buildPhases = (
+				1044C7B619B74AE000001272 /* Sources */,
+				1044C7B719B74AE000001272 /* Frameworks */,
+				1044C7B819B74AE000001272 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1044C7C019B74AE100001272 /* PBXTargetDependency */,
+			);
+			name = VertexGetterTests;
+			productName = VertexGetterTests;
+			productReference = 1044C7BA19B74AE000001272 /* VertexGetterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1044C79119B74AE000001272 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Francisco L. De Choudens Ortiz";
+				TargetAttributes = {
+					1044C7B919B74AE000001272 = {
+						TestTargetID = 1044C79819B74AE000001272;
+					};
+				};
+			};
+			buildConfigurationList = 1044C79419B74AE000001272 /* Build configuration list for PBXProject "VertexGetter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1044C79019B74AE000001272;
+			productRefGroup = 1044C79A19B74AE000001272 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1044C79819B74AE000001272 /* VertexGetter */,
+				1044C7B919B74AE000001272 /* VertexGetterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1044C79719B74AE000001272 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1044C7D219B74BDA00001272 /* JardinBotanicoDKML.kml in Resources */,
+				1044C7B519B74AE000001272 /* Images.xcassets in Resources */,
+				1044C7A719B74AE000001272 /* InfoPlist.strings in Resources */,
+				1044C7B019B74AE000001272 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1044C7B819B74AE000001272 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1044C7C619B74AE100001272 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1044C79519B74AE000001272 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1044C7E519B74C2500001272 /* PESGraphEdge+Coordinates.m in Sources */,
+				1044C7E219B74C2500001272 /* PESGraphEdge.m in Sources */,
+				1044C7B319B74AE000001272 /* ViewController.m in Sources */,
+				1044C7AD19B74AE000001272 /* AppDelegate.m in Sources */,
+				1044C7E419B74C2500001272 /* PESGraphRouteStep.m in Sources */,
+				1044C7A919B74AE000001272 /* main.m in Sources */,
+				1044C7F219B74C4200001272 /* ParseCustomKML.m in Sources */,
+				1044C7E119B74C2500001272 /* PESGraphNode.m in Sources */,
+				1044C7EF19B74C4200001272 /* Vertex.m in Sources */,
+				1044C7F019B74C4200001272 /* Placemark.m in Sources */,
+				1044C7E319B74C2500001272 /* PESGraphRoute.m in Sources */,
+				1044C7F119B74C4200001272 /* SMXMLDocument.m in Sources */,
+				1044C7E019B74C2500001272 /* PESGraph.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1044C7B619B74AE000001272 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1044C7C819B74AE100001272 /* VertexGetterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1044C7C019B74AE100001272 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1044C79819B74AE000001272 /* VertexGetter */;
+			targetProxy = 1044C7BF19B74AE100001272 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1044C7A519B74AE000001272 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1044C7A619B74AE000001272 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1044C7AE19B74AE000001272 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1044C7AF19B74AE000001272 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1044C7C419B74AE100001272 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1044C7C519B74AE100001272 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1044C7C919B74AE100001272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1044C7CA19B74AE100001272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1044C7CC19B74AE100001272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VertexGetter/VertexGetter-Prefix.pch";
+				INFOPLIST_FILE = "VertexGetter/VertexGetter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1044C7CD19B74AE100001272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VertexGetter/VertexGetter-Prefix.pch";
+				INFOPLIST_FILE = "VertexGetter/VertexGetter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1044C7CF19B74AE100001272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VertexGetter.app/VertexGetter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VertexGetter/VertexGetter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VertexGetterTests/VertexGetterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1044C7D019B74AE100001272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VertexGetter.app/VertexGetter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VertexGetter/VertexGetter-Prefix.pch";
+				INFOPLIST_FILE = "VertexGetterTests/VertexGetterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1044C79419B74AE000001272 /* Build configuration list for PBXProject "VertexGetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1044C7C919B74AE100001272 /* Debug */,
+				1044C7CA19B74AE100001272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1044C7CB19B74AE100001272 /* Build configuration list for PBXNativeTarget "VertexGetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1044C7CC19B74AE100001272 /* Debug */,
+				1044C7CD19B74AE100001272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1044C7CE19B74AE100001272 /* Build configuration list for PBXNativeTarget "VertexGetterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1044C7CF19B74AE100001272 /* Debug */,
+				1044C7D019B74AE100001272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1044C79119B74AE000001272 /* Project object */;
+}
