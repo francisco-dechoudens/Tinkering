@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10121D2719F5923900A6EB9C /* 2 Zoo Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10121D2619F5923900A6EB9C /* 2 Zoo Intro.mp3 */; };
+		10121D2919F5924300A6EB9C /* 6 Chimpance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10121D2819F5924300A6EB9C /* 6 Chimpance.mp3 */; };
 		101973311974649600541622 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973301974649600541622 /* Foundation.framework */; };
 		101973331974649600541622 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973321974649600541622 /* CoreGraphics.framework */; };
 		101973351974649600541622 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101973341974649600541622 /* UIKit.framework */; };
@@ -37,6 +39,19 @@
 		102DF00E1975A1B3005E1CDC /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 102DF00C1975A1B3005E1CDC /* green.png */; };
 		1030F4151975685800972E98 /* SightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030F4141975685800972E98 /* SightingViewController.m */; };
 		1030F4181975730900972E98 /* VisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030F4171975730900972E98 /* VisitViewController.m */; };
+		10665B4B19F03EB80033DD75 /* main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10665B4A19F03EB80033DD75 /* main2.storyboard */; };
+		10665B5119F040940033DD75 /* ItemAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10665B4F19F040940033DD75 /* ItemAlertViewController.m */; };
+		10665B5419F041340033DD75 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10665B5319F041340033DD75 /* MainViewController.m */; };
+		10665B5719F04D590033DD75 /* avatar_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10665B5619F04D590033DD75 /* avatar_01@2x.png */; };
+		10665B5919F04D630033DD75 /* bar_full@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10665B5819F04D630033DD75 /* bar_full@2x.png */; };
+		10665B5B19F04D710033DD75 /* bar_track_full@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10665B5A19F04D710033DD75 /* bar_track_full@2x.png */; };
+		10665B5D19F04D810033DD75 /* list_item_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10665B5C19F04D810033DD75 /* list_item_bg@2x.png */; };
+		10665B6219F04DA50033DD75 /* battery_full@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10665B5E19F04DA50033DD75 /* battery_full@2x.png */; };
+		10665B6319F04DA50033DD75 /* battery_high@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10665B5F19F04DA50033DD75 /* battery_high@2x.png */; };
+		10665B6419F04DA50033DD75 /* battery_low@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10665B6019F04DA50033DD75 /* battery_low@2x.png */; };
+		10665B6519F04DA50033DD75 /* battery_med@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10665B6119F04DA50033DD75 /* battery_med@2x.png */; };
+		10665B6819F04EA50033DD75 /* Transmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 10665B6719F04EA50033DD75 /* Transmitter.m */; };
+		10665B6B19F054AF0033DD75 /* SightingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10665B6A19F054AF0033DD75 /* SightingsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10121D2619F5923900A6EB9C /* 2 Zoo Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2 Zoo Intro.mp3"; sourceTree = "<group>"; };
+		10121D2819F5924300A6EB9C /* 6 Chimpance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "6 Chimpance.mp3"; sourceTree = "<group>"; };
 		1019732D1974649600541622 /* GimbalBeaconDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GimbalBeaconDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		101973301974649600541622 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		101973321974649600541622 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +104,23 @@
 		1030F4141975685800972E98 /* SightingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SightingViewController.m; sourceTree = "<group>"; };
 		1030F4161975730900972E98 /* VisitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitViewController.h; sourceTree = "<group>"; };
 		1030F4171975730900972E98 /* VisitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitViewController.m; sourceTree = "<group>"; };
+		10665B4A19F03EB80033DD75 /* main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main2.storyboard; sourceTree = "<group>"; };
+		10665B4E19F040940033DD75 /* ItemAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemAlertViewController.h; sourceTree = "<group>"; };
+		10665B4F19F040940033DD75 /* ItemAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemAlertViewController.m; sourceTree = "<group>"; };
+		10665B5219F041330033DD75 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		10665B5319F041340033DD75 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		10665B5619F04D590033DD75 /* avatar_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_01@2x.png"; sourceTree = "<group>"; };
+		10665B5819F04D630033DD75 /* bar_full@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar_full@2x.png"; sourceTree = "<group>"; };
+		10665B5A19F04D710033DD75 /* bar_track_full@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar_track_full@2x.png"; sourceTree = "<group>"; };
+		10665B5C19F04D810033DD75 /* list_item_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_item_bg@2x.png"; sourceTree = "<group>"; };
+		10665B5E19F04DA50033DD75 /* battery_full@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "battery_full@2x.png"; sourceTree = "<group>"; };
+		10665B5F19F04DA50033DD75 /* battery_high@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "battery_high@2x.png"; sourceTree = "<group>"; };
+		10665B6019F04DA50033DD75 /* battery_low@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "battery_low@2x.png"; sourceTree = "<group>"; };
+		10665B6119F04DA50033DD75 /* battery_med@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "battery_med@2x.png"; sourceTree = "<group>"; };
+		10665B6619F04EA50033DD75 /* Transmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transmitter.h; sourceTree = "<group>"; };
+		10665B6719F04EA50033DD75 /* Transmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transmitter.m; sourceTree = "<group>"; };
+		10665B6919F054AF0033DD75 /* SightingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SightingsTableViewCell.h; sourceTree = "<group>"; };
+		10665B6A19F054AF0033DD75 /* SightingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SightingsTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,15 +202,21 @@
 		101973361974649600541622 /* GimbalBeaconDemo */ = {
 			isa = PBXGroup;
 			children = (
+				10121D2619F5923900A6EB9C /* 2 Zoo Intro.mp3 */,
+				10121D2819F5924300A6EB9C /* 6 Chimpance.mp3 */,
 				1019733F1974649700541622 /* AppDelegate.h */,
 				101973401974649700541622 /* AppDelegate.m */,
-				101973421974649700541622 /* Main.storyboard */,
-				101973451974649700541622 /* ViewController.h */,
-				101973461974649700541622 /* ViewController.m */,
-				1030F4131975685800972E98 /* SightingViewController.h */,
-				1030F4141975685800972E98 /* SightingViewController.m */,
-				1030F4161975730900972E98 /* VisitViewController.h */,
-				1030F4171975730900972E98 /* VisitViewController.m */,
+				10665B4E19F040940033DD75 /* ItemAlertViewController.h */,
+				10665B4F19F040940033DD75 /* ItemAlertViewController.m */,
+				10665B5219F041330033DD75 /* MainViewController.h */,
+				10665B5319F041340033DD75 /* MainViewController.m */,
+				10665B6919F054AF0033DD75 /* SightingsTableViewCell.h */,
+				10665B6A19F054AF0033DD75 /* SightingsTableViewCell.m */,
+				10665B6619F04EA50033DD75 /* Transmitter.h */,
+				10665B6719F04EA50033DD75 /* Transmitter.m */,
+				10665B5519F04D470033DD75 /* Demo2Images */,
+				10665B4A19F03EB80033DD75 /* main2.storyboard */,
+				10665B4919F03E660033DD75 /* Demo 1 */,
 				101973481974649700541622 /* Images.xcassets */,
 				101973371974649600541622 /* Supporting Files */,
 			);
@@ -279,6 +319,35 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		10665B4919F03E660033DD75 /* Demo 1 */ = {
+			isa = PBXGroup;
+			children = (
+				101973421974649700541622 /* Main.storyboard */,
+				101973451974649700541622 /* ViewController.h */,
+				101973461974649700541622 /* ViewController.m */,
+				1030F4131975685800972E98 /* SightingViewController.h */,
+				1030F4141975685800972E98 /* SightingViewController.m */,
+				1030F4161975730900972E98 /* VisitViewController.h */,
+				1030F4171975730900972E98 /* VisitViewController.m */,
+			);
+			name = "Demo 1";
+			sourceTree = "<group>";
+		};
+		10665B5519F04D470033DD75 /* Demo2Images */ = {
+			isa = PBXGroup;
+			children = (
+				10665B5619F04D590033DD75 /* avatar_01@2x.png */,
+				10665B5819F04D630033DD75 /* bar_full@2x.png */,
+				10665B5A19F04D710033DD75 /* bar_track_full@2x.png */,
+				10665B5C19F04D810033DD75 /* list_item_bg@2x.png */,
+				10665B5E19F04DA50033DD75 /* battery_full@2x.png */,
+				10665B5F19F04DA50033DD75 /* battery_high@2x.png */,
+				10665B6019F04DA50033DD75 /* battery_low@2x.png */,
+				10665B6119F04DA50033DD75 /* battery_med@2x.png */,
+			);
+			name = Demo2Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,11 +425,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				101973491974649700541622 /* Images.xcassets in Resources */,
+				10665B6419F04DA50033DD75 /* battery_low@2x.png in Resources */,
 				1019733B1974649600541622 /* InfoPlist.strings in Resources */,
+				10121D2719F5923900A6EB9C /* 2 Zoo Intro.mp3 in Resources */,
+				10665B5D19F04D810033DD75 /* list_item_bg@2x.png in Resources */,
 				101973441974649700541622 /* Main.storyboard in Resources */,
+				10665B6319F04DA50033DD75 /* battery_high@2x.png in Resources */,
+				10665B5B19F04D710033DD75 /* bar_track_full@2x.png in Resources */,
+				10665B6219F04DA50033DD75 /* battery_full@2x.png in Resources */,
 				102DF00E1975A1B3005E1CDC /* green.png in Resources */,
+				10665B5719F04D590033DD75 /* avatar_01@2x.png in Resources */,
 				102DF00D1975A1B3005E1CDC /* red.png in Resources */,
+				10665B5919F04D630033DD75 /* bar_full@2x.png in Resources */,
 				1019737E1974652900541622 /* DataModels.bundle in Resources */,
+				10665B6519F04DA50033DD75 /* battery_med@2x.png in Resources */,
+				10121D2919F5924300A6EB9C /* 6 Chimpance.mp3 in Resources */,
+				10665B4B19F03EB80033DD75 /* main2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,8 +460,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				101973471974649700541622 /* ViewController.m in Sources */,
+				10665B6B19F054AF0033DD75 /* SightingsTableViewCell.m in Sources */,
 				1030F4181975730900972E98 /* VisitViewController.m in Sources */,
 				101973411974649700541622 /* AppDelegate.m in Sources */,
+				10665B5119F040940033DD75 /* ItemAlertViewController.m in Sources */,
+				10665B5419F041340033DD75 /* MainViewController.m in Sources */,
+				10665B6819F04EA50033DD75 /* Transmitter.m in Sources */,
 				1019733D1974649700541622 /* main.m in Sources */,
 				1030F4151975685800972E98 /* SightingViewController.m in Sources */,
 			);

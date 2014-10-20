@@ -12,11 +12,14 @@
 #import "WeatherAnimationViewController.h"
 #import "NSDictionary+weather.h"
 #import "NSDictionary+weather_package.h"
+#import "Restaurant.h"
+#import "UIImageView+AFNetworking.h"
 
 static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/weather_sample/";
 
 @interface WTTableViewController ()
-@property(strong) NSDictionary *weather;
+@property(strong) NSDictionary *restaurantDict;
+@property(strong) NSMutableArray* restArray;
 @end
 
 @implementation WTTableViewController
@@ -59,11 +62,11 @@ static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/wea
         NSDictionary *w;
         switch (indexPath.section) {
             case 0: {
-                w = self.weather.currentCondition;
+                w = self.restaurantDict.currentCondition;
                 break;
             }
             case 1: {
-                w = [self.weather upcomingWeather][indexPath.row];
+                w = [self.restaurantDict upcomingWeather][indexPath.row];
                 break;
             }
             default: {
@@ -79,7 +82,7 @@ static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/wea
 - (IBAction)clear:(id)sender
 {
     self.title = @"";
-    self.weather = nil;
+    self.restaurantDict = nil;
     [self.tableView reloadData];
 }
 
@@ -101,10 +104,29 @@ static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/wea
         
         //The success block runs when (surprise!) the request succeeds.
         //The JSON serializer parses the received data and returns a dictionary in the responseObject variable, which is stored in the weather property.
-        ///self.weather = (NSDictionary *)responseObject;
-        NSLog(@"%@",(NSDictionary *)responseObject);
+        self.restaurantDict = (NSDictionary *)responseObject;
+       self.restArray = [NSMutableArray new];
+        
+        for (id key in self.restaurantDict) {
+            NSError *error;
+            if (![key isEqualToString:@"status"]) {
+                NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self.restaurantDict[key]
+                                                                   options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                                     error:&error];
+                if (! jsonData) {
+                    NSLog(@"Got an error: %@", error);
+                } else {
+                    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+                    //NSLog(@"%@", jsonString);
+                    NSError* err = nil;
+                    Restaurant* restaurant = [[Restaurant alloc] initWithString:jsonString error:&err];
+                    [_restArray addObject:restaurant];
+                }
+            }
+           
+        }
         self.title = @"JSON Retrieved";
-        //[self.tableView reloadData];
+        [self.tableView reloadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
@@ -145,27 +167,12 @@ static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/wea
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 2;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if(!self.weather)
-        return 0;
-    
-    switch (section) {
-        case 0: {
-            return 1;
-        }
-        case 1: {
-            NSArray *upcomingWeather = [self.weather upcomingWeather];
-            return [upcomingWeather count];
-        }
-        default:
-            return 0;
-    }
+   
+    return _restArray.count;
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -173,28 +180,23 @@ static NSString * const BaseURLString = @"http://www.raywenderlich.com/demos/wea
     static NSString *CellIdentifier = @"WeatherCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    NSDictionary *daysWeather = nil;
+    cell.textLabel.text = [(Restaurant*)self.restArray[indexPath.row] title];
     
-    switch (indexPath.section) {
-        case 0: {
-            daysWeather = [self.weather currentCondition];
-            break;
-        }
-            
-        case 1: {
-            NSArray *upcomingWeather = [self.weather upcomingWeather];
-            daysWeather = upcomingWeather[indexPath.row];
-            break;
-        }
-            
-        default:
-            break;
-    }
+    NSURL *url = [NSURL URLWithString:[(NSArray*)[(Restaurant*)self.restArray[indexPath.row] featuredImage] firstObject]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    UIImage *placeholderImage = [UIImage imageNamed:@"placeholder"];
     
-    cell.textLabel.text = [daysWeather weatherDescription];
+    __weak UITableViewCell *weakCell = cell;
     
-    // You will add code here later to customize the cell, but it's good for now.
-    
+    [cell.imageView setImageWithURLRequest:request
+                          placeholderImage:placeholderImage
+                                   success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                                       
+                                       weakCell.imageView.image = image;
+                                       [weakCell setNeedsLayout];
+                                       
+                                   }
+                                   failure:nil];
     return cell;
 
 }
