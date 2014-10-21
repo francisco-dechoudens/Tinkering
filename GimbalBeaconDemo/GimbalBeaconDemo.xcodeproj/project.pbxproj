@@ -39,6 +39,8 @@
 		102DF00E1975A1B3005E1CDC /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 102DF00C1975A1B3005E1CDC /* green.png */; };
 		1030F4151975685800972E98 /* SightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030F4141975685800972E98 /* SightingViewController.m */; };
 		1030F4181975730900972E98 /* VisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030F4171975730900972E98 /* VisitViewController.m */; };
+		104D113A19F69E2D00828399 /* 8 Sapo Concho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 104D113919F69E2D00828399 /* 8 Sapo Concho.mp3 */; };
+		104D113C19F69E3900828399 /* 15 Culebra Maicera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 104D113B19F69E3900828399 /* 15 Culebra Maicera.mp3 */; };
 		10665B4B19F03EB80033DD75 /* main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10665B4A19F03EB80033DD75 /* main2.storyboard */; };
 		10665B5119F040940033DD75 /* ItemAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10665B4F19F040940033DD75 /* ItemAlertViewController.m */; };
 		10665B5419F041340033DD75 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10665B5319F041340033DD75 /* MainViewController.m */; };
@@ -104,6 +106,8 @@
 		1030F4141975685800972E98 /* SightingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SightingViewController.m; sourceTree = "<group>"; };
 		1030F4161975730900972E98 /* VisitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitViewController.h; sourceTree = "<group>"; };
 		1030F4171975730900972E98 /* VisitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitViewController.m; sourceTree = "<group>"; };
+		104D113919F69E2D00828399 /* 8 Sapo Concho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "8 Sapo Concho.mp3"; sourceTree = "<group>"; };
+		104D113B19F69E3900828399 /* 15 Culebra Maicera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "15 Culebra Maicera.mp3"; sourceTree = "<group>"; };
 		10665B4A19F03EB80033DD75 /* main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main2.storyboard; sourceTree = "<group>"; };
 		10665B4E19F040940033DD75 /* ItemAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemAlertViewController.h; sourceTree = "<group>"; };
 		10665B4F19F040940033DD75 /* ItemAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemAlertViewController.m; sourceTree = "<group>"; };
@@ -204,6 +208,8 @@
 			children = (
 				10121D2619F5923900A6EB9C /* 2 Zoo Intro.mp3 */,
 				10121D2819F5924300A6EB9C /* 6 Chimpance.mp3 */,
+				104D113919F69E2D00828399 /* 8 Sapo Concho.mp3 */,
+				104D113B19F69E3900828399 /* 15 Culebra Maicera.mp3 */,
 				1019733F1974649700541622 /* AppDelegate.h */,
 				101973401974649700541622 /* AppDelegate.m */,
 				10665B4E19F040940033DD75 /* ItemAlertViewController.h */,
@@ -428,6 +434,7 @@
 				10665B6419F04DA50033DD75 /* battery_low@2x.png in Resources */,
 				1019733B1974649600541622 /* InfoPlist.strings in Resources */,
 				10121D2719F5923900A6EB9C /* 2 Zoo Intro.mp3 in Resources */,
+				104D113A19F69E2D00828399 /* 8 Sapo Concho.mp3 in Resources */,
 				10665B5D19F04D810033DD75 /* list_item_bg@2x.png in Resources */,
 				101973441974649700541622 /* Main.storyboard in Resources */,
 				10665B6319F04DA50033DD75 /* battery_high@2x.png in Resources */,
@@ -439,6 +446,7 @@
 				10665B5919F04D630033DD75 /* bar_full@2x.png in Resources */,
 				1019737E1974652900541622 /* DataModels.bundle in Resources */,
 				10665B6519F04DA50033DD75 /* battery_med@2x.png in Resources */,
+				104D113C19F69E3900828399 /* 15 Culebra Maicera.mp3 in Resources */,
 				10121D2919F5924300A6EB9C /* 6 Chimpance.mp3 in Resources */,
 				10665B4B19F03EB80033DD75 /* main2.storyboard in Resources */,
 			);
