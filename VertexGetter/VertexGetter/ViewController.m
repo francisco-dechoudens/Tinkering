@@ -40,6 +40,7 @@
     locationManager.delegate = self;
     locationManager.distanceFilter = kCLDistanceFilterNone;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [locationManager requestAlwaysAuthorization];
     [locationManager startUpdatingLocation];
 }
 
@@ -66,7 +67,7 @@
 
 -(void)createGraph{
     // create a new SMXMLDocument with the contents of sample.xml
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"JardinBotanicoDKML" ofType:@"kml"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"MarquezaDKML" ofType:@"kml"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     
     ParseCustomKML *kml = [[ParseCustomKML alloc]initWithData:data];

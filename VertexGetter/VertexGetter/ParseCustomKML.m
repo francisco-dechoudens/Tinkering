@@ -53,7 +53,7 @@
     
     for (SMXMLElement *placemark in placemarks) {
        
-        if (count == 80) {
+        if (count == 145) {
             NSLog(@"<#string#>");
         }
         count++;

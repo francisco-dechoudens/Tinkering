@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UISlider *currentTimeSlider;
 @property (weak, nonatomic) IBOutlet UILabel *elapsedTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *remainingTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *mainTitle;
 @end
 
 @implementation ItemAlertViewController{
@@ -68,6 +69,14 @@
 -(void)viewDidAppear:(BOOL)animated{
     
     [super viewDidAppear:animated];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    // Release any retained subviews of the main view.
+    [super viewWillDisappear:animated];
+    [self stop:nil];
     
 }
 
@@ -128,6 +137,9 @@
     //Higlight first cell
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
     [self.playListTableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+    
+    //Add to Main Title
+    self.mainTitle.text = [(Transmitter*)self.transmitters[index] name];
    
     NSError *error;
     
@@ -146,21 +158,18 @@
 #pragma mark - Actions
 
 - (IBAction)play:(id)sender {
-    //IDZTrace();
     [self.audioPlayer prepareToPlay];
     [self.audioPlayer play];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
 }
 
 - (IBAction)pause:(id)sender {
-   // IDZTrace();
     [self.audioPlayer pause];
     [self stopTimer];
     [self updateDisplay];
 }
 
 - (IBAction)stop:(id)sender {
-  //  IDZTrace();
     [self.audioPlayer stop];
     [self stopTimer];
     self.audioPlayer.currentTime = 0;
@@ -278,6 +287,7 @@
 }
 
 - (IBAction)cancelButton:(id)sender {
+   
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
