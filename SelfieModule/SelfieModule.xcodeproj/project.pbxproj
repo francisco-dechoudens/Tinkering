@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10D4A1401A041814003DEA3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D4A13F1A041814003DEA3A /* main.m */; };
+		10D4A1431A041814003DEA3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D4A1421A041814003DEA3A /* AppDelegate.m */; };
+		10D4A1461A041814003DEA3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D4A1451A041814003DEA3A /* ViewController.m */; };
+		10D4A1491A041814003DEA3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D4A1471A041814003DEA3A /* Main.storyboard */; };
+		10D4A14B1A041814003DEA3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D4A14A1A041814003DEA3A /* Images.xcassets */; };
+		10D4A14E1A041814003DEA3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D4A14C1A041814003DEA3A /* LaunchScreen.xib */; };
+		10D4A15A1A041814003DEA3A /* SelfieModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D4A1591A041814003DEA3A /* SelfieModuleTests.m */; };
+		10D4A1641A04188A003DEA3A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D4A1631A04188A003DEA3A /* AssetsLibrary.framework */; };
+		10D4A1671A0418C2003DEA3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D4A1661A0418C2003DEA3A /* Foundation.framework */; };
+		10D4A1691A0418CE003DEA3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D4A1681A0418CE003DEA3A /* CoreGraphics.framework */; };
+		10D4A16B1A0418D6003DEA3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D4A16A1A0418D6003DEA3A /* UIKit.framework */; };
+		10D4A16E1A041F6C003DEA3A /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D4A16D1A041F6C003DEA3A /* OverlayView.m */; };
+		10D4A1771A0421D9003DEA3A /* ScanButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D4A1761A0421D9003DEA3A /* ScanButton.m */; };
+		10D4A17A1A04244C003DEA3A /* scanbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D4A1781A04244C003DEA3A /* scanbutton.png */; };
+		10D4A17B1A04244C003DEA3A /* overlaygraphic.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D4A1791A04244C003DEA3A /* overlaygraphic.png */; };
+		10D4A17D1A042C54003DEA3A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D4A17C1A042C54003DEA3A /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10D4A1541A041814003DEA3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D4A1321A041814003DEA3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10D4A1391A041814003DEA3A;
+			remoteInfo = SelfieModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10D4A13A1A041814003DEA3A /* SelfieModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfieModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10D4A13E1A041814003DEA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10D4A13F1A041814003DEA3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		10D4A1411A041814003DEA3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		10D4A1421A041814003DEA3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		10D4A1441A041814003DEA3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		10D4A1451A041814003DEA3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		10D4A1481A041814003DEA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10D4A14A1A041814003DEA3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		10D4A14D1A041814003DEA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		10D4A1531A041814003DEA3A /* SelfieModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfieModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10D4A1581A041814003DEA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10D4A1591A041814003DEA3A /* SelfieModuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfieModuleTests.m; sourceTree = "<group>"; };
+		10D4A1631A04188A003DEA3A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		10D4A1661A0418C2003DEA3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		10D4A1681A0418CE003DEA3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		10D4A16A1A0418D6003DEA3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		10D4A16C1A041F6C003DEA3A /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		10D4A16D1A041F6C003DEA3A /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		10D4A1751A0421D9003DEA3A /* ScanButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanButton.h; sourceTree = "<group>"; };
+		10D4A1761A0421D9003DEA3A /* ScanButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanButton.m; sourceTree = "<group>"; };
+		10D4A1781A04244C003DEA3A /* scanbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanbutton.png; sourceTree = "<group>"; };
+		10D4A1791A04244C003DEA3A /* overlaygraphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlaygraphic.png; sourceTree = "<group>"; };
+		10D4A17C1A042C54003DEA3A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10D4A1371A041814003DEA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D4A17D1A042C54003DEA3A /* MobileCoreServices.framework in Frameworks */,
+				10D4A16B1A0418D6003DEA3A /* UIKit.framework in Frameworks */,
+				10D4A1691A0418CE003DEA3A /* CoreGraphics.framework in Frameworks */,
+				10D4A1671A0418C2003DEA3A /* Foundation.framework in Frameworks */,
+				10D4A1641A04188A003DEA3A /* AssetsLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10D4A1501A041814003DEA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10D4A1311A041814003DEA3A = {
+			isa = PBXGroup;
+			children = (
+				10D4A1651A0418A4003DEA3A /* Frameworks */,
+				10D4A1561A041814003DEA3A /* SelfieModuleTests */,
+				10D4A13B1A041814003DEA3A /* Products */,
+				10D4A13C1A041814003DEA3A /* SelfieModule */,
+			);
+			sourceTree = "<group>";
+		};
+		10D4A13B1A041814003DEA3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10D4A13A1A041814003DEA3A /* SelfieModule.app */,
+				10D4A1531A041814003DEA3A /* SelfieModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10D4A13C1A041814003DEA3A /* SelfieModule */ = {
+			isa = PBXGroup;
+			children = (
+				10D4A1411A041814003DEA3A /* AppDelegate.h */,
+				10D4A1421A041814003DEA3A /* AppDelegate.m */,
+				10D4A1441A041814003DEA3A /* ViewController.h */,
+				10D4A1451A041814003DEA3A /* ViewController.m */,
+				10D4A16C1A041F6C003DEA3A /* OverlayView.h */,
+				10D4A16D1A041F6C003DEA3A /* OverlayView.m */,
+				10D4A1751A0421D9003DEA3A /* ScanButton.h */,
+				10D4A1761A0421D9003DEA3A /* ScanButton.m */,
+				10D4A1781A04244C003DEA3A /* scanbutton.png */,
+				10D4A1791A04244C003DEA3A /* overlaygraphic.png */,
+				10D4A1471A041814003DEA3A /* Main.storyboard */,
+				10D4A14A1A041814003DEA3A /* Images.xcassets */,
+				10D4A14C1A041814003DEA3A /* LaunchScreen.xib */,
+				10D4A13D1A041814003DEA3A /* Supporting Files */,
+			);
+			path = SelfieModule;
+			sourceTree = "<group>";
+		};
+		10D4A13D1A041814003DEA3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10D4A13E1A041814003DEA3A /* Info.plist */,
+				10D4A13F1A041814003DEA3A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10D4A1561A041814003DEA3A /* SelfieModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				10D4A1591A041814003DEA3A /* SelfieModuleTests.m */,
+				10D4A1571A041814003DEA3A /* Supporting Files */,
+			);
+			path = SelfieModuleTests;
+			sourceTree = "<group>";
+		};
+		10D4A1571A041814003DEA3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10D4A1581A041814003DEA3A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10D4A1651A0418A4003DEA3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10D4A17C1A042C54003DEA3A /* MobileCoreServices.framework */,
+				10D4A16A1A0418D6003DEA3A /* UIKit.framework */,
+				10D4A1681A0418CE003DEA3A /* CoreGraphics.framework */,
+				10D4A1661A0418C2003DEA3A /* Foundation.framework */,
+				10D4A1631A04188A003DEA3A /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10D4A1391A041814003DEA3A /* SelfieModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10D4A15D1A041814003DEA3A /* Build configuration list for PBXNativeTarget "SelfieModule" */;
+			buildPhases = (
+				10D4A1361A041814003DEA3A /* Sources */,
+				10D4A1371A041814003DEA3A /* Frameworks */,
+				10D4A1381A041814003DEA3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SelfieModule;
+			productName = SelfieModule;
+			productReference = 10D4A13A1A041814003DEA3A /* SelfieModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10D4A1521A041814003DEA3A /* SelfieModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10D4A1601A041814003DEA3A /* Build configuration list for PBXNativeTarget "SelfieModuleTests" */;
+			buildPhases = (
+				10D4A14F1A041814003DEA3A /* Sources */,
+				10D4A1501A041814003DEA3A /* Frameworks */,
+				10D4A1511A041814003DEA3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10D4A1551A041814003DEA3A /* PBXTargetDependency */,
+			);
+			name = SelfieModuleTests;
+			productName = SelfieModuleTests;
+			productReference = 10D4A1531A041814003DEA3A /* SelfieModuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10D4A1321A041814003DEA3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Francisco L. De Choudens Ortiz";
+				TargetAttributes = {
+					10D4A1391A041814003DEA3A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					10D4A1521A041814003DEA3A = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 10D4A1391A041814003DEA3A;
+					};
+				};
+			};
+			buildConfigurationList = 10D4A1351A041814003DEA3A /* Build configuration list for PBXProject "SelfieModule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10D4A1311A041814003DEA3A;
+			productRefGroup = 10D4A13B1A041814003DEA3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10D4A1391A041814003DEA3A /* SelfieModule */,
+				10D4A1521A041814003DEA3A /* SelfieModuleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10D4A1381A041814003DEA3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D4A17B1A04244C003DEA3A /* overlaygraphic.png in Resources */,
+				10D4A1491A041814003DEA3A /* Main.storyboard in Resources */,
+				10D4A14E1A041814003DEA3A /* LaunchScreen.xib in Resources */,
+				10D4A17A1A04244C003DEA3A /* scanbutton.png in Resources */,
+				10D4A14B1A041814003DEA3A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10D4A1511A041814003DEA3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10D4A1361A041814003DEA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D4A1771A0421D9003DEA3A /* ScanButton.m in Sources */,
+				10D4A1461A041814003DEA3A /* ViewController.m in Sources */,
+				10D4A16E1A041F6C003DEA3A /* OverlayView.m in Sources */,
+				10D4A1431A041814003DEA3A /* AppDelegate.m in Sources */,
+				10D4A1401A041814003DEA3A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10D4A14F1A041814003DEA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D4A15A1A041814003DEA3A /* SelfieModuleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10D4A1551A041814003DEA3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10D4A1391A041814003DEA3A /* SelfieModule */;
+			targetProxy = 10D4A1541A041814003DEA3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10D4A1471A041814003DEA3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10D4A1481A041814003DEA3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10D4A14C1A041814003DEA3A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10D4A14D1A041814003DEA3A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10D4A15B1A041814003DEA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		10D4A15C1A041814003DEA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10D4A15E1A041814003DEA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SelfieModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		10D4A15F1A041814003DEA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SelfieModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		10D4A1611A041814003DEA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SelfieModuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelfieModule.app/SelfieModule";
+			};
+			name = Debug;
+		};
+		10D4A1621A041814003DEA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SelfieModuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelfieModule.app/SelfieModule";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10D4A1351A041814003DEA3A /* Build configuration list for PBXProject "SelfieModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10D4A15B1A041814003DEA3A /* Debug */,
+				10D4A15C1A041814003DEA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10D4A15D1A041814003DEA3A /* Build configuration list for PBXNativeTarget "SelfieModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10D4A15E1A041814003DEA3A /* Debug */,
+				10D4A15F1A041814003DEA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		10D4A1601A041814003DEA3A /* Build configuration list for PBXNativeTarget "SelfieModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10D4A1611A041814003DEA3A /* Debug */,
+				10D4A1621A041814003DEA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10D4A1321A041814003DEA3A /* Project object */;
+}
