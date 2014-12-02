@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100CE0691A2CBC42000C6B20 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100CE0681A2CBC42000C6B20 /* Storyboard.storyboard */; };
+		100CE06C1A2CC2D5000C6B20 /* SHCBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 100CE06B1A2CC2D5000C6B20 /* SHCBoard.m */; };
+		100CE06F1A2CC8D1000C6B20 /* SHCBoardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 100CE06E1A2CC8D1000C6B20 /* SHCBoardTest.m */; };
+		100CE0721A2CCB7C000C6B20 /* SHCReversiBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 100CE0711A2CCB7C000C6B20 /* SHCReversiBoard.m */; };
+		100CE0751A2CD0C4000C6B20 /* SHCBoardSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 100CE0741A2CD0C4000C6B20 /* SHCBoardSquare.m */; };
+		100CE0781A2CD308000C6B20 /* SHCReversiBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 100CE0771A2CD308000C6B20 /* SHCReversiBoardView.m */; };
 		72347606167601BE00185647 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72347605167601BE00185647 /* main.m */; };
 		7234760A167604FA00185647 /* SHCMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72347609167604FA00185647 /* SHCMulticastDelegate.m */; };
 		72A5A03E1671D8F600AF63F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A5A03D1671D8F600AF63F4 /* UIKit.framework */; };
@@ -18,7 +24,6 @@
 		72A5A0521671D8F600AF63F4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0511671D8F600AF63F4 /* Default@2x.png */; };
 		72A5A0541671D8F600AF63F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0531671D8F600AF63F4 /* Default-568h@2x.png */; };
 		72A5A0571671D8F600AF63F4 /* SHCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A5A0561671D8F600AF63F4 /* SHCViewController.m */; };
-		72A5A05A1671D8F600AF63F4 /* SHCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0581671D8F600AF63F4 /* SHCViewController.xib */; };
 		72A5A0631671D8F600AF63F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A5A03D1671D8F600AF63F4 /* UIKit.framework */; };
 		72A5A0641671D8F600AF63F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A5A03F1671D8F600AF63F4 /* Foundation.framework */; };
 		72A5A06C1671D8F600AF63F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A06A1671D8F600AF63F4 /* InfoPlist.strings */; };
@@ -27,7 +32,6 @@
 		72A5A08B1671DA3E00AF63F4 /* Reversi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0811671DA3E00AF63F4 /* Reversi.png */; };
 		72A5A08D1671DA3E00AF63F4 /* Reversi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0831671DA3E00AF63F4 /* Reversi@2x.png */; };
 		72A5A08E1671DA3E00AF63F4 /* ReversiBlackPiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0841671DA3E00AF63F4 /* ReversiBlackPiece.png */; };
-		72A5A08F1671DA3E00AF63F4 /* ReversiBlackPiece@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0851671DA3E00AF63F4 /* ReversiBlackPiece@2x.png */; };
 		72A5A0901671DA3E00AF63F4 /* ReversiWhitePiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5A0861671DA3E00AF63F4 /* ReversiWhitePiece.png */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +46,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		100CE0681A2CBC42000C6B20 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		100CE06A1A2CC2D5000C6B20 /* SHCBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCBoard.h; sourceTree = "<group>"; };
+		100CE06B1A2CC2D5000C6B20 /* SHCBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCBoard.m; sourceTree = "<group>"; };
+		100CE06D1A2CC479000C6B20 /* BoardCellState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoardCellState.h; sourceTree = "<group>"; };
+		100CE06E1A2CC8D1000C6B20 /* SHCBoardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCBoardTest.m; sourceTree = "<group>"; };
+		100CE0701A2CCB7C000C6B20 /* SHCReversiBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCReversiBoard.h; sourceTree = "<group>"; };
+		100CE0711A2CCB7C000C6B20 /* SHCReversiBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCReversiBoard.m; sourceTree = "<group>"; };
+		100CE0731A2CD0C4000C6B20 /* SHCBoardSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCBoardSquare.h; sourceTree = "<group>"; };
+		100CE0741A2CD0C4000C6B20 /* SHCBoardSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCBoardSquare.m; sourceTree = "<group>"; };
+		100CE0761A2CD308000C6B20 /* SHCReversiBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCReversiBoardView.h; sourceTree = "<group>"; };
+		100CE0771A2CD308000C6B20 /* SHCReversiBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCReversiBoardView.m; sourceTree = "<group>"; };
+		100CE0791A2CF2E5000C6B20 /* SHCBoardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCBoardDelegate.h; sourceTree = "<group>"; };
+		100CE07A1A2DE797000C6B20 /* SHCReversiBoardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCReversiBoardDelegate.h; sourceTree = "<group>"; };
 		72347605167601BE00185647 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72347608167604FA00185647 /* SHCMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCMulticastDelegate.h; sourceTree = "<group>"; };
 		72347609167604FA00185647 /* SHCMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCMulticastDelegate.m; sourceTree = "<group>"; };
@@ -59,7 +76,6 @@
 		72A5A0531671D8F600AF63F4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		72A5A0551671D8F600AF63F4 /* SHCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHCViewController.h; sourceTree = "<group>"; };
 		72A5A0561671D8F600AF63F4 /* SHCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHCViewController.m; sourceTree = "<group>"; };
-		72A5A0591671D8F600AF63F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SHCViewController.xib; sourceTree = "<group>"; };
 		72A5A0601671D8F600AF63F4 /* SHCReversiGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHCReversiGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A5A0691671D8F600AF63F4 /* SHCReversiGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SHCReversiGameTests-Info.plist"; sourceTree = "<group>"; };
 		72A5A06B1671D8F600AF63F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -68,7 +84,6 @@
 		72A5A0811671DA3E00AF63F4 /* Reversi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Reversi.png; path = Assets/Reversi.png; sourceTree = "<group>"; };
 		72A5A0831671DA3E00AF63F4 /* Reversi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Reversi@2x.png"; path = "Assets/Reversi@2x.png"; sourceTree = "<group>"; };
 		72A5A0841671DA3E00AF63F4 /* ReversiBlackPiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ReversiBlackPiece.png; path = Assets/ReversiBlackPiece.png; sourceTree = "<group>"; };
-		72A5A0851671DA3E00AF63F4 /* ReversiBlackPiece@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ReversiBlackPiece@2x.png"; path = "Assets/ReversiBlackPiece@2x.png"; sourceTree = "<group>"; };
 		72A5A0861671DA3E00AF63F4 /* ReversiWhitePiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ReversiWhitePiece.png; path = Assets/ReversiWhitePiece.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,7 +159,7 @@
 				72A5A04D1671D8F600AF63F4 /* SHCAppDelegate.m */,
 				72A5A0551671D8F600AF63F4 /* SHCViewController.h */,
 				72A5A0561671D8F600AF63F4 /* SHCViewController.m */,
-				72A5A0581671D8F600AF63F4 /* SHCViewController.xib */,
+				100CE0681A2CBC42000C6B20 /* Storyboard.storyboard */,
 				72A5A0441671D8F600AF63F4 /* Supporting Files */,
 			);
 			path = SHCReversiGame;
@@ -168,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				72A5A0681671D8F600AF63F4 /* Supporting Files */,
+				100CE06E1A2CC8D1000C6B20 /* SHCBoardTest.m */,
 			);
 			path = SHCReversiGameTests;
 			sourceTree = "<group>";
@@ -184,6 +200,13 @@
 		72A5A07A1671D9D200AF63F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				100CE06D1A2CC479000C6B20 /* BoardCellState.h */,
+				100CE06A1A2CC2D5000C6B20 /* SHCBoard.h */,
+				100CE06B1A2CC2D5000C6B20 /* SHCBoard.m */,
+				100CE0791A2CF2E5000C6B20 /* SHCBoardDelegate.h */,
+				100CE0701A2CCB7C000C6B20 /* SHCReversiBoard.h */,
+				100CE0711A2CCB7C000C6B20 /* SHCReversiBoard.m */,
+				100CE07A1A2DE797000C6B20 /* SHCReversiBoardDelegate.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -191,6 +214,10 @@
 		72A5A07B1671D9D700AF63F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				100CE0731A2CD0C4000C6B20 /* SHCBoardSquare.h */,
+				100CE0741A2CD0C4000C6B20 /* SHCBoardSquare.m */,
+				100CE0761A2CD308000C6B20 /* SHCReversiBoardView.h */,
+				100CE0771A2CD308000C6B20 /* SHCReversiBoardView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -203,7 +230,6 @@
 				72A5A0811671DA3E00AF63F4 /* Reversi.png */,
 				72A5A0831671DA3E00AF63F4 /* Reversi@2x.png */,
 				72A5A0841671DA3E00AF63F4 /* ReversiBlackPiece.png */,
-				72A5A0851671DA3E00AF63F4 /* ReversiBlackPiece@2x.png */,
 				72A5A0861671DA3E00AF63F4 /* ReversiWhitePiece.png */,
 			);
 			name = Assets;
@@ -286,13 +312,12 @@
 				72A5A0501671D8F600AF63F4 /* Default.png in Resources */,
 				72A5A0521671D8F600AF63F4 /* Default@2x.png in Resources */,
 				72A5A0541671D8F600AF63F4 /* Default-568h@2x.png in Resources */,
-				72A5A05A1671D8F600AF63F4 /* SHCViewController.xib in Resources */,
 				72A5A0881671DA3E00AF63F4 /* GameOver.png in Resources */,
 				72A5A0891671DA3E00AF63F4 /* GameOver@2x.png in Resources */,
 				72A5A08B1671DA3E00AF63F4 /* Reversi.png in Resources */,
 				72A5A08D1671DA3E00AF63F4 /* Reversi@2x.png in Resources */,
+				100CE0691A2CBC42000C6B20 /* Storyboard.storyboard in Resources */,
 				72A5A08E1671DA3E00AF63F4 /* ReversiBlackPiece.png in Resources */,
-				72A5A08F1671DA3E00AF63F4 /* ReversiBlackPiece@2x.png in Resources */,
 				72A5A0901671DA3E00AF63F4 /* ReversiWhitePiece.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,9 +353,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100CE06C1A2CC2D5000C6B20 /* SHCBoard.m in Sources */,
+				100CE0781A2CD308000C6B20 /* SHCReversiBoardView.m in Sources */,
 				72A5A04E1671D8F600AF63F4 /* SHCAppDelegate.m in Sources */,
 				72A5A0571671D8F600AF63F4 /* SHCViewController.m in Sources */,
 				72347606167601BE00185647 /* main.m in Sources */,
+				100CE0721A2CCB7C000C6B20 /* SHCReversiBoard.m in Sources */,
+				100CE0751A2CD0C4000C6B20 /* SHCBoardSquare.m in Sources */,
 				7234760A167604FA00185647 /* SHCMulticastDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100CE06F1A2CC8D1000C6B20 /* SHCBoardTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,14 +389,6 @@
 				72A5A0471671D8F600AF63F4 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		72A5A0581671D8F600AF63F4 /* SHCViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72A5A0591671D8F600AF63F4 /* en */,
-			);
-			name = SHCViewController.xib;
 			sourceTree = "<group>";
 		};
 		72A5A06A1671D8F600AF63F4 /* InfoPlist.strings */ = {
@@ -439,6 +461,7 @@
 				GCC_PREFIX_HEADER = "SHCReversiGame/SHCReversiGame-Prefix.pch";
 				INFOPLIST_FILE = "SHCReversiGame/SHCReversiGame-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -450,6 +473,7 @@
 				GCC_PREFIX_HEADER = "SHCReversiGame/SHCReversiGame-Prefix.pch";
 				INFOPLIST_FILE = "SHCReversiGame/SHCReversiGame-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
