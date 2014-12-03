@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10216C831A2F309600471B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216C821A2F309600471B67 /* main.m */; };
+		10216C861A2F309600471B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216C851A2F309600471B67 /* AppDelegate.m */; };
+		10216C891A2F309600471B67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216C881A2F309600471B67 /* ViewController.m */; };
+		10216C8C1A2F309600471B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10216C8A1A2F309600471B67 /* Main.storyboard */; };
+		10216C8E1A2F309600471B67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10216C8D1A2F309600471B67 /* Images.xcassets */; };
+		10216C911A2F309600471B67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10216C8F1A2F309600471B67 /* LaunchScreen.xib */; };
+		10216C9D1A2F309700471B67 /* JasperAndZotGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216C9C1A2F309700471B67 /* JasperAndZotGameTests.m */; };
+		10216CAC1A2F30ED00471B67 /* SHCMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216CAB1A2F30ED00471B67 /* SHCMulticastDelegate.m */; };
+		10216CB01A2F32C700471B67 /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CAF1A2F32C700471B67 /* Board.png */; };
+		10216CBB1A2F35CC00471B67 /* zombieFire.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CB11A2F35CC00471B67 /* zombieFire.png */; };
+		10216CBC1A2F35CC00471B67 /* flower3.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CB21A2F35CC00471B67 /* flower3.png */; };
+		10216CBD1A2F35CC00471B67 /* x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CB31A2F35CC00471B67 /* x2.png */; };
+		10216CBE1A2F35CC00471B67 /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CB41A2F35CC00471B67 /* bomb.png */; };
+		10216CBF1A2F35CC00471B67 /* wizard.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CB51A2F35CC00471B67 /* wizard.png */; };
+		10216CC01A2F35CC00471B67 /* flower4.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CB61A2F35CC00471B67 /* flower4.png */; };
+		10216CC11A2F35CC00471B67 /* zombie.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CB71A2F35CC00471B67 /* zombie.png */; };
+		10216CC21A2F35CC00471B67 /* pumking.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CB81A2F35CC00471B67 /* pumking.png */; };
+		10216CC31A2F35CC00471B67 /* flower2.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CB91A2F35CC00471B67 /* flower2.png */; };
+		10216CC41A2F35CC00471B67 /* zombie2.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CBA1A2F35CC00471B67 /* zombie2.png */; };
+		10216CC71A2F366E00471B67 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216CC61A2F366E00471B67 /* Board.m */; };
+		10216CCC1A2F39AB00471B67 /* JasperAndZotBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216CCB1A2F39AB00471B67 /* JasperAndZotBoard.m */; };
+		10216CD01A2F3B6F00471B67 /* BoardSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216CCF1A2F3B6F00471B67 /* BoardSquare.m */; };
+		10216CD31A2F3C9E00471B67 /* JasperAndZotBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216CD21A2F3C9E00471B67 /* JasperAndZotBoardView.m */; };
+		10216CD61A2F615200471B67 /* diceFieldSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 10216CD51A2F615200471B67 /* diceFieldSelect.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10216C971A2F309700471B67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10216C751A2F309600471B67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10216C7C1A2F309600471B67;
+			remoteInfo = JasperAndZotGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10216C7D1A2F309600471B67 /* JasperAndZotGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JasperAndZotGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10216C811A2F309600471B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10216C821A2F309600471B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		10216C841A2F309600471B67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		10216C851A2F309600471B67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		10216C871A2F309600471B67 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		10216C881A2F309600471B67 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		10216C8B1A2F309600471B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10216C8D1A2F309600471B67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		10216C901A2F309600471B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		10216C961A2F309700471B67 /* JasperAndZotGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JasperAndZotGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10216C9B1A2F309700471B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10216C9C1A2F309700471B67 /* JasperAndZotGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JasperAndZotGameTests.m; sourceTree = "<group>"; };
+		10216CAA1A2F30ED00471B67 /* SHCMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCMulticastDelegate.h; sourceTree = "<group>"; };
+		10216CAB1A2F30ED00471B67 /* SHCMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCMulticastDelegate.m; sourceTree = "<group>"; };
+		10216CAF1A2F32C700471B67 /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Board.png; sourceTree = "<group>"; };
+		10216CB11A2F35CC00471B67 /* zombieFire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombieFire.png; sourceTree = "<group>"; };
+		10216CB21A2F35CC00471B67 /* flower3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower3.png; sourceTree = "<group>"; };
+		10216CB31A2F35CC00471B67 /* x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x2.png; sourceTree = "<group>"; };
+		10216CB41A2F35CC00471B67 /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bomb.png; sourceTree = "<group>"; };
+		10216CB51A2F35CC00471B67 /* wizard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wizard.png; sourceTree = "<group>"; };
+		10216CB61A2F35CC00471B67 /* flower4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower4.png; sourceTree = "<group>"; };
+		10216CB71A2F35CC00471B67 /* zombie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie.png; sourceTree = "<group>"; };
+		10216CB81A2F35CC00471B67 /* pumking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pumking.png; sourceTree = "<group>"; };
+		10216CB91A2F35CC00471B67 /* flower2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower2.png; sourceTree = "<group>"; };
+		10216CBA1A2F35CC00471B67 /* zombie2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie2.png; sourceTree = "<group>"; };
+		10216CC51A2F366E00471B67 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		10216CC61A2F366E00471B67 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		10216CC81A2F369B00471B67 /* BoardCellState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoardCellState.h; sourceTree = "<group>"; };
+		10216CCA1A2F39AB00471B67 /* JasperAndZotBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JasperAndZotBoard.h; sourceTree = "<group>"; };
+		10216CCB1A2F39AB00471B67 /* JasperAndZotBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JasperAndZotBoard.m; sourceTree = "<group>"; };
+		10216CCE1A2F3B6F00471B67 /* BoardSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardSquare.h; sourceTree = "<group>"; };
+		10216CCF1A2F3B6F00471B67 /* BoardSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardSquare.m; sourceTree = "<group>"; };
+		10216CD11A2F3C9E00471B67 /* JasperAndZotBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JasperAndZotBoardView.h; sourceTree = "<group>"; };
+		10216CD21A2F3C9E00471B67 /* JasperAndZotBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JasperAndZotBoardView.m; sourceTree = "<group>"; };
+		10216CD41A2F582900471B67 /* BoardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardDelegate.h; sourceTree = "<group>"; };
+		10216CD51A2F615200471B67 /* diceFieldSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diceFieldSelect.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10216C7A1A2F309600471B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10216C931A2F309700471B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10216C741A2F309600471B67 = {
+			isa = PBXGroup;
+			children = (
+				10216C7F1A2F309600471B67 /* JasperAndZotGame */,
+				10216C991A2F309700471B67 /* JasperAndZotGameTests */,
+				10216C7E1A2F309600471B67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10216C7E1A2F309600471B67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10216C7D1A2F309600471B67 /* JasperAndZotGame.app */,
+				10216C961A2F309700471B67 /* JasperAndZotGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10216C7F1A2F309600471B67 /* JasperAndZotGame */ = {
+			isa = PBXGroup;
+			children = (
+				10216CA91A2F30DE00471B67 /* Util */,
+				10216CA81A2F30D500471B67 /* Assets */,
+				10216CA71A2F30CE00471B67 /* View */,
+				10216CA61A2F30BD00471B67 /* Model */,
+				10216C841A2F309600471B67 /* AppDelegate.h */,
+				10216C851A2F309600471B67 /* AppDelegate.m */,
+				10216C871A2F309600471B67 /* ViewController.h */,
+				10216C881A2F309600471B67 /* ViewController.m */,
+				10216C8A1A2F309600471B67 /* Main.storyboard */,
+				10216C8D1A2F309600471B67 /* Images.xcassets */,
+				10216C8F1A2F309600471B67 /* LaunchScreen.xib */,
+				10216C801A2F309600471B67 /* Supporting Files */,
+			);
+			path = JasperAndZotGame;
+			sourceTree = "<group>";
+		};
+		10216C801A2F309600471B67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10216C811A2F309600471B67 /* Info.plist */,
+				10216C821A2F309600471B67 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10216C991A2F309700471B67 /* JasperAndZotGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				10216C9C1A2F309700471B67 /* JasperAndZotGameTests.m */,
+				10216C9A1A2F309700471B67 /* Supporting Files */,
+			);
+			path = JasperAndZotGameTests;
+			sourceTree = "<group>";
+		};
+		10216C9A1A2F309700471B67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10216C9B1A2F309700471B67 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10216CA61A2F30BD00471B67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10216CC81A2F369B00471B67 /* BoardCellState.h */,
+				10216CC51A2F366E00471B67 /* Board.h */,
+				10216CC61A2F366E00471B67 /* Board.m */,
+				10216CD41A2F582900471B67 /* BoardDelegate.h */,
+				10216CCA1A2F39AB00471B67 /* JasperAndZotBoard.h */,
+				10216CCB1A2F39AB00471B67 /* JasperAndZotBoard.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		10216CA71A2F30CE00471B67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10216CCE1A2F3B6F00471B67 /* BoardSquare.h */,
+				10216CCF1A2F3B6F00471B67 /* BoardSquare.m */,
+				10216CD11A2F3C9E00471B67 /* JasperAndZotBoardView.h */,
+				10216CD21A2F3C9E00471B67 /* JasperAndZotBoardView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		10216CA81A2F30D500471B67 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				10216CAF1A2F32C700471B67 /* Board.png */,
+				10216CB81A2F35CC00471B67 /* pumking.png */,
+				10216CB51A2F35CC00471B67 /* wizard.png */,
+				10216CD51A2F615200471B67 /* diceFieldSelect.png */,
+				10216CB31A2F35CC00471B67 /* x2.png */,
+				10216CB41A2F35CC00471B67 /* bomb.png */,
+				10216CB91A2F35CC00471B67 /* flower2.png */,
+				10216CB21A2F35CC00471B67 /* flower3.png */,
+				10216CB61A2F35CC00471B67 /* flower4.png */,
+				10216CB71A2F35CC00471B67 /* zombie.png */,
+				10216CBA1A2F35CC00471B67 /* zombie2.png */,
+				10216CB11A2F35CC00471B67 /* zombieFire.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		10216CA91A2F30DE00471B67 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				10216CAA1A2F30ED00471B67 /* SHCMulticastDelegate.h */,
+				10216CAB1A2F30ED00471B67 /* SHCMulticastDelegate.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10216C7C1A2F309600471B67 /* JasperAndZotGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10216CA01A2F309700471B67 /* Build configuration list for PBXNativeTarget "JasperAndZotGame" */;
+			buildPhases = (
+				10216C791A2F309600471B67 /* Sources */,
+				10216C7A1A2F309600471B67 /* Frameworks */,
+				10216C7B1A2F309600471B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JasperAndZotGame;
+			productName = JasperAndZotGame;
+			productReference = 10216C7D1A2F309600471B67 /* JasperAndZotGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10216C951A2F309700471B67 /* JasperAndZotGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10216CA31A2F309700471B67 /* Build configuration list for PBXNativeTarget "JasperAndZotGameTests" */;
+			buildPhases = (
+				10216C921A2F309700471B67 /* Sources */,
+				10216C931A2F309700471B67 /* Frameworks */,
+				10216C941A2F309700471B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10216C981A2F309700471B67 /* PBXTargetDependency */,
+			);
+			name = JasperAndZotGameTests;
+			productName = JasperAndZotGameTests;
+			productReference = 10216C961A2F309700471B67 /* JasperAndZotGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10216C751A2F309600471B67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Francisco L. De Choudens Ortiz";
+				TargetAttributes = {
+					10216C7C1A2F309600471B67 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					10216C951A2F309700471B67 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 10216C7C1A2F309600471B67;
+					};
+				};
+			};
+			buildConfigurationList = 10216C781A2F309600471B67 /* Build configuration list for PBXProject "JasperAndZotGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10216C741A2F309600471B67;
+			productRefGroup = 10216C7E1A2F309600471B67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10216C7C1A2F309600471B67 /* JasperAndZotGame */,
+				10216C951A2F309700471B67 /* JasperAndZotGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10216C7B1A2F309600471B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10216CBC1A2F35CC00471B67 /* flower3.png in Resources */,
+				10216CBD1A2F35CC00471B67 /* x2.png in Resources */,
+				10216CBB1A2F35CC00471B67 /* zombieFire.png in Resources */,
+				10216CC01A2F35CC00471B67 /* flower4.png in Resources */,
+				10216CD61A2F615200471B67 /* diceFieldSelect.png in Resources */,
+				10216CBE1A2F35CC00471B67 /* bomb.png in Resources */,
+				10216CC31A2F35CC00471B67 /* flower2.png in Resources */,
+				10216CC21A2F35CC00471B67 /* pumking.png in Resources */,
+				10216CB01A2F32C700471B67 /* Board.png in Resources */,
+				10216C8C1A2F309600471B67 /* Main.storyboard in Resources */,
+				10216CBF1A2F35CC00471B67 /* wizard.png in Resources */,
+				10216CC41A2F35CC00471B67 /* zombie2.png in Resources */,
+				10216C911A2F309600471B67 /* LaunchScreen.xib in Resources */,
+				10216CC11A2F35CC00471B67 /* zombie.png in Resources */,
+				10216C8E1A2F309600471B67 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10216C941A2F309700471B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10216C791A2F309600471B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10216CD01A2F3B6F00471B67 /* BoardSquare.m in Sources */,
+				10216CAC1A2F30ED00471B67 /* SHCMulticastDelegate.m in Sources */,
+				10216CD31A2F3C9E00471B67 /* JasperAndZotBoardView.m in Sources */,
+				10216C891A2F309600471B67 /* ViewController.m in Sources */,
+				10216C861A2F309600471B67 /* AppDelegate.m in Sources */,
+				10216C831A2F309600471B67 /* main.m in Sources */,
+				10216CC71A2F366E00471B67 /* Board.m in Sources */,
+				10216CCC1A2F39AB00471B67 /* JasperAndZotBoard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10216C921A2F309700471B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10216C9D1A2F309700471B67 /* JasperAndZotGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10216C981A2F309700471B67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10216C7C1A2F309600471B67 /* JasperAndZotGame */;
+			targetProxy = 10216C971A2F309700471B67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10216C8A1A2F309600471B67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10216C8B1A2F309600471B67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10216C8F1A2F309600471B67 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10216C901A2F309600471B67 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10216C9E1A2F309700471B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		10216C9F1A2F309700471B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10216CA11A2F309700471B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JasperAndZotGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		10216CA21A2F309700471B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JasperAndZotGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		10216CA41A2F309700471B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JasperAndZotGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JasperAndZotGame.app/JasperAndZotGame";
+			};
+			name = Debug;
+		};
+		10216CA51A2F309700471B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JasperAndZotGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JasperAndZotGame.app/JasperAndZotGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10216C781A2F309600471B67 /* Build configuration list for PBXProject "JasperAndZotGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10216C9E1A2F309700471B67 /* Debug */,
+				10216C9F1A2F309700471B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10216CA01A2F309700471B67 /* Build configuration list for PBXNativeTarget "JasperAndZotGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10216CA11A2F309700471B67 /* Debug */,
+				10216CA21A2F309700471B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10216CA31A2F309700471B67 /* Build configuration list for PBXNativeTarget "JasperAndZotGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10216CA41A2F309700471B67 /* Debug */,
+				10216CA51A2F309700471B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10216C751A2F309600471B67 /* Project object */;
+}
