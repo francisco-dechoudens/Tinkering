@@ -126,13 +126,48 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
 {
     // place the playing piece at the given location
     [self clearJasperSpaces];
-    [self setCellState:self.turnPlayer forColumn:column andRow:row];
+    [self setCellState:self.turnPlayer forColumn:column andRow:row];//Move Jasper
+    
+    //Shoot
+    // check the 8 play directions and flip pieces
+    
+    [self shootType:1
+              forColumn:column andRow:row withNavigationFunction:_boardNavigationFunctions[0] toState:self.turnPlayer];
+    
     
     [self decentPhase];
     [self diceFieldChanging];
     //dice formation changing
     //Enter zombie in field +  formation
 }
+
+-(void)shootType:(int)magicType forColumn:(NSInteger) column andRow:(NSInteger)row withNavigationFunction:(BoardNavigationFunction) navigationFunction toState:(BoardCellState) state
+{
+    
+        BoardCellState opponentsState = [self invertState:state];
+        BoardCellState currentCellState;
+        
+        // flip counters until the edge of the boards is reached, or
+        // a piece of the current state is reached
+        navigationFunction(&column, &row);//pass the pumkin
+        do
+        {
+            // advance to the next cell
+            navigationFunction(&column, &row);
+            
+            
+            currentCellState = [super cellStateAtColumn:column andRow:row];
+            if (currentCellState == BoardCellStateZombiePiece) {
+                [self setCellState:BoardCellStateFlowerPiece forColumn:column  andRow:row];
+                break;
+            }
+            
+        }
+        while(column>=0 && column<=5 &&
+              row>=6 && row<=10);
+        
+}
+
 
 -(void)decentPhase{
     
@@ -158,8 +193,17 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
         int row = [(NSNumber*)object[@"row"] intValue];
         int col = [(NSNumber*)object[@"col"] intValue];
         
-        [self setCellState:BoardCellStateZombiePiece forColumn:col andRow:row+2];//esta es la vel cuanto se mueve
-        [self setCellState:BoardCellStateEmpty forColumn:col andRow:row];
+        if ([self cellStateAtColumn:col andRow:row+1] == BoardCellStateZombiePiece || [self cellStateAtColumn:col andRow:row+1] == BoardCellStatePumpkinPiece || [self cellStateAtColumn:col andRow:row+1] == BoardCellStateFlowerPiece) {
+  
+        }
+        else if ([self cellStateAtColumn:col andRow:row+2] == BoardCellStateZombiePiece || [self cellStateAtColumn:col andRow:row+2] == BoardCellStatePumpkinPiece || [self cellStateAtColumn:col andRow:row+2] == BoardCellStateFlowerPiece) {
+            [self setCellState:BoardCellStateZombiePiece forColumn:col andRow:row+1];//esta es la vel cuanto se mueve
+            [self setCellState:BoardCellStateEmpty forColumn:col andRow:row];
+        }
+        else{
+            [self setCellState:BoardCellStateZombiePiece forColumn:col andRow:row+2];//esta es la vel cuanto se mueve
+            [self setCellState:BoardCellStateEmpty forColumn:col andRow:row];
+        }
         
     }
 }
@@ -205,11 +249,8 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
 
 - (BoardCellState) invertState: (BoardCellState)state
 {
-    if (state == BoardCellStateJasperPiece)
-        return BoardCellStateZombiePiece;
-    
     if (state == BoardCellStateZombiePiece)
-        return BoardCellStateJasperPiece;
+        return BoardCellStateFlowerPiece;
     
     return BoardCellStateEmpty;
 }
