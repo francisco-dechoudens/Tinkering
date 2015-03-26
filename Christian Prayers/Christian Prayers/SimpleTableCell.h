@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ParseUI/ParseUI.h>
 
 @interface SimpleTableCell : UITableViewCell
-
+@property (nonatomic, weak) IBOutlet UILabel *nameLabel;
+@property (nonatomic, weak) IBOutlet PFImageView *thumbnailImageView;
 @end

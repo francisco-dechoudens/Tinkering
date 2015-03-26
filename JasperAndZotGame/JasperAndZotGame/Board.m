@@ -11,7 +11,7 @@
 
 @implementation Board
 {
-    NSUInteger _board[6][11];
+    NSUInteger _board[6][11], _pastBoard[6][11];
     id<BoardDelegate> _delegate;
 }
 
@@ -31,15 +31,23 @@
     return _board[column][row];
 }
 
+- (BoardCellState)cellLastStateAtColumn:(NSInteger)column andRow:(NSInteger)row
+{
+    [self checkBoundsForColumn:column andRow:row];
+    return _pastBoard[column][row];
+}
+
 - (void)setCellState:(BoardCellState)state forColumn:(NSInteger)column andRow:(NSInteger)row
 {
     [self checkBoundsForColumn:column andRow:row];
+    _pastBoard[column][row] = _board[column][row];
     _board[column][row] = state;
     [self informDelegateOfStateChanged:state forColumn:column andRow:row];
 }
 
 - (void)clearBoard
 {
+    memset(_pastBoard, 0, sizeof(NSUInteger) * 11 * 6);
     memset(_board, 0, sizeof(NSUInteger) * 11 * 6);
     [self informDelegateOfStateChanged:BoardCellStateEmpty forColumn:-1 andRow:-1];
 }

@@ -10,8 +10,17 @@
 
 @implementation SimpleTableCell
 
+@synthesize nameLabel = _nameLabel;
+@synthesize thumbnailImageView = _thumbnailImageView;
+
+
 - (void)awakeFromNib {
     // Initialization code
+    
+    _thumbnailImageView.layer.cornerRadius = _thumbnailImageView.frame.size.width / 2;
+    _thumbnailImageView.layer.borderWidth = 3.0f;
+    _thumbnailImageView.layer.borderColor = [UIColor grayColor].CGColor;
+    _thumbnailImageView.clipsToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

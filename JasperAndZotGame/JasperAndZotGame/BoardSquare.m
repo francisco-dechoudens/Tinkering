@@ -21,6 +21,7 @@
     UIImageView* _bombView;
     UIImageView* _x2View;
     UIImageView* _diceFieldView;
+    UIImageView* _jasperPosiblePositionView;
 }
 
 - (id)initWithFrame:(CGRect)frame column:(NSInteger)column row:(NSInteger)row board:(JasperAndZotBoard *)board
@@ -73,6 +74,11 @@
         _diceFieldView.alpha = 0.0;
         [self addSubview:_diceFieldView];
         
+        UIImage* jasperPosiblePositionImage = [UIImage imageNamed: @"jasperPosiblePosition"];
+        _jasperPosiblePositionView = [[UIImageView alloc] initWithImage: jasperPosiblePositionImage];
+        _jasperPosiblePositionView.alpha = 0.0;
+        [self addSubview:_jasperPosiblePositionView];
+        
         self.backgroundColor = [UIColor clearColor];
         
         [self update];
@@ -104,6 +110,7 @@
     _wizardView.alpha = state == BoardCellStateJasperPiece ? 1.0 : 0.0;
     
     _diceFieldView.alpha = state == BoardCellStateDiceField ? 1.0 : 0.0;
+    _jasperPosiblePositionView.alpha = state == BoardCellStateJasperPosiblePosition ? 1.0 : 0.0;
    
 }
 

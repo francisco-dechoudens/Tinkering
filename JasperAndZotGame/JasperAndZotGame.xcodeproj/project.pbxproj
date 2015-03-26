@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100887991A36010600C77CAF /* jasperPosiblePosition.png in Resources */ = {isa = PBXBuildFile; fileRef = 100887981A36010600C77CAF /* jasperPosiblePosition.png */; };
+		1008879C1A37117F00C77CAF /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008879B1A37117F00C77CAF /* UIView+Animation.m */; };
+		1008879E1A3712BF00C77CAF /* flowerAnimation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1008879D1A3712BF00C77CAF /* flowerAnimation.png */; };
 		10216C831A2F309600471B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216C821A2F309600471B67 /* main.m */; };
 		10216C861A2F309600471B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216C851A2F309600471B67 /* AppDelegate.m */; };
 		10216C891A2F309600471B67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10216C881A2F309600471B67 /* ViewController.m */; };
@@ -44,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		100887981A36010600C77CAF /* jasperPosiblePosition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jasperPosiblePosition.png; sourceTree = "<group>"; };
+		1008879A1A37117F00C77CAF /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		1008879B1A37117F00C77CAF /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		1008879D1A3712BF00C77CAF /* flowerAnimation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flowerAnimation.png; sourceTree = "<group>"; };
 		10216C7D1A2F309600471B67 /* JasperAndZotGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JasperAndZotGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10216C811A2F309600471B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10216C821A2F309600471B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -184,6 +191,8 @@
 				10216CCF1A2F3B6F00471B67 /* BoardSquare.m */,
 				10216CD11A2F3C9E00471B67 /* JasperAndZotBoardView.h */,
 				10216CD21A2F3C9E00471B67 /* JasperAndZotBoardView.m */,
+				1008879A1A37117F00C77CAF /* UIView+Animation.h */,
+				1008879B1A37117F00C77CAF /* UIView+Animation.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -195,11 +204,13 @@
 				10216CB81A2F35CC00471B67 /* pumking.png */,
 				10216CB51A2F35CC00471B67 /* wizard.png */,
 				10216CD51A2F615200471B67 /* diceFieldSelect.png */,
+				100887981A36010600C77CAF /* jasperPosiblePosition.png */,
 				10216CB31A2F35CC00471B67 /* x2.png */,
 				10216CB41A2F35CC00471B67 /* bomb.png */,
 				10216CB91A2F35CC00471B67 /* flower2.png */,
 				10216CB21A2F35CC00471B67 /* flower3.png */,
 				10216CB61A2F35CC00471B67 /* flower4.png */,
+				1008879D1A3712BF00C77CAF /* flowerAnimation.png */,
 				10216CB71A2F35CC00471B67 /* zombie.png */,
 				10216CBA1A2F35CC00471B67 /* zombie2.png */,
 				10216CB11A2F35CC00471B67 /* zombieFire.png */,
@@ -300,12 +311,14 @@
 				10216CBD1A2F35CC00471B67 /* x2.png in Resources */,
 				10216CBB1A2F35CC00471B67 /* zombieFire.png in Resources */,
 				10216CC01A2F35CC00471B67 /* flower4.png in Resources */,
+				100887991A36010600C77CAF /* jasperPosiblePosition.png in Resources */,
 				10216CD61A2F615200471B67 /* diceFieldSelect.png in Resources */,
 				10216CBE1A2F35CC00471B67 /* bomb.png in Resources */,
 				10216CC31A2F35CC00471B67 /* flower2.png in Resources */,
 				10216CC21A2F35CC00471B67 /* pumking.png in Resources */,
 				10216CB01A2F32C700471B67 /* Board.png in Resources */,
 				10216C8C1A2F309600471B67 /* Main.storyboard in Resources */,
+				1008879E1A3712BF00C77CAF /* flowerAnimation.png in Resources */,
 				10216CBF1A2F35CC00471B67 /* wizard.png in Resources */,
 				10216CC41A2F35CC00471B67 /* zombie2.png in Resources */,
 				10216C911A2F309600471B67 /* LaunchScreen.xib in Resources */,
@@ -331,6 +344,7 @@
 				10216CD01A2F3B6F00471B67 /* BoardSquare.m in Sources */,
 				10216CAC1A2F30ED00471B67 /* SHCMulticastDelegate.m in Sources */,
 				10216CD31A2F3C9E00471B67 /* JasperAndZotBoardView.m in Sources */,
+				1008879C1A37117F00C77CAF /* UIView+Animation.m in Sources */,
 				10216C891A2F309600471B67 /* ViewController.m in Sources */,
 				10216C861A2F309600471B67 /* AppDelegate.m in Sources */,
 				10216C831A2F309600471B67 /* main.m in Sources */,

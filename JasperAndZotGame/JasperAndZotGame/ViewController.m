@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "JasperAndZotBoard.h"
 #import "JasperAndZotBoardView.h"
+#import "UIView+Animation.h"
 
 @interface ViewController ()
 
@@ -29,6 +30,29 @@
     JasperAndZotBoardView* jasperAndZotBoard = [[JasperAndZotBoardView alloc] initWithFrame:CGRectMake(35,108,248,395) andBoard:_board];
     
     [self.view addSubview:jasperAndZotBoard];
+    
+}
+
+- (IBAction)shootButton:(id)sender {
+    [_board makeShot];
+    
+    //[self addingShootingView];
+}
+
+-(void)addingShootingView{
+    UIImage* jasperPosiblePositionImage = [UIImage imageNamed: @"jasperPosiblePosition"];
+    UIView *jasperPosiblePositionView = [[UIImageView alloc] initWithImage: jasperPosiblePositionImage];
+    jasperPosiblePositionView.frame = CGRectMake(156, 464, jasperPosiblePositionView.frame.size.width,jasperPosiblePositionView.frame.size.height ); // set new position exactly
+
+    jasperPosiblePositionView.alpha = 1.0;
+    
+    [self.view addSubview:jasperPosiblePositionView];
+    
+    [jasperPosiblePositionView moveTo:CGPointMake(164,292)duration:0.5 option:0];
+}
+
+- (IBAction)waitButton:(id)sender {
+    [_board waitAction];
 }
 
 - (void)didReceiveMemoryWarning {

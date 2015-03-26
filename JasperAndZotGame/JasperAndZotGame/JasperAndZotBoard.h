@@ -28,4 +28,10 @@
 // Makes the given move for the player who is currently taking their turn
 - (void) makeMoveToColumn:(NSInteger) column andRow:(NSInteger)row;
 
+// wait jasper action
+- (void) waitAction;
+
+// shot jasper action
+-(void)makeShot;
+
 @end

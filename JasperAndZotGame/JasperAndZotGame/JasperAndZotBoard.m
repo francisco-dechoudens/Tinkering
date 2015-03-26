@@ -51,6 +51,7 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
 {
     BoardNavigationFunction _boardNavigationFunctions[8];
     int dieCounter;
+    NSMutableArray *pumkingPositionArray;
 }
 
 - (id)init
@@ -58,6 +59,8 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
     if (self = [super init]) {
         [self commonInit];
         [self setToInitialState];
+        [self decentPhase];
+        [self diceFieldChanging];
     }
     return self;
 }
@@ -82,12 +85,17 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
     [self clearJasperSpaces];
     
     [super setCellState:BoardCellStateJasperPiece forColumn:2 andRow:10];
+    [self viewJasperPosiblePosition];
     
     _jasperScore = 0;
     _zotScore = 0;
     
     // Black gets the first turn
     _turnPlayer = BoardCellStateJasperPiece;
+    
+    NSArray * array = @[@1,@1,@1,@1,@1,@1];
+    
+    pumkingPositionArray = [[NSMutableArray alloc]initWithArray:array];//1 is alive 0 is death
 }
 
 - (void)commonInit
@@ -113,43 +121,139 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
     [super setCellState:BoardCellStateJasperEmptyPiece forColumn:5 andRow:10];
 }
 
+-(void)waitAction{
+    
+    [self smashPhase];
+    [self decentPhase];
+    [self diceFieldChanging];
+    [self viewJasperPosiblePosition];
+    
+}
+
 -(BOOL)isValidMoveToColumn:(NSInteger)column andRow:(NSInteger)row
 {
     // check the cell is empty
-    if ([super cellStateAtColumn:column andRow:row] != BoardCellStateJasperEmptyPiece)
+    
+    if ([super cellStateAtColumn:column andRow:row] != BoardCellStateJasperPosiblePosition)
         return NO;
     
     return YES;
 }
 
+-(void)viewJasperPosiblePosition{
+    
+    int jasperPosition = 0;
+    
+    for (int col = 0; col < 6; col++) {
+        if ([super cellStateAtColumn:col andRow:10] == BoardCellStateJasperPiece) {
+            jasperPosition = col;
+            break;
+        }
+    }
+    
+    for (int col = 0; col < 6; col++) {
+        int x = abs(jasperPosition - col);
+        
+        if (x <= 3 && col != jasperPosition) {
+            [super setCellState:BoardCellStateJasperPosiblePosition forColumn:col andRow:10];
+        }
+    }
+    
+    
+}
+
 - (void)makeMoveToColumn:(NSInteger)column andRow:(NSInteger)row
 {
     // place the playing piece at the given location
+    //Move Jasper
     [self clearJasperSpaces];
     [self setCellState:self.turnPlayer forColumn:column andRow:row];//Move Jasper
+    
     
     //Shoot
     // check the 8 play directions and flip pieces
     
-    [self shootType:1
-              forColumn:column andRow:row withNavigationFunction:_boardNavigationFunctions[0] toState:self.turnPlayer];
+    //[self shootType:1 forColumn:column andRow:row withNavigationFunction:_boardNavigationFunctions[0] toState:self.turnPlayer];
+    
+    //[self smashPhase];
+    
+    //[self decentPhase];
+    //[self diceFieldChanging];
     
     
+    
+  
+}
+
+-(void)smashPhase{
+    
+    NSMutableArray *needUpdateArray = [NSMutableArray new];
+    
+    for (int col = 0; col < 6; col++)
+    {
+        if ([self cellStateAtColumn:col andRow:8] == BoardCellStateZombiePiece){
+            
+            [self setCellState:[super cellLastStateAtColumn:col andRow:8] forColumn:col  andRow:8];
+            [self setCellState:BoardCellStateZombiePiece forColumn:col  andRow:9];
+        }
+        else if ([self cellStateAtColumn:col andRow:9] == BoardCellStateZombiePiece)
+        {
+            NSDictionary *needUpdate = [NSDictionary dictionaryWithObjectsAndKeys:
+                                        [NSNumber numberWithInt:col], @"col",[NSNumber numberWithInt:9], @"row", nil];
+            
+            [needUpdateArray addObject:needUpdate];
+        }
+        
+        
+    }
+    
+    for (NSDictionary *object in needUpdateArray) {
+        int col = [object[@"col"] intValue];
+        pumkingPositionArray[col] = @0;
+        
+        if ([pumkingPositionArray containsObject:@1]) {
+            if ([pumkingPositionArray indexOfObject:@1] < col) {
+                [self setCellState:BoardCellStateEmpty forColumn:col  andRow:9];
+                [self setCellState:BoardCellStateZombiePiece forColumn:col-1  andRow:9];
+                pumkingPositionArray[col-1] = @0;
+            }
+            else{
+                [self setCellState:BoardCellStateEmpty forColumn:col  andRow:9];
+                [self setCellState:BoardCellStateZombiePiece forColumn:col+1  andRow:9];
+                pumkingPositionArray[col+1] = @0;
+            }
+        }
+
+    }
+   
+}
+
+-(void)makeShot{
+    
+    int jasperPosition = 0;
+    
+    for (int col = 0; col < 6; col++) {
+        if ([super cellStateAtColumn:col andRow:10] == BoardCellStateJasperPiece) {
+            jasperPosition = col;
+            break;
+        }
+    }
+    
+    [self shootType:1 forColumn:jasperPosition andRow:10 withNavigationFunction:_boardNavigationFunctions[0] toState:self.turnPlayer];
+    [self smashPhase];
     [self decentPhase];
     [self diceFieldChanging];
-    //dice formation changing
-    //Enter zombie in field +  formation
+    [self viewJasperPosiblePosition];
+    
 }
 
 -(void)shootType:(int)magicType forColumn:(NSInteger) column andRow:(NSInteger)row withNavigationFunction:(BoardNavigationFunction) navigationFunction toState:(BoardCellState) state
 {
     
-        BoardCellState opponentsState = [self invertState:state];
         BoardCellState currentCellState;
-        
-        // flip counters until the edge of the boards is reached, or
-        // a piece of the current state is reached
-        navigationFunction(&column, &row);//pass the pumkin
+    
+       // navigationFunction(&column, &row);//pass the pumkin row
+    
         do
         {
             // advance to the next cell
@@ -159,13 +263,50 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
             currentCellState = [super cellStateAtColumn:column andRow:row];
             if (currentCellState == BoardCellStateZombiePiece) {
                 [self setCellState:BoardCellStateFlowerPiece forColumn:column  andRow:row];
-                break;
+                for(int i=0; i<4; i++)
+                {
+                    [self chainReactionforColumn:column andRow:row withNavigationFunction:_boardNavigationFunctions[i] toState:BoardCellStateZombiePiece];
+                }
+                break;//just the first hit
             }
             
         }
-        while(column>=0 && column<=5 &&
-              row>=6 && row<=10);
+    while(column>=0 && column<=5 &&
+          row>=6 && row<=10);
+    
+}
+
+-(void)addindShootAnimation{
+    
+}
+
+-(void)chainReactionforColumn:(NSInteger) column andRow:(NSInteger)row withNavigationFunction:(BoardNavigationFunction) navigationFunction toState:(BoardCellState) state
+{
+
+    BoardCellState currentCellState = state;
+
+    do
+    {
+        // advance to the next cell
+        navigationFunction(&column, &row);
         
+        if (column>=0 && column<=5 &&
+            row>=0 && row<=10) {
+            currentCellState = [super cellStateAtColumn:column andRow:row];
+            
+            if (currentCellState == BoardCellStateZombiePiece) {
+                [self setCellState:BoardCellStateFlowerPiece forColumn:column  andRow:row];
+                for(int i=0; i<4; i++)
+                {
+                    [self chainReactionforColumn:column andRow:row withNavigationFunction:_boardNavigationFunctions[i] toState:BoardCellStateZombiePiece];
+                }
+            }
+        }
+
+    }while(column>=0 && column<=5 &&
+           row>=0 && row<=10 &&
+           currentCellState == BoardCellStateZombiePiece);
+    
 }
 
 
@@ -193,8 +334,24 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
         int row = [(NSNumber*)object[@"row"] intValue];
         int col = [(NSNumber*)object[@"col"] intValue];
         
-        if ([self cellStateAtColumn:col andRow:row+1] == BoardCellStateZombiePiece || [self cellStateAtColumn:col andRow:row+1] == BoardCellStatePumpkinPiece || [self cellStateAtColumn:col andRow:row+1] == BoardCellStateFlowerPiece) {
-  
+        BoardCellState temp1 = [super cellStateAtColumn:col andRow:row];
+        BoardCellState temp = [super cellLastStateAtColumn:col andRow:row];
+        
+        if ([self cellStateAtColumn:col andRow:row+1] == BoardCellStateZombiePiece || [self cellStateAtColumn:col andRow:row+1] == BoardCellStateJasperEmptyPiece || [self cellStateAtColumn:col andRow:row+1] == BoardCellStateJasperPiece || [self cellStateAtColumn:col andRow:row+1] == BoardCellStatePumpkinPiece || [self cellStateAtColumn:col andRow:row+1] == BoardCellStateFlowerPiece || temp == BoardCellStateFlowerPiece) {
+            
+            if (row < 9) {
+                if (([self cellStateAtColumn:col andRow:row+1] == BoardCellStateFlowerPiece || temp == BoardCellStateFlowerPiece) && [self cellStateAtColumn:col andRow:row+1] != BoardCellStatePumpkinPiece ) {
+                    [self setCellState:BoardCellStateZombiePiece forColumn:col andRow:row+1];//esta es la vel cuanto se mueve
+                    if(temp == BoardCellStateFlowerPiece){
+                        [self setCellState:BoardCellStateFlowerPiece forColumn:col andRow:row];
+                    }
+                    else{
+                        [self setCellState:BoardCellStateEmpty forColumn:col andRow:row];
+                    }
+                }
+            }
+            
+            
         }
         else if ([self cellStateAtColumn:col andRow:row+2] == BoardCellStateZombiePiece || [self cellStateAtColumn:col andRow:row+2] == BoardCellStatePumpkinPiece || [self cellStateAtColumn:col andRow:row+2] == BoardCellStateFlowerPiece) {
             [self setCellState:BoardCellStateZombiePiece forColumn:col andRow:row+1];//esta es la vel cuanto se mueve
@@ -255,21 +412,39 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
     return BoardCellStateEmpty;
 }
 
+-(BoardCellState)boardCellStateRandomizer{
+    
+    BoardCellState boardCellState;
+    
+    switch (arc4random_uniform(2)) {
+        case 0:
+            boardCellState = BoardCellStateZombiePiece;
+            break;
+        case 1:
+            boardCellState = BoardCellStateFireZombiePiece;
+            break;
+        default:
+            break;
+    }
+    
+    return boardCellState;
+}
+
 -(void)formationsNumber:(int)dieResult levelDifficulty:(int)level positionToEnter:(int)positionDie{
     switch (dieResult) {
         case 0:
-            [super setCellState:BoardCellStateZombiePiece forColumn:positionDie andRow:0];
+            [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie andRow:0];
             break;
         case 1:
-            [super setCellState:BoardCellStateZombiePiece forColumn:positionDie andRow:0];
+            [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie andRow:0];
             @try {
-                [super setCellState:BoardCellStateZombiePiece forColumn:positionDie+1 andRow:0];
+                [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie+1 andRow:0];
                 ;
             }
             @catch (NSException * e) {
                 NSLog(@"Exception: %@ , ignore", e);
                 @try {
-                    [super setCellState:BoardCellStateZombiePiece forColumn:positionDie-1 andRow:0];
+                    [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie-1 andRow:0];
                     ;
                 }
                 @catch (NSException * e) {
@@ -278,23 +453,23 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
             }
             break;
         case 2:
-            [super setCellState:BoardCellStateZombiePiece forColumn:positionDie andRow:0];
-            [super setCellState:BoardCellStateZombiePiece forColumn:positionDie andRow:1];
+            [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie andRow:0];
+            [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie andRow:1];
             break;
         case 3:
-            [super setCellState:BoardCellStateZombiePiece forColumn:positionDie andRow:0];
-            [super setCellState:BoardCellStateZombiePiece forColumn:positionDie andRow:1];
+            [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie andRow:0];
+            [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie andRow:1];
             @try {
-                [super setCellState:BoardCellStateZombiePiece forColumn:positionDie+1 andRow:0];
+                [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie+1 andRow:0];
                 ;
             }
             @catch (NSException * e) {
                 NSLog(@"Exception: %@ , ignore", e);
                 @try {
-                    [super setCellState:BoardCellStateZombiePiece forColumn:positionDie-1 andRow:0];
+                    [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie-1 andRow:0];
                     ;
                     [super setCellState:BoardCellStateEmpty forColumn:positionDie andRow:1];
-                    [super setCellState:BoardCellStateZombiePiece forColumn:positionDie-1 andRow:1];
+                    [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie-1 andRow:1];
                 }
                 @catch (NSException * e) {
                     NSLog(@"Exception: %@ , ignore", e);
@@ -302,19 +477,19 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
             }
             break;
         case 4:
-            [super setCellState:BoardCellStateZombiePiece forColumn:positionDie andRow:0];
-            [super setCellState:BoardCellStateZombiePiece forColumn:positionDie andRow:1];
+            [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie andRow:0];
+            [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie andRow:1];
             @try {
-                [super setCellState:BoardCellStateZombiePiece forColumn:positionDie-1 andRow:0];
+                [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie-1 andRow:0];
                 ;
             }
             @catch (NSException * e) {
                 NSLog(@"Exception: %@ , ignore", e);
                 @try {
-                    [super setCellState:BoardCellStateZombiePiece forColumn:positionDie+1 andRow:0];
+                    [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie+1 andRow:0];
                     ;
                     [super setCellState:BoardCellStateEmpty forColumn:positionDie andRow:1];
-                    [super setCellState:BoardCellStateZombiePiece forColumn:positionDie+1 andRow:1];
+                    [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie+1 andRow:1];
                 }
                 @catch (NSException * e) {
                     NSLog(@"Exception: %@ , ignore", e);
@@ -322,17 +497,17 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
             }
             break;
         case 5:
-            [super setCellState:BoardCellStateZombiePiece forColumn:positionDie andRow:0];
+            [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie andRow:0];
             @try {
-                [super setCellState:BoardCellStateZombiePiece forColumn:positionDie-1 andRow:0];
+                [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie-1 andRow:0];
                 ;
             }
             @catch (NSException * e) {
                 NSLog(@"Exception: %@ , ignore", e);
                 @try {
-                    [super setCellState:BoardCellStateZombiePiece forColumn:positionDie+1 andRow:0];
+                    [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie+1 andRow:0];
                     ;
-                    [super setCellState:BoardCellStateZombiePiece forColumn:positionDie+2 andRow:0];
+                    [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie+2 andRow:0];
                     ;
                     break;
                 }
@@ -341,15 +516,15 @@ BoardNavigationFunction BoardNavigationFunctionLeftDown = ^(NSInteger* c, NSInte
                 }
             }
             @try {
-                [super setCellState:BoardCellStateZombiePiece forColumn:positionDie+1 andRow:0];
+                [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie+1 andRow:0];
                 ;
             }
             @catch (NSException * e) {
                 NSLog(@"Exception: %@ , ignore", e);
                 @try {
-                    [super setCellState:BoardCellStateZombiePiece forColumn:positionDie-1 andRow:0];
+                    [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie-1 andRow:0];
                     ;
-                    [super setCellState:BoardCellStateZombiePiece forColumn:positionDie-2 andRow:0];
+                    [super setCellState:[self boardCellStateRandomizer] forColumn:positionDie-2 andRow:0];
                     ;
                     break;
                 }

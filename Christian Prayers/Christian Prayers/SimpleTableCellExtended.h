@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ParseUI/ParseUI.h>
 
-@interface SimpleTableCellExtended : UITableViewCell
+@interface SimpleTableCellExtended : UITableViewCell <UITextViewDelegate>
+@property (nonatomic, weak) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UITextView *extendedInfo;
+@property (nonatomic, weak) IBOutlet PFImageView *thumbnailImageView;
+@property (nonatomic) CGFloat cellHeight;
 
+-(void)AdjustToFittingHeight;
 @end

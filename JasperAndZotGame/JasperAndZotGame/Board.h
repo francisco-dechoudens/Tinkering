@@ -18,6 +18,8 @@
 // sets the state of the cell at the given location
 - (void) setCellState:(BoardCellState)state forColumn:(NSInteger)column andRow:(NSInteger)row;
 
+- (BoardCellState)cellLastStateAtColumn:(NSInteger)column andRow:(NSInteger)row;
+
 // clears the entire board
 - (void) clearBoard;
 

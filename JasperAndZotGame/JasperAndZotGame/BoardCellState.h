@@ -19,7 +19,8 @@ typedef NS_ENUM(NSUInteger, BoardCellState) {
     BoardCellStatePumpkinPiece = 6,
     BoardCellStateJasperPiece = 7,
     BoardCellStateJasperEmptyPiece = 8,
-    BoardCellStateDiceField = 9
+    BoardCellStateDiceField = 9,
+    BoardCellStateJasperPosiblePosition = 10
 };
 
 #endif

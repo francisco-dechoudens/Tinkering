@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		105F6FBF1AC060D9008DA9F3 /* cross-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FBE1AC060D9008DA9F3 /* cross-4.jpg */; };
+		105F6FC51AC06853008DA9F3 /* btnBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FC41AC06853008DA9F3 /* btnBg.png */; };
+		105F6FC71AC06B57008DA9F3 /* chat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FC61AC06B57008DA9F3 /* chat.jpg */; };
+		105F6FC91AC06C92008DA9F3 /* lectio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FC81AC06C92008DA9F3 /* lectio.jpg */; };
+		105F6FCB1AC06DA5008DA9F3 /* lordsprayer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FCA1AC06DA5008DA9F3 /* lordsprayer.jpg */; };
+		105F6FCD1AC06E36008DA9F3 /* praise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FCC1AC06E36008DA9F3 /* praise.jpg */; };
+		105F6FCF1AC06EC0008DA9F3 /* pray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FCE1AC06EC0008DA9F3 /* pray.jpg */; };
 		109B3F251AAF9EC40011EFB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 109B3F241AAF9EC40011EFB3 /* main.m */; };
 		109B3F281AAF9EC40011EFB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 109B3F271AAF9EC40011EFB3 /* AppDelegate.m */; };
 		109B3F2B1AAF9EC40011EFB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109B3F2A1AAF9EC40011EFB3 /* ViewController.m */; };
@@ -14,6 +21,26 @@
 		109B3F301AAF9EC40011EFB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109B3F2F1AAF9EC40011EFB3 /* Images.xcassets */; };
 		109B3F331AAF9EC40011EFB3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109B3F311AAF9EC40011EFB3 /* LaunchScreen.xib */; };
 		109B3F3F1AAF9EC40011EFB3 /* Christian_PrayersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 109B3F3E1AAF9EC40011EFB3 /* Christian_PrayersTests.m */; };
+		109B3F4C1AB399F30011EFB3 /* PrayerTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109B3F4B1AB399F30011EFB3 /* PrayerTypeTableViewController.m */; };
+		109B3F721AB39C960011EFB3 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 109B3F711AB39C960011EFB3 /* SimpleTableCell.m */; };
+		10C6293B1AC49D4100BDC9F0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C629381AC49C4C00BDC9F0 /* Parse.framework */; };
+		10C6293D1AC49D9200BDC9F0 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6293C1AC49D9200BDC9F0 /* ParseUI.framework */; };
+		10C6293F1AC49DD800BDC9F0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6293E1AC49DD800BDC9F0 /* Bolts.framework */; };
+		10C629411AC4AC1E00BDC9F0 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C629401AC4AC1E00BDC9F0 /* thumbnail.png */; };
+		10CFD6141AC076D3008A437F /* SimpleTableCellExtended.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CFD6131AC076D3008A437F /* SimpleTableCellExtended.m */; };
+		10CFD6171AC095DB008A437F /* MinuteSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CFD6161AC095DB008A437F /* MinuteSetupViewController.m */; };
+		10CFD6541AC0BEE6008A437F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD6521AC0BED3008A437F /* AudioToolbox.framework */; };
+		10CFD6561AC0BEF5008A437F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD6551AC0BEF5008A437F /* CFNetwork.framework */; };
+		10CFD6581AC0BF1E008A437F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD6571AC0BF1E008A437F /* CoreGraphics.framework */; };
+		10CFD65A1AC0BF2E008A437F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD6591AC0BF2E008A437F /* CoreLocation.framework */; };
+		10CFD65C1AC0BF3B008A437F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD65B1AC0BF3B008A437F /* MobileCoreServices.framework */; };
+		10CFD65E1AC0BF46008A437F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD65D1AC0BF46008A437F /* QuartzCore.framework */; };
+		10CFD6601AC0BF55008A437F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD65F1AC0BF55008A437F /* Security.framework */; };
+		10CFD6621AC0BF5E008A437F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD6611AC0BF5E008A437F /* StoreKit.framework */; };
+		10CFD6641AC0BF6A008A437F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD6631AC0BF6A008A437F /* SystemConfiguration.framework */; };
+		10CFD6661AC0BF78008A437F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD6651AC0BF78008A437F /* libz.dylib */; };
+		10CFD6681AC0BF8B008A437F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD6671AC0BF8B008A437F /* libsqlite3.dylib */; };
+		10CFD66B1AC0C44D008A437F /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CFD66A1AC0C44D008A437F /* PlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		105F6FBE1AC060D9008DA9F3 /* cross-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "cross-4.jpg"; path = "Christian Prayers/cross-4.jpg"; sourceTree = SOURCE_ROOT; };
+		105F6FC41AC06853008DA9F3 /* btnBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnBg.png; path = "Christian Prayers/btnBg.png"; sourceTree = SOURCE_ROOT; };
+		105F6FC61AC06B57008DA9F3 /* chat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chat.jpg; path = "Christian Prayers/chat.jpg"; sourceTree = SOURCE_ROOT; };
+		105F6FC81AC06C92008DA9F3 /* lectio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lectio.jpg; path = "Christian Prayers/lectio.jpg"; sourceTree = SOURCE_ROOT; };
+		105F6FCA1AC06DA5008DA9F3 /* lordsprayer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lordsprayer.jpg; path = "Christian Prayers/lordsprayer.jpg"; sourceTree = SOURCE_ROOT; };
+		105F6FCC1AC06E36008DA9F3 /* praise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = praise.jpg; path = "Christian Prayers/praise.jpg"; sourceTree = SOURCE_ROOT; };
+		105F6FCE1AC06EC0008DA9F3 /* pray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pray.jpg; path = "Christian Prayers/pray.jpg"; sourceTree = SOURCE_ROOT; };
 		109B3F1F1AAF9EC40011EFB3 /* Christian Prayers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Christian Prayers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		109B3F231AAF9EC40011EFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		109B3F241AAF9EC40011EFB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +74,31 @@
 		109B3F381AAF9EC40011EFB3 /* Christian PrayersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Christian PrayersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		109B3F3D1AAF9EC40011EFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		109B3F3E1AAF9EC40011EFB3 /* Christian_PrayersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Christian_PrayersTests.m; sourceTree = "<group>"; };
+		109B3F4A1AB399F20011EFB3 /* PrayerTypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrayerTypeTableViewController.h; sourceTree = "<group>"; };
+		109B3F4B1AB399F30011EFB3 /* PrayerTypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrayerTypeTableViewController.m; sourceTree = "<group>"; };
+		109B3F701AB39C960011EFB3 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
+		109B3F711AB39C960011EFB3 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
+		10C629381AC49C4C00BDC9F0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		10C6293C1AC49D9200BDC9F0 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		10C6293E1AC49DD800BDC9F0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		10C629401AC4AC1E00BDC9F0 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		10CFD6121AC076D3008A437F /* SimpleTableCellExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCellExtended.h; sourceTree = "<group>"; };
+		10CFD6131AC076D3008A437F /* SimpleTableCellExtended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCellExtended.m; sourceTree = "<group>"; };
+		10CFD6151AC095DB008A437F /* MinuteSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinuteSetupViewController.h; sourceTree = "<group>"; };
+		10CFD6161AC095DB008A437F /* MinuteSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinuteSetupViewController.m; sourceTree = "<group>"; };
+		10CFD6521AC0BED3008A437F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		10CFD6551AC0BEF5008A437F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		10CFD6571AC0BF1E008A437F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		10CFD6591AC0BF2E008A437F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		10CFD65B1AC0BF3B008A437F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		10CFD65D1AC0BF46008A437F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		10CFD65F1AC0BF55008A437F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		10CFD6611AC0BF5E008A437F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		10CFD6631AC0BF6A008A437F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		10CFD6651AC0BF78008A437F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		10CFD6671AC0BF8B008A437F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		10CFD6691AC0C44D008A437F /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		10CFD66A1AC0C44D008A437F /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +106,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10CFD6681AC0BF8B008A437F /* libsqlite3.dylib in Frameworks */,
+				10CFD6661AC0BF78008A437F /* libz.dylib in Frameworks */,
+				10CFD6641AC0BF6A008A437F /* SystemConfiguration.framework in Frameworks */,
+				10CFD6621AC0BF5E008A437F /* StoreKit.framework in Frameworks */,
+				10CFD6601AC0BF55008A437F /* Security.framework in Frameworks */,
+				10CFD65E1AC0BF46008A437F /* QuartzCore.framework in Frameworks */,
+				10CFD65C1AC0BF3B008A437F /* MobileCoreServices.framework in Frameworks */,
+				10CFD65A1AC0BF2E008A437F /* CoreLocation.framework in Frameworks */,
+				10CFD6581AC0BF1E008A437F /* CoreGraphics.framework in Frameworks */,
+				10CFD6561AC0BEF5008A437F /* CFNetwork.framework in Frameworks */,
+				10C6293B1AC49D4100BDC9F0 /* Parse.framework in Frameworks */,
+				10CFD6541AC0BEE6008A437F /* AudioToolbox.framework in Frameworks */,
+				10C6293D1AC49D9200BDC9F0 /* ParseUI.framework in Frameworks */,
+				10C6293F1AC49DD800BDC9F0 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +136,7 @@
 		109B3F161AAF9EC40011EFB3 = {
 			isa = PBXGroup;
 			children = (
+				10CFD64D1AC0BE97008A437F /* frameworks */,
 				109B3F211AAF9EC40011EFB3 /* Christian Prayers */,
 				109B3F3B1AAF9EC40011EFB3 /* Christian PrayersTests */,
 				109B3F201AAF9EC40011EFB3 /* Products */,
@@ -85,9 +159,21 @@
 				109B3F271AAF9EC40011EFB3 /* AppDelegate.m */,
 				109B3F291AAF9EC40011EFB3 /* ViewController.h */,
 				109B3F2A1AAF9EC40011EFB3 /* ViewController.m */,
+				109B3F4A1AB399F20011EFB3 /* PrayerTypeTableViewController.h */,
+				109B3F4B1AB399F30011EFB3 /* PrayerTypeTableViewController.m */,
+				10CFD6151AC095DB008A437F /* MinuteSetupViewController.h */,
+				10CFD6161AC095DB008A437F /* MinuteSetupViewController.m */,
+				10CFD6691AC0C44D008A437F /* PlayerViewController.h */,
+				10CFD66A1AC0C44D008A437F /* PlayerViewController.m */,
 				109B3F2C1AAF9EC40011EFB3 /* Main.storyboard */,
+				109B3F701AB39C960011EFB3 /* SimpleTableCell.h */,
+				109B3F711AB39C960011EFB3 /* SimpleTableCell.m */,
+				10CFD6121AC076D3008A437F /* SimpleTableCellExtended.h */,
+				10CFD6131AC076D3008A437F /* SimpleTableCellExtended.m */,
 				109B3F2F1AAF9EC40011EFB3 /* Images.xcassets */,
+				10C629401AC4AC1E00BDC9F0 /* thumbnail.png */,
 				109B3F311AAF9EC40011EFB3 /* LaunchScreen.xib */,
+				109B3F4F1AB39B410011EFB3 /* simpletable_image_pack */,
 				109B3F221AAF9EC40011EFB3 /* Supporting Files */,
 			);
 			path = "Christian Prayers";
@@ -117,6 +203,42 @@
 				109B3F3D1AAF9EC40011EFB3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		109B3F4F1AB39B410011EFB3 /* simpletable_image_pack */ = {
+			isa = PBXGroup;
+			children = (
+				105F6FBE1AC060D9008DA9F3 /* cross-4.jpg */,
+				105F6FC41AC06853008DA9F3 /* btnBg.png */,
+				105F6FC61AC06B57008DA9F3 /* chat.jpg */,
+				105F6FC81AC06C92008DA9F3 /* lectio.jpg */,
+				105F6FCA1AC06DA5008DA9F3 /* lordsprayer.jpg */,
+				105F6FCE1AC06EC0008DA9F3 /* pray.jpg */,
+				105F6FCC1AC06E36008DA9F3 /* praise.jpg */,
+			);
+			path = simpletable_image_pack;
+			sourceTree = "<group>";
+		};
+		10CFD64D1AC0BE97008A437F /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10C6293E1AC49DD800BDC9F0 /* Bolts.framework */,
+				10CFD6671AC0BF8B008A437F /* libsqlite3.dylib */,
+				10C629381AC49C4C00BDC9F0 /* Parse.framework */,
+				10CFD6651AC0BF78008A437F /* libz.dylib */,
+				10C6293C1AC49D9200BDC9F0 /* ParseUI.framework */,
+				10CFD6631AC0BF6A008A437F /* SystemConfiguration.framework */,
+				10CFD6611AC0BF5E008A437F /* StoreKit.framework */,
+				10CFD65F1AC0BF55008A437F /* Security.framework */,
+				10CFD65D1AC0BF46008A437F /* QuartzCore.framework */,
+				10CFD65B1AC0BF3B008A437F /* MobileCoreServices.framework */,
+				10CFD6591AC0BF2E008A437F /* CoreLocation.framework */,
+				10CFD6571AC0BF1E008A437F /* CoreGraphics.framework */,
+				10CFD6551AC0BEF5008A437F /* CFNetwork.framework */,
+				10CFD6521AC0BED3008A437F /* AudioToolbox.framework */,
+			);
+			name = frameworks;
+			path = "Christian Prayers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +322,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				109B3F2E1AAF9EC40011EFB3 /* Main.storyboard in Resources */,
+				105F6FCF1AC06EC0008DA9F3 /* pray.jpg in Resources */,
+				10C629411AC4AC1E00BDC9F0 /* thumbnail.png in Resources */,
+				105F6FC71AC06B57008DA9F3 /* chat.jpg in Resources */,
+				105F6FCD1AC06E36008DA9F3 /* praise.jpg in Resources */,
+				105F6FC91AC06C92008DA9F3 /* lectio.jpg in Resources */,
+				105F6FBF1AC060D9008DA9F3 /* cross-4.jpg in Resources */,
+				105F6FC51AC06853008DA9F3 /* btnBg.png in Resources */,
+				105F6FCB1AC06DA5008DA9F3 /* lordsprayer.jpg in Resources */,
 				109B3F331AAF9EC40011EFB3 /* LaunchScreen.xib in Resources */,
 				109B3F301AAF9EC40011EFB3 /* Images.xcassets in Resources */,
 			);
@@ -221,7 +351,12 @@
 			files = (
 				109B3F2B1AAF9EC40011EFB3 /* ViewController.m in Sources */,
 				109B3F281AAF9EC40011EFB3 /* AppDelegate.m in Sources */,
+				109B3F4C1AB399F30011EFB3 /* PrayerTypeTableViewController.m in Sources */,
 				109B3F251AAF9EC40011EFB3 /* main.m in Sources */,
+				10CFD6171AC095DB008A437F /* MinuteSetupViewController.m in Sources */,
+				10CFD66B1AC0C44D008A437F /* PlayerViewController.m in Sources */,
+				109B3F721AB39C960011EFB3 /* SimpleTableCell.m in Sources */,
+				10CFD6141AC076D3008A437F /* SimpleTableCellExtended.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +478,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
+				);
 				INFOPLIST_FILE = "Christian Prayers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +497,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
+				);
 				INFOPLIST_FILE = "Christian Prayers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +565,7 @@
 				109B3F441AAF9EC40011EFB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		109B3F451AAF9EC40011EFB3 /* Build configuration list for PBXNativeTarget "Christian PrayersTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +574,7 @@
 				109B3F471AAF9EC40011EFB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
