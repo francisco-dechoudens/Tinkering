@@ -43,8 +43,10 @@
             
             [query2 getFirstObjectInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
                 bodyTextVC = (VerseViewController*)segue.destinationViewController;
-                bodyTextVC.playerBodyTextLabel.text = obj[@"verseText"];
-                bodyTextVC.actionLabel.text = obj[@"ActionMessage"];
+                bodyTextVC.verseBody.text = obj[@"verseText"];
+                bodyTextVC.actionLabel1.text = obj[@"ActionMessage"];
+                bodyTextVC.actionLabel2.text = obj[@"ActionMessage2"];
+                bodyTextVC.actionBody.text = obj[@"prayFor"];
             }];
         }];
     }
@@ -70,8 +72,11 @@
             [query2 whereKey:@"PrayerTypeSubdivitionsId" equalTo:object.objectId];
             
             [query2 getFirstObjectInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
-                bodyTextVC.playerBodyTextLabel.text = obj[@"verseText"];
-                bodyTextVC.actionLabel.text = obj[@"ActionMessage"];
+                bodyTextVC.verseBody.text = obj[@"verseText"];
+                bodyTextVC.actionLabel1.text = obj[@"ActionMessage"];
+                bodyTextVC.actionLabel2.text = obj[@"ActionMessage2"];
+                bodyTextVC.actionBody.text = obj[@"prayFor"];
+                [bodyTextVC resizeView];
             }];
         }];
     }
@@ -93,8 +98,11 @@
             [query2 whereKey:@"PrayerTypeSubdivitionsId" equalTo:object.objectId];
             
             [query2 getFirstObjectInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
-                bodyTextVC.playerBodyTextLabel.text = obj[@"verseText"];
-                bodyTextVC.actionLabel.text = obj[@"ActionMessage"];
+                bodyTextVC.verseBody.text = obj[@"verseText"];
+                bodyTextVC.actionLabel1.text = obj[@"ActionMessage"];
+                bodyTextVC.actionLabel2.text = obj[@"ActionMessage2"];
+                bodyTextVC.actionBody.text = obj[@"prayFor"];
+                [bodyTextVC resizeView];
             }];
         }];
     }

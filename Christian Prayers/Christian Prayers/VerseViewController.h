@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface VerseViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *actionLabel;
-@property (weak, nonatomic) IBOutlet UITextView *playerBodyTextLabel;
+@property (weak, nonatomic) IBOutlet UITextView *actionLabel1;
+@property (weak, nonatomic) IBOutlet UITextView *verseBody;
+@property (weak, nonatomic) IBOutlet UITextView *actionLabel2;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UITextView *actionBody;
+
+-(void)resizeView;
 @end

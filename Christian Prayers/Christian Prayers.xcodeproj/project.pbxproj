@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101C89711AC5BD3C0039F441 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C629381AC49C4C00BDC9F0 /* Parse.framework */; };
 		105F6FBF1AC060D9008DA9F3 /* cross-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FBE1AC060D9008DA9F3 /* cross-4.jpg */; };
 		105F6FC51AC06853008DA9F3 /* btnBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FC41AC06853008DA9F3 /* btnBg.png */; };
 		105F6FC71AC06B57008DA9F3 /* chat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FC61AC06B57008DA9F3 /* chat.jpg */; };
@@ -26,7 +27,6 @@
 		10C6293D1AC49D9200BDC9F0 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6293C1AC49D9200BDC9F0 /* ParseUI.framework */; };
 		10C6293F1AC49DD800BDC9F0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6293E1AC49DD800BDC9F0 /* Bolts.framework */; };
 		10C629411AC4AC1E00BDC9F0 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C629401AC4AC1E00BDC9F0 /* thumbnail.png */; };
-		10C629421AC5581600BDC9F0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C629381AC49C4C00BDC9F0 /* Parse.framework */; };
 		10C629451AC5643F00BDC9F0 /* VerseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C629441AC5643F00BDC9F0 /* VerseViewController.m */; };
 		10CFD6141AC076D3008A437F /* SimpleTableCellExtended.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CFD6131AC076D3008A437F /* SimpleTableCellExtended.m */; };
 		10CFD6171AC095DB008A437F /* MinuteSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CFD6161AC095DB008A437F /* MinuteSetupViewController.m */; };
@@ -119,7 +119,7 @@
 				10CFD65A1AC0BF2E008A437F /* CoreLocation.framework in Frameworks */,
 				10CFD6581AC0BF1E008A437F /* CoreGraphics.framework in Frameworks */,
 				10CFD6561AC0BEF5008A437F /* CFNetwork.framework in Frameworks */,
-				10C629421AC5581600BDC9F0 /* Parse.framework in Frameworks */,
+				101C89711AC5BD3C0039F441 /* Parse.framework in Frameworks */,
 				10CFD6541AC0BEE6008A437F /* AudioToolbox.framework in Frameworks */,
 				10C6293D1AC49D9200BDC9F0 /* ParseUI.framework in Frameworks */,
 				10C6293F1AC49DD800BDC9F0 /* Bolts.framework in Frameworks */,
@@ -494,6 +494,8 @@
 					Prayers,
 					"$(PROJECT_DIR)/Christian",
 					Prayers,
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
 				);
 				INFOPLIST_FILE = "Christian Prayers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -507,6 +509,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
 					"$(PROJECT_DIR)/Christian",
 					Prayers,
 					"$(PROJECT_DIR)/Christian",
