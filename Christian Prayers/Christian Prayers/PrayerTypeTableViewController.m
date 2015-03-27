@@ -37,7 +37,6 @@
 
 
 -(void)toggleInfo{
-    NSLog(@"Enter");
      showCellInfoExtended = !showCellInfoExtended;
     
     [self loadObjects];
@@ -190,8 +189,10 @@
     // Pass the selected object to the new view controller.
     NSIndexPath *selectedIndex= [self.tableView indexPathForSelectedRow];
     
-    UIViewController* vc = [segue destinationViewController];
+    MinuteSetupViewController* vc = [segue destinationViewController];
+    
     vc.navigationItem.title = self.objects[selectedIndex.row-2][@"name"];
+    vc.prayerTypeObject = self.objects[selectedIndex.row-2];
 
 }
 

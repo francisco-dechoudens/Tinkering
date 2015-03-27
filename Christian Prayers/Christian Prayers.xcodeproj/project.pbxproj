@@ -23,10 +23,11 @@
 		109B3F3F1AAF9EC40011EFB3 /* Christian_PrayersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 109B3F3E1AAF9EC40011EFB3 /* Christian_PrayersTests.m */; };
 		109B3F4C1AB399F30011EFB3 /* PrayerTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109B3F4B1AB399F30011EFB3 /* PrayerTypeTableViewController.m */; };
 		109B3F721AB39C960011EFB3 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 109B3F711AB39C960011EFB3 /* SimpleTableCell.m */; };
-		10C6293B1AC49D4100BDC9F0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C629381AC49C4C00BDC9F0 /* Parse.framework */; };
 		10C6293D1AC49D9200BDC9F0 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6293C1AC49D9200BDC9F0 /* ParseUI.framework */; };
 		10C6293F1AC49DD800BDC9F0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C6293E1AC49DD800BDC9F0 /* Bolts.framework */; };
 		10C629411AC4AC1E00BDC9F0 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C629401AC4AC1E00BDC9F0 /* thumbnail.png */; };
+		10C629421AC5581600BDC9F0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C629381AC49C4C00BDC9F0 /* Parse.framework */; };
+		10C629451AC5643F00BDC9F0 /* VerseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C629441AC5643F00BDC9F0 /* VerseViewController.m */; };
 		10CFD6141AC076D3008A437F /* SimpleTableCellExtended.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CFD6131AC076D3008A437F /* SimpleTableCellExtended.m */; };
 		10CFD6171AC095DB008A437F /* MinuteSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CFD6161AC095DB008A437F /* MinuteSetupViewController.m */; };
 		10CFD6541AC0BEE6008A437F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CFD6521AC0BED3008A437F /* AudioToolbox.framework */; };
@@ -82,6 +83,8 @@
 		10C6293C1AC49D9200BDC9F0 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		10C6293E1AC49DD800BDC9F0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		10C629401AC4AC1E00BDC9F0 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		10C629431AC5643F00BDC9F0 /* VerseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerseViewController.h; sourceTree = "<group>"; };
+		10C629441AC5643F00BDC9F0 /* VerseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerseViewController.m; sourceTree = "<group>"; };
 		10CFD6121AC076D3008A437F /* SimpleTableCellExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCellExtended.h; sourceTree = "<group>"; };
 		10CFD6131AC076D3008A437F /* SimpleTableCellExtended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCellExtended.m; sourceTree = "<group>"; };
 		10CFD6151AC095DB008A437F /* MinuteSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinuteSetupViewController.h; sourceTree = "<group>"; };
@@ -116,7 +119,7 @@
 				10CFD65A1AC0BF2E008A437F /* CoreLocation.framework in Frameworks */,
 				10CFD6581AC0BF1E008A437F /* CoreGraphics.framework in Frameworks */,
 				10CFD6561AC0BEF5008A437F /* CFNetwork.framework in Frameworks */,
-				10C6293B1AC49D4100BDC9F0 /* Parse.framework in Frameworks */,
+				10C629421AC5581600BDC9F0 /* Parse.framework in Frameworks */,
 				10CFD6541AC0BEE6008A437F /* AudioToolbox.framework in Frameworks */,
 				10C6293D1AC49D9200BDC9F0 /* ParseUI.framework in Frameworks */,
 				10C6293F1AC49DD800BDC9F0 /* Bolts.framework in Frameworks */,
@@ -165,6 +168,8 @@
 				10CFD6161AC095DB008A437F /* MinuteSetupViewController.m */,
 				10CFD6691AC0C44D008A437F /* PlayerViewController.h */,
 				10CFD66A1AC0C44D008A437F /* PlayerViewController.m */,
+				10C629431AC5643F00BDC9F0 /* VerseViewController.h */,
+				10C629441AC5643F00BDC9F0 /* VerseViewController.m */,
 				109B3F2C1AAF9EC40011EFB3 /* Main.storyboard */,
 				109B3F701AB39C960011EFB3 /* SimpleTableCell.h */,
 				109B3F711AB39C960011EFB3 /* SimpleTableCell.m */,
@@ -349,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C629451AC5643F00BDC9F0 /* VerseViewController.m in Sources */,
 				109B3F2B1AAF9EC40011EFB3 /* ViewController.m in Sources */,
 				109B3F281AAF9EC40011EFB3 /* AppDelegate.m in Sources */,
 				109B3F4C1AB399F30011EFB3 /* PrayerTypeTableViewController.m in Sources */,
@@ -486,6 +492,8 @@
 					Prayers,
 					"$(PROJECT_DIR)/Christian",
 					Prayers,
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
 				);
 				INFOPLIST_FILE = "Christian Prayers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -499,6 +507,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
 					"$(PROJECT_DIR)/Christian",
 					Prayers,
 					"$(PROJECT_DIR)/Christian",
