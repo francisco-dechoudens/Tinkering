@@ -18,12 +18,22 @@
     NSArray* prayerTypeSubdivitionsArray;
     int selectedPrayerTypeSubdivitions;
     VerseViewController *bodyTextVC;
+    NSTimer* timer;
+    int secondsLeft;
+    bool isPause;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-     
+    
+    self.navigationItem.title = [NSString stringWithFormat:@"%d:00",_timeSelected];
+    secondsLeft = _timeSelected*60;
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [timer invalidate];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -33,6 +43,8 @@
         selectedPrayerTypeSubdivitions = 0;
         
         PFQuery* query = [PFQuery queryWithClassName:@"PrayerTypeCategorySubdivition"];
+        
+        
         [query getObjectInBackgroundWithId:prayerTypeSubdivitionsArray[selectedPrayerTypeSubdivitions] block:^(PFObject *object, NSError *error) {
             // Do something with the returned PFObject in the gameScore variable.
             self.prayerTypeSubdivitionLabel.text = object[@"name"];
@@ -41,13 +53,22 @@
             
             [query2 whereKey:@"PrayerTypeSubdivitionsId" equalTo:object.objectId];
             
-            [query2 getFirstObjectInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
+            [query2 findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                
+                int randomVerseSelection = arc4random_uniform((int)objects.count);
+                
+                PFObject* obj = objects[randomVerseSelection];
+                
                 bodyTextVC = (VerseViewController*)segue.destinationViewController;
-                bodyTextVC.verseBody.text = obj[@"verseText"];
+                NSString *verseText = obj[@"verseText"];
+                NSString *verseComplete = [[verseText stringByAppendingString:@" -- "]stringByAppendingString:obj[@"verseNumber"]];
+                
+                bodyTextVC.verseBody.text = verseComplete;
                 bodyTextVC.actionLabel1.text = obj[@"ActionMessage"];
                 bodyTextVC.actionLabel2.text = obj[@"ActionMessage2"];
                 bodyTextVC.actionBody.text = obj[@"prayFor"];
             }];
+            
         }];
     }
 }
@@ -71,11 +92,20 @@
             
             [query2 whereKey:@"PrayerTypeSubdivitionsId" equalTo:object.objectId];
             
-            [query2 getFirstObjectInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
-                bodyTextVC.verseBody.text = obj[@"verseText"];
+            [query2 findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                
+                int randomVerseSelection = arc4random_uniform((int)objects.count);
+                
+                PFObject* obj = objects[randomVerseSelection];
+            
+                NSString *verseText = obj[@"verseText"];
+                NSString *verseComplete = [[verseText stringByAppendingString:@" -- "]stringByAppendingString:obj[@"verseNumber"]];
+                
+                bodyTextVC.verseBody.text = verseComplete;
                 bodyTextVC.actionLabel1.text = obj[@"ActionMessage"];
                 bodyTextVC.actionLabel2.text = obj[@"ActionMessage2"];
                 bodyTextVC.actionBody.text = obj[@"prayFor"];
+                
                 [bodyTextVC resizeView];
             }];
         }];
@@ -97,14 +127,55 @@
             
             [query2 whereKey:@"PrayerTypeSubdivitionsId" equalTo:object.objectId];
             
-            [query2 getFirstObjectInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
-                bodyTextVC.verseBody.text = obj[@"verseText"];
+            [query2 findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                
+                int randomVerseSelection = arc4random_uniform((int)objects.count);
+                
+                PFObject* obj = objects[randomVerseSelection];
+                
+                NSString *verseText = obj[@"verseText"];
+                NSString *verseComplete = [[verseText stringByAppendingString:@" -- "]stringByAppendingString:obj[@"verseNumber"]];
+                
+                bodyTextVC.verseBody.text = verseComplete;
                 bodyTextVC.actionLabel1.text = obj[@"ActionMessage"];
                 bodyTextVC.actionLabel2.text = obj[@"ActionMessage2"];
                 bodyTextVC.actionBody.text = obj[@"prayFor"];
+                
                 [bodyTextVC resizeView];
             }];
         }];
+    }
+}
+- (IBAction)playPauseButton:(id)sender {
+    
+    isPause = !isPause;
+    
+    if (isPause) {
+        
+        timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateElapsedTime) userInfo:nil repeats:YES];
+        
+        
+        [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    }
+    else{
+        [timer invalidate];
+    }
+    
+    
+}
+
+-(void) updateElapsedTime {
+    int minutes, seconds;
+    
+    if ( secondsLeft <= 0 ) {
+        [timer invalidate];
+    }
+    else{
+        secondsLeft--;
+        
+        minutes = (secondsLeft % 3600) / 60;
+        seconds = (secondsLeft %3600) % 60;
+        self.navigationItem.title = [NSString stringWithFormat:@"%02d:%02d", minutes, seconds];
     }
 }
 

@@ -23,6 +23,7 @@
     // Do any additional setup after loading the view.
     
     [self setCircleFigure];
+    [self plus:self];
     
     _plusButton.layer.cornerRadius = _plusButton.frame.size.width / 2;
     _plusButton.layer.borderWidth = 3.0f;
@@ -31,7 +32,7 @@
     
     _minusButton.layer.cornerRadius = _plusButton.frame.size.width / 2;
     _minusButton.layer.borderWidth = 3.0f;
-    _minusButton.layer.borderColor = [UIColor blueColor].CGColor;
+    _minusButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
     _minusButton.clipsToBounds = YES;
 
     
@@ -64,6 +65,8 @@
     shapeLayer.fillColor = [[UIColor clearColor] CGColor];
     
     [self.circleView.layer addSublayer:shapeLayer];
+    
+    
 }
 
 - (IBAction)plus:(id)sender {
@@ -131,7 +134,7 @@
 }
 
 -(void)checkButtonConditions{
-    if (_counter <= 0) {
+    if (_counter <= 1) {
         self.minusButton.enabled = false;
         _minusButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
     }
@@ -163,6 +166,8 @@
     PlayerViewController *vc = nav.childViewControllers.firstObject;
     
     vc.prayerTypeObject = self.prayerTypeObject;
+    
+    vc.timeSelected = _counter*5;
 }
 
 

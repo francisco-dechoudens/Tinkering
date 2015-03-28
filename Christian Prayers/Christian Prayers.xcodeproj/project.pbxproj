@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		101C89711AC5BD3C0039F441 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C629381AC49C4C00BDC9F0 /* Parse.framework */; };
+		101C89751AC69A2D0039F441 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101C89741AC69A2D0039F441 /* Parse.framework */; };
+		101C89771AC6AA110039F441 /* prayBlur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 101C89761AC6AA110039F441 /* prayBlur.jpg */; };
+		101C897D1AC6AD850039F441 /* ephesians-6-18-iphone-pray-bible-lock-screen-christian-iphone-wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 101C897C1AC6AD850039F441 /* ephesians-6-18-iphone-pray-bible-lock-screen-christian-iphone-wallpaper.jpg */; };
 		105F6FBF1AC060D9008DA9F3 /* cross-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FBE1AC060D9008DA9F3 /* cross-4.jpg */; };
 		105F6FC51AC06853008DA9F3 /* btnBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FC41AC06853008DA9F3 /* btnBg.png */; };
 		105F6FC71AC06B57008DA9F3 /* chat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105F6FC61AC06B57008DA9F3 /* chat.jpg */; };
@@ -55,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		101C89741AC69A2D0039F441 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		101C89761AC6AA110039F441 /* prayBlur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prayBlur.jpg; sourceTree = "<group>"; };
+		101C897C1AC6AD850039F441 /* ephesians-6-18-iphone-pray-bible-lock-screen-christian-iphone-wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ephesians-6-18-iphone-pray-bible-lock-screen-christian-iphone-wallpaper.jpg"; sourceTree = "<group>"; };
 		105F6FBE1AC060D9008DA9F3 /* cross-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "cross-4.jpg"; path = "Christian Prayers/cross-4.jpg"; sourceTree = SOURCE_ROOT; };
 		105F6FC41AC06853008DA9F3 /* btnBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnBg.png; path = "Christian Prayers/btnBg.png"; sourceTree = SOURCE_ROOT; };
 		105F6FC61AC06B57008DA9F3 /* chat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chat.jpg; path = "Christian Prayers/chat.jpg"; sourceTree = SOURCE_ROOT; };
@@ -79,7 +84,6 @@
 		109B3F4B1AB399F30011EFB3 /* PrayerTypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrayerTypeTableViewController.m; sourceTree = "<group>"; };
 		109B3F701AB39C960011EFB3 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
 		109B3F711AB39C960011EFB3 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
-		10C629381AC49C4C00BDC9F0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		10C6293C1AC49D9200BDC9F0 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		10C6293E1AC49DD800BDC9F0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		10C629401AC4AC1E00BDC9F0 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
@@ -119,7 +123,7 @@
 				10CFD65A1AC0BF2E008A437F /* CoreLocation.framework in Frameworks */,
 				10CFD6581AC0BF1E008A437F /* CoreGraphics.framework in Frameworks */,
 				10CFD6561AC0BEF5008A437F /* CFNetwork.framework in Frameworks */,
-				101C89711AC5BD3C0039F441 /* Parse.framework in Frameworks */,
+				101C89751AC69A2D0039F441 /* Parse.framework in Frameworks */,
 				10CFD6541AC0BEE6008A437F /* AudioToolbox.framework in Frameworks */,
 				10C6293D1AC49D9200BDC9F0 /* ParseUI.framework in Frameworks */,
 				10C6293F1AC49DD800BDC9F0 /* Bolts.framework in Frameworks */,
@@ -176,7 +180,9 @@
 				10CFD6121AC076D3008A437F /* SimpleTableCellExtended.h */,
 				10CFD6131AC076D3008A437F /* SimpleTableCellExtended.m */,
 				109B3F2F1AAF9EC40011EFB3 /* Images.xcassets */,
+				101C89761AC6AA110039F441 /* prayBlur.jpg */,
 				10C629401AC4AC1E00BDC9F0 /* thumbnail.png */,
+				101C897C1AC6AD850039F441 /* ephesians-6-18-iphone-pray-bible-lock-screen-christian-iphone-wallpaper.jpg */,
 				109B3F311AAF9EC40011EFB3 /* LaunchScreen.xib */,
 				109B3F4F1AB39B410011EFB3 /* simpletable_image_pack */,
 				109B3F221AAF9EC40011EFB3 /* Supporting Files */,
@@ -229,7 +235,7 @@
 			children = (
 				10C6293E1AC49DD800BDC9F0 /* Bolts.framework */,
 				10CFD6671AC0BF8B008A437F /* libsqlite3.dylib */,
-				10C629381AC49C4C00BDC9F0 /* Parse.framework */,
+				101C89741AC69A2D0039F441 /* Parse.framework */,
 				10CFD6651AC0BF78008A437F /* libz.dylib */,
 				10C6293C1AC49D9200BDC9F0 /* ParseUI.framework */,
 				10CFD6631AC0BF6A008A437F /* SystemConfiguration.framework */,
@@ -329,7 +335,9 @@
 				109B3F2E1AAF9EC40011EFB3 /* Main.storyboard in Resources */,
 				105F6FCF1AC06EC0008DA9F3 /* pray.jpg in Resources */,
 				10C629411AC4AC1E00BDC9F0 /* thumbnail.png in Resources */,
+				101C897D1AC6AD850039F441 /* ephesians-6-18-iphone-pray-bible-lock-screen-christian-iphone-wallpaper.jpg in Resources */,
 				105F6FC71AC06B57008DA9F3 /* chat.jpg in Resources */,
+				101C89771AC6AA110039F441 /* prayBlur.jpg in Resources */,
 				105F6FCD1AC06E36008DA9F3 /* praise.jpg in Resources */,
 				105F6FC91AC06C92008DA9F3 /* lectio.jpg in Resources */,
 				105F6FBF1AC060D9008DA9F3 /* cross-4.jpg in Resources */,
@@ -496,6 +504,8 @@
 					Prayers,
 					"$(PROJECT_DIR)/Christian",
 					Prayers,
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
 				);
 				INFOPLIST_FILE = "Christian Prayers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -509,6 +519,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Christian",
+					Prayers,
 					"$(PROJECT_DIR)/Christian",
 					Prayers,
 					"$(PROJECT_DIR)/Christian",

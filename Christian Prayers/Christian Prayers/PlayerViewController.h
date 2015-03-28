@@ -12,6 +12,7 @@
 @interface PlayerViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *prayerTypeSubdivitionLabel;
+@property (nonatomic) int timeSelected;
 
 @property (weak, nonatomic) PFObject *prayerTypeObject;
 
